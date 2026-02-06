@@ -7,7 +7,7 @@
 [![Join the chat at https://gitter.im/Compliance-As-Code-The/content](https://badges.gitter.im/Compliance-As-Code-The/content.svg)](https://gitter.im/Compliance-As-Code-The/content?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
-The purpose of this project is to create *security policy content* for various
+Thee purpose of this project is to create *security policy content* for various
 platforms &mdash; *Red Hat Enterprise Linux*, *Fedora*, *Ubuntu*, *Debian*, *SUSE Linux Enterprise Server (SLES)*,... &mdash;
 as well as products &mdash; *Firefox*,...
 We aim to make it as easy as possible to write new and maintain existing
