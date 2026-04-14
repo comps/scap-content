@@ -1,11 +1,11 @@
 name: Github Pages
 on:
   push:
-    branches: [ 'master' ]
+    branches: ['master']
   pull_request:
-    branches: [ 'master',  'oscal-update-*' ]
+    branches: ['master', 'oscal-update-*']
   merge_group:
-    branches: [ 'master' ]
+    branches: ['master']
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.run_id }}
   cancel-in-progress: true
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-            persist-credentials: false
+          persist-credentials: false
       - name: Build
         run: cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Debug
         working-directory: ./build

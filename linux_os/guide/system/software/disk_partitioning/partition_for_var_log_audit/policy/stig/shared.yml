@@ -18,4 +18,3 @@ checktext: |-
 
 fixtext: |-
     Migrate the system audit data path onto a separate file system.
-

@@ -15,5 +15,3 @@ checktext: |-
 
 fixtext: |-
     Modify "/etc/fstab" to use the "nodev" option on the "/boot" directory.
-
-

@@ -5,7 +5,8 @@ title: 'BSI IT-Grundschutz (Basic Protection) Building Block SYS.1.6 and APP.4.4
 
 platform: ocp4-node
 
-reference: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Grundschutz/International/bsi_it_gs_comp_2022.pdf
+reference: >-
+  https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Grundschutz/International/bsi_it_gs_comp_2022.pdf
 
 metadata:
     SMEs:

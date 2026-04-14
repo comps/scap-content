@@ -35,4 +35,4 @@ template:
     vars:
         name: Disable developer tools
         policies:
-          - {path: "policies", parameter: "DisableDeveloperTools", value: true}
+            - {path: "policies", parameter: "DisableDeveloperTools", value: true}

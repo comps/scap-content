@@ -23,5 +23,3 @@ fixtext: |-
     Add/modify the "/etc/security/faillock.conf" file to match the following line:
 
     audit
-
-

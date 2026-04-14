@@ -26,6 +26,6 @@ ocil: |-
 template:
     name: firefox_policy-setting
     vars:
-        name: Enable tracking protection for cryptomining 
+        name: Enable tracking protection for cryptomining
         policies:
-          - {path: "EnableTrackingProtection", parameter: "Cryptomining", value: true}
+            - {path: "EnableTrackingProtection", parameter: "Cryptomining", value: true}

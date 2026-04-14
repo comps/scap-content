@@ -42,4 +42,3 @@ ocil: |-
     The output should show the following:
     <pre>[daemon]
     TimedLoginEnable=false</pre>
-

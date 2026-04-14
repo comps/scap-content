@@ -58,20 +58,25 @@ cpes:
       check_id: installed_OS_is_fedora
 
 # Retrieve the fingerprint as follows:
-#   gpg --show-keys --with-fingerprint --with-colons "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<version>-primary" | grep '^fpr' | cut -d ":" -f 10
+#   gpg --show-keys --with-fingerprint --with-colons
+#   "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<version>-primary" | grep '^fpr' | cut -d ":" -f 10
 # For current supported releases, this can be verified by comparing it to the keys published on:
 #   https://getfedora.org/keys/
 rawhide_version: 40
 rawhide_release_fingerprint: "115DF9AEF857853EE8445D0A0727707EA15B79CC"
-# The shortened version of the key, to be used for the pkg_version variable can be derived as follows:
-#   gpg --show-keys --keyid-format short "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<version>-primary" | grep 'rsa' | cut -d "/" -f 2 | awk '{print $1}'
+# The shortened version of the key, to be used for the pkg_version variable can be derived as
+# follows:
+#   gpg --show-keys --keyid-format short "/etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<version>-primary" |
+#   grep 'rsa' | cut -d "/" -f 2 | awk '{print $1}'
 # Alternatively, you can simply take the last 8 digits of the fingerprint above.
-# For currently supported releases, this can also be verified by comparing it to the keyid values published on:
+# For currently supported releases, this can also be verified by comparing it to the keyid values
+# published on:
 #   https://getfedora.org/keys/
 rawhide_pkg_version: "a15b79cc"
 # The pkg_release can be derived as follows:
 #   rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-<version>-x86_64
-#   rpm -q gpg-pubkey --qf '%{VERSION}-%{RELEASE}-%{SUMMARY}\n' | grep -i <pkg_version> | cut -f 2 -d -
+#   rpm -q gpg-pubkey --qf '%{VERSION}-%{RELEASE}-%{SUMMARY}\n' | grep -i <pkg_version> | cut -f 2
+#   -d -
 rawhide_pkg_release: "63d04c2c"
 
 future_version: 39

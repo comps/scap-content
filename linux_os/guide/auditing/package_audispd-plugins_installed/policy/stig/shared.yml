@@ -19,4 +19,3 @@ checktext: |-
     audispd-plugins.x86_64          3.0.7-101.el9_0.2
 
     If the "audispd-plugins" package is not installed, this is a finding.
-

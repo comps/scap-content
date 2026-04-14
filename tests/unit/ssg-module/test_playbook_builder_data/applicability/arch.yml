@@ -9,4 +9,3 @@ cpes:
       name: "cpe:/a:s390x_arch"
       title: "System architecture is S390X"
       check_id: proc_sys_kernel_osrelease_arch_s390x
-

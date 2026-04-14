@@ -29,5 +29,3 @@ fixtext: |-
     Run the following command to update the database:
 
     $ sudo dconf update
-
-

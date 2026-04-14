@@ -11,4 +11,6 @@ operator: equals
 interactive: false
 
 options:
-    default: '[.data."config.yaml" | fromjson | if .extendedArguments["port"]!=null then .extendedArguments["port"]==["0"] else true end]'
+    default: >-
+      [.data."config.yaml" | fromjson | if .extendedArguments["port"]!=null then
+      .extendedArguments["port"]==["0"] else true end]

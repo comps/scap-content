@@ -25,5 +25,6 @@ selections:
     # Limiting user namespaces cause issues with user apps, such as Firefox and Cheese
     - '!sysctl_user_max_user_namespaces'
 
-    # locking of idle sessions is handled by screensaver when GUI is present, the following rule is therefore redundant
+    # locking of idle sessions is handled by screensaver when GUI is present, the following rule is
+    # therefore redundant
     - '!logind_session_timeout'

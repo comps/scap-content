@@ -41,4 +41,3 @@ fixtext: |-
     NAME: The imagestream name to update
     NAMESPACE: The namespace the imagestream is in. This will most often be 'openshift'.
     TAG_NAME: The imagestream tag to update
-

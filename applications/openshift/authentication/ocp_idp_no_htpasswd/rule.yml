@@ -1,4 +1,3 @@
-
 title: "Do Not Use htpasswd-based IdP"
 
 {{% set default_jqfilter = '.spec' %}}

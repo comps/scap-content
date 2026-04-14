@@ -13,7 +13,6 @@ vuldiscussion: |-
     Proceed with caution with enforcing the use of this daemon. Improper configuration may render the system nonfunctional. The "fapolicyd" API is not namespace aware and can cause issues when launching or running containers.
 
 
-
 checktext: |-
     Verify that {{{ full_name }}} fapolicyd package is installed with the following command:
 
@@ -29,5 +28,3 @@ fixtext: |-
     The  fapolicyd  package can be installed with the following command:
 
     $ sudo dnf install fapolicyd
-
-

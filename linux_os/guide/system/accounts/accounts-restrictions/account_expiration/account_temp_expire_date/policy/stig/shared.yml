@@ -9,7 +9,6 @@ vuldiscussion: |-
     The automatic expiration of temporary accounts may be extended as needed by the circumstances but it must not be extended indefinitely. A documented permanent account should be established for privileged users who need long-term maintenance accounts.
 
 
-
 checktext: |-
     Verify temporary accounts have been provisioned with an expiration date of 72 hours.
 
@@ -25,5 +24,3 @@ fixtext: |-
     Configure the operating system to expire temporary accounts after 72 hours with the following command:
 
     $ sudo chage -E $(date -d +3days +%Y-%m-%d) &lt;temporary_account_name&gt;
-
-

@@ -87,4 +87,3 @@ template:
     - value: '\/metrics'
       operation: 'pattern match'
       entity_check: 'at least one'
-

@@ -1,4 +1,3 @@
-
 title: Ensure that EBS volumes declared in storageclasses are encrypted
 
 platform: ocp4-on-aws

@@ -21,4 +21,3 @@ template:
     vars:
         filepath: /var/log/auth.log
         gid_or_name: 'adm|root'
-

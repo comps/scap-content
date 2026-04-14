@@ -21,4 +21,3 @@ controls:
         status_justification: |-
             {{{ full_name }}} is secure in the event of a failure.
             Authentication and authorizations are still necessary to access the system.
-

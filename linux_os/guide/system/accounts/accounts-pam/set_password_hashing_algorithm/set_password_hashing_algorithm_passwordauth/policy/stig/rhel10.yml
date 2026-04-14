@@ -18,7 +18,6 @@ checktext: |-
     If "yescrypt" is missing, or the line is commented out, this is a finding.
 
 
-
 vuldiscussion: |-
     Unapproved mechanisms that are used for authentication to the cryptographic module are not verified and; therefore, cannot be relied upon to provide confidentiality or integrity, and DOD data may be compromised.
 

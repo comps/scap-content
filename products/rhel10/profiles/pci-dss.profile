@@ -28,7 +28,8 @@ selections:
     - var_password_hashing_algorithm=yescrypt
     - var_password_hashing_algorithm_pam=yescrypt
 
-    # RHEL 10 uses a different rule for auditing changes to selinux configuration (PCI-DSSv4 - 10.3.4)
+    # RHEL 10 uses a different rule for auditing changes to selinux configuration (PCI-DSSv4 -
+    # 10.3.4)
     - '!audit_rules_mac_modification'
     - audit_rules_mac_modification_etc_selinux
 
@@ -71,7 +72,8 @@ selections:
     - '!set_ip6tables_default_rule'
     - '!set_loopback_traffic'
     - '!set_password_hashing_algorithm_commonauth'
-    # Following rule are excluded since, "so far" no CCEs were defined for them and maybe irrelevant for rhel10
+    # Following rule are excluded since, "so far" no CCEs were defined for them and maybe
+    # irrelevant for rhel10
     - '!enable_dconf_user_profile'
 
     # Following are incompatible with the rhel10 product (based on RHEL9)

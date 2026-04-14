@@ -28,5 +28,3 @@ fixtext: |-
     auth required pam_faillock.so preauth
     auth required pam_faillock.so authfail
     account required pam_faillock.so
-
-

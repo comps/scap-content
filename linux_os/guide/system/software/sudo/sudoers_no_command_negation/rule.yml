@@ -28,7 +28,8 @@ identifiers:
     cce@sle15: CCE-91193-3
     cce@sle16: CCE-95859-5
 
-ocil_clause: '/etc/sudoers file contains rules that define the set of allowed commands using negation'
+ocil_clause: >-
+  /etc/sudoers file contains rules that define the set of allowed commands using negation
 
 # A setp-by-step guide how to modify the configuration to achieve compliance
 ocil: |-
@@ -39,6 +40,6 @@ ocil: |-
 platform: package[sudo]
 
 warnings:
-  - general:
-      This rule doesn't come with a remediation, as negations indicate design issues with the sudoers user specifications design.
-      Just removing negations doesn't increase the security - you typically have to rethink the definition of allowed commands to fix the issue.
+    - general:
+        This rule doesn't come with a remediation, as negations indicate design issues with the sudoers user specifications design.
+        Just removing negations doesn't increase the security - you typically have to rethink the definition of allowed commands to fix the issue.

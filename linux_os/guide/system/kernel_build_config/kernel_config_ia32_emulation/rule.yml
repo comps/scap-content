@@ -35,4 +35,3 @@ template:
     vars:
         config: CONFIG_IA32_EMULATION
         value: 'n'
-

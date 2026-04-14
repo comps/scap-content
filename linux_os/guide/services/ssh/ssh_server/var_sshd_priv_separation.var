@@ -2,7 +2,8 @@ documentation_complete: true
 
 title: 'SSH Privilege Separation Setting'
 
-description: 'Specify whether and how sshd separates privileges when handling incoming network connections.'
+description: >-
+  Specify whether and how sshd separates privileges when handling incoming network connections.
 
 type: string
 

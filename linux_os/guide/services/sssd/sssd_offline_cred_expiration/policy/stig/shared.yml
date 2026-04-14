@@ -31,5 +31,3 @@ fixtext: |-
     Edit the file "/etc/sssd/sssd.conf" or a configuration file in "/etc/sssd/conf.d" and add or edit the following line just below the line [pam]:
 
     offline_credentials_expiration = 1
-
-

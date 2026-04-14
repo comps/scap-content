@@ -21,7 +21,8 @@ references:
     cis@sle15: 3.5.3.2.4,3.5.3.3.4
     pcidss: Req-1.4
 
-ocil_clause: 'Verify all open ports listening on non-localhost addresses have at least one firewall rule.'
+ocil_clause: >-
+  Verify all open ports listening on non-localhost addresses have at least one firewall rule.
 
 ocil: |-
     Inspect the list of open listening ports with the following command:

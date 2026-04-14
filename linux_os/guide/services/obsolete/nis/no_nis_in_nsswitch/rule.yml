@@ -28,6 +28,6 @@ ocil: |-
 
 warnings:
     - general:
-        This rule does not have remediation. Editing the
+          This rule does not have remediation. Editing the
         <tt>/etc/nsswitch.conf</tt> incorrectly can disrupt access to the
         system.

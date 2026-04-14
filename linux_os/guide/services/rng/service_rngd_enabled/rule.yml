@@ -55,7 +55,6 @@ warnings:
 {{% endif %}}
 
 
-
 template:
     name: service_enabled
     vars:

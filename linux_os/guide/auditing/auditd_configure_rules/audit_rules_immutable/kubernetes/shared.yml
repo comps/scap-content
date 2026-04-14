@@ -8,8 +8,8 @@ spec:
       version: 3.1.0
     storage:
       files:
-      - contents:
-          source: data:,-e%202%0A
-        mode: 0600
-        path: /etc/audit/rules.d/90-immutable.rules
-        overwrite: true
+        - contents:
+            source: data:,-e%202%0A
+          mode: 0600
+          path: /etc/audit/rules.d/90-immutable.rules
+          overwrite: true

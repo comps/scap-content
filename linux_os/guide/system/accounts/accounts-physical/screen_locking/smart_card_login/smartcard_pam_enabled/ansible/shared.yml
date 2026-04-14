@@ -28,7 +28,7 @@
     line: 'auth {{{ pam_pkcs11_control_flag }}} pam_pkcs11.so'
     insertafter: '^\s*#'
     state: present
-  when: 
+  when:
     - '"{{{ pam_package }}}" in ansible_facts.packages'
     - '"pam_pkcs11.so" not in check_pam_pkcs11_module_result.stdout'
 

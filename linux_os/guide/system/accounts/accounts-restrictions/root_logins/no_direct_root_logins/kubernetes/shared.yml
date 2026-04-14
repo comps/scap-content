@@ -8,8 +8,8 @@ spec:
       version: 3.1.0
     storage:
       files:
-      - contents:
-          source: data:,
-        mode: 0600
-        path: /etc/securetty
-        overwrite: true
+        - contents:
+            source: data:,
+          mode: 0600
+          path: /etc/securetty
+          overwrite: true

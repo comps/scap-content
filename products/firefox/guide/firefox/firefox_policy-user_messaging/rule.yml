@@ -21,4 +21,4 @@ template:
     vars:
         name: Disable Extension Recommendation Messages
         policies:
-          - {path: "UserMessaging", parameter: "ExtensionRecommendations", value: false}
+            - {path: "UserMessaging", parameter: "ExtensionRecommendations", value: false}

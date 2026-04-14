@@ -31,5 +31,3 @@ fixtext: |-
     The system configuration files need to be reloaded for the changes to take effect. To reload the contents of the files, run the following command:
 
     $ sudo sysctl --system
-
-

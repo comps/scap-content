@@ -13,5 +13,3 @@ checktext: |-
 
 vuldiscussion: |-
     If system is not a Domain Name Server (DNS) server it shouldn't have a DNS server package installed to decrease the attack surface of the system.
-
-

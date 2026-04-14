@@ -21,4 +21,3 @@ template:
         filepath: /var/log/
         file_regex: .*cloud-init\.log.*
         uid_or_name: 'syslog|root'
-

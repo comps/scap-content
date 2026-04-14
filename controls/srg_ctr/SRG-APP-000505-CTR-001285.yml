@@ -11,4 +11,3 @@ controls:
   rules:
   - audit_rules_session_events
   status: automated
-

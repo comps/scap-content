@@ -1,4 +1,3 @@
-
 title: 'Ensure workloads use resource requests and limits per namespace'
 
 description: |-

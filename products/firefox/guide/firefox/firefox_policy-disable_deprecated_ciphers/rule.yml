@@ -30,4 +30,4 @@ template:
     vars:
         name: Disable deprecated ciphers
         policies:
-          - {path: "DisabledCiphers", parameter: "TLS_RSA_WITH_3DES_EDE_CBC_SHA", value: true}
+            - {path: "DisabledCiphers", parameter: "TLS_RSA_WITH_3DES_EDE_CBC_SHA", value: true}

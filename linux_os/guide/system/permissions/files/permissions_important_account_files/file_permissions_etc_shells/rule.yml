@@ -3,7 +3,7 @@ documentation_complete: true
 
 title: 'Verify Permissions on /etc/shells File'
 
-description:  |-
+description: |-
     {{{ describe_file_permissions(file="/etc/shells", perms="0644") }}}
 
 rationale: |-

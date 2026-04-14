@@ -12,15 +12,17 @@ reference_type: pcidss4
 
 controls:
     - id: '1.1'
-      title: 'Processes and mechanisms for installing and maintaining network security controls are defined
-          and understood.'
+      title: >-
+        Processes and mechanisms for installing and maintaining network security controls are
+        defined and understood.
       levels:
           - base
       status: pending
       controls:
           - id: 1.1.1
-            title: 'All security policies and operational procedures that are identified in Requirement
-                1 are Documented, Kept up to date, In use and Known to all affected parties.'
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 1
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -30,8 +32,9 @@ controls:
                 elements specified in this requirement.
 
           - id: 1.1.2
-            title: 'Roles and responsibilities for performing activities in Requirement 1 are documented,
-                assigned, and understood.'
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 1 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -47,7 +50,8 @@ controls:
       status: pending
       controls:
           - id: 1.2.1
-            title: 'Configuration standards for NSC rulesets are Defined, Implemented and Maintained.'
+            title: >-
+              Configuration standards for NSC rulesets are Defined, Implemented and Maintained.
             levels:
                 - base
             status: not applicable
@@ -61,8 +65,9 @@ controls:
             rules: []
 
           - id: 1.2.2
-            title: 'All changes to network connections and to configurations of NSCs are approved and
-                managed in accordance with the change control process defined at Requirement 6.5.1.'
+            title: >-
+              All changes to network connections and to configurations of NSCs are approved and
+              managed in accordance with the change control process defined at Requirement 6.5.1.
             levels:
                 - base
             status: not applicable
@@ -74,8 +79,9 @@ controls:
                 how it performs its security function. A formal change control process should be in place.
 
           - id: 1.2.3
-            title: 'An accurate network diagram(s) is maintained that shows all connections between the
-                CDE and other networks, including any wireless networks.'
+            title: >-
+              An accurate network diagram(s) is maintained that shows all connections between the
+              CDE and other networks, including any wireless networks.
             levels:
                 - base
       # NOTE(rhmdnd): ACS can supplement this requirement through it's
@@ -104,8 +110,9 @@ controls:
             status: not applicable
 
           - id: 1.2.5
-            title: 'All services, protocols, and ports allowed are identified, approved, and have a defined
-                business need.'
+            title: >-
+              All services, protocols, and ports allowed are identified, approved, and have a
+              defined business need.
             levels:
                 - base
       # NOTE(rhmdnd): This is best left to the system owner to maintain, and
@@ -113,8 +120,9 @@ controls:
             status: not applicable
 
           - id: 1.2.6
-            title: Security features are defined and implemented for all services, protocols, and ports
-                that are in use and considered to be insecure, such that the risk is mitigated.
+            title: >-
+              Security features are defined and implemented for all services, protocols, and ports
+              that are in use and considered to be insecure, such that the risk is mitigated.
             levels:
                 - base
             status: partial
@@ -132,8 +140,9 @@ controls:
                 - configure_network_policies_hypershift_hosted
 
           - id: 1.2.7
-            title: Configurations of NSCs are reviewed at least once every six months to confirm they
-                are relevant and effective.
+            title: >-
+              Configurations of NSCs are reviewed at least once every six months to confirm they
+              are relevant and effective.
             description: |-
                 NSC configurations that allow or restrict access to trusted networks are verified
                 periodically to ensure that only authorized connections with a current business
@@ -149,8 +158,9 @@ controls:
             status: not applicable
 
           - id: 1.2.8
-            title: Configuration files for NSCs are secured from unauthorized access and kept consistent
-                with active network configurations.
+            title: >-
+              Configuration files for NSCs are secured from unauthorized access and kept consistent
+              with active network configurations.
             levels:
                 - base
       # NOTE(rhmdnd): Access to OpenShift configuration falls outside the scope
@@ -199,8 +209,9 @@ controls:
                 assessment is more reasonable here.
 
           - id: 1.3.3
-            title: NSCs are installed between all wireless networks and the CDE, regardless of whether
-                the wireless network is a CDE.
+            title: >-
+              NSCs are installed between all wireless networks and the CDE, regardless of whether
+              the wireless network is a CDE.
             description: |-
                 NSCs are installed between all wireless networks and the CDE, regardless of whether the
                 wireless network is a CDE, such that:
@@ -256,8 +267,9 @@ controls:
       # https://issues.redhat.com/browse/CMP-2407
 
           - id: 1.4.3
-            title: Anti-spoofing measures are implemented to detect and block forged source IP addresses
-                from entering the trusted network.
+            title: >-
+              Anti-spoofing measures are implemented to detect and block forged source IP addresses
+              from entering the trusted network.
             levels:
                 - base
             status: not applicable
@@ -266,8 +278,9 @@ controls:
                 of the OpenShift Container Platform.
 
           - id: 1.4.4
-            title: System components that store cardholder data are not directly accessible from untrusted
-                networks.
+            title: >-
+              System components that store cardholder data are not directly accessible from
+              untrusted networks.
             levels:
                 - base
             status: pending
@@ -283,8 +296,9 @@ controls:
                 payment card transaction).
 
           - id: 1.4.5
-            title: The disclosure of internal IP addresses and routing information is limited to only
-                authorized parties.
+            title: >-
+              The disclosure of internal IP addresses and routing information is limited to only
+              authorized parties.
             description: |-
                 Internal network information is protected from unauthorized disclosure.
             levels:
@@ -295,16 +309,18 @@ controls:
                 outside of OpenShift.
 
     - id: '1.5'
-      title: Risks to the CDE from computing devices that are able to connect to both untrusted networks
-          and the CDE are mitigated.
+      title: >-
+        Risks to the CDE from computing devices that are able to connect to both untrusted networks
+        and the CDE are mitigated.
       levels:
           - base
       status: not applicable
       controls:
           - id: 1.5.1
-            title: Security controls are implemented on any computing devices, including company- and
-                employee-owned devices, that connect to both untrusted networks (including the Internet)
-                and the CDE
+            title: >-
+              Security controls are implemented on any computing devices, including company- and
+              employee-owned devices, that connect to both untrusted networks (including the
+              Internet) and the CDE
             description: |-
                 Security controls are implemented on any computing devices, including company- and
                 employee-owned devices, that connect to both untrusted networks (including the Internet)
@@ -327,15 +343,17 @@ controls:
                 OpenShift network functionality may be required.
 
     - id: '2.1'
-      title: Processes and mechanisms for applying secure configurations to all system components are
-          defined and understood.
+      title: >-
+        Processes and mechanisms for applying secure configurations to all system components are
+        defined and understood.
       levels:
           - base
       status: not applicable
       controls:
           - id: 2.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                2 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 2
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -345,8 +363,9 @@ controls:
                 elements specified in this requirement.
 
           - id: 2.1.2
-            title: Roles and responsibilities for performing activities in Requirement 2 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 2 are documented,
+              assigned, and understood.
             description: |-
                 Day-to-day responsibilities for performing all the activities in Requirement 2 are
                 allocated. Personnel are accountable for successful, continuous operation of these
@@ -436,8 +455,9 @@ controls:
             rules: []
 
           - id: 2.2.4
-            title: Only necessary services, protocols, daemons, and functions are enabled, and all unnecessary
-                functionality is removed or disabled
+            title: >-
+              Only necessary services, protocols, daemons, and functions are enabled, and all
+              unnecessary functionality is removed or disabled
             description: |-
                 System components cannot be compromised by exploiting unnecessary functionality present in
                 the system component.
@@ -452,8 +472,9 @@ controls:
             rules: []
 
           - id: 2.2.5
-            title: If any insecure services, protocols, or daemons are present, business justification
-                is documented and the risk is reduced.
+            title: >-
+              If any insecure services, protocols, or daemons are present, business justification
+              is documented and the risk is reduced.
             description: |-
                 If any insecure services, protocols, or daemons are present:
                 - Business justification is documented.
@@ -553,8 +574,9 @@ controls:
       status: not applicable
       controls:
           - id: 2.3.1
-            title: For wireless environments connected to the CDE or transmitting account data, all wireless
-                vendor defaults are changed at installation or are confirmed to be secure.
+            title: >-
+              For wireless environments connected to the CDE or transmitting account data, all
+              wireless vendor defaults are changed at installation or are confirmed to be secure.
             description: |-
                 For wireless environments connected to the CDE or transmitting account data, all wireless
                 vendor defaults are changed at installation or are confirmed to be secure, including but
@@ -574,8 +596,9 @@ controls:
                 - wireless_disable_interfaces
 
           - id: 2.3.2
-            title: For wireless environments connected to the CDE or transmitting account data, wireless
-                encryption keys are changed
+            title: >-
+              For wireless environments connected to the CDE or transmitting account data, wireless
+              encryption keys are changed
             description: |-
                 For wireless environments connected to the CDE or transmitting account
                 data, wireless encryption keys are changed
@@ -587,14 +610,16 @@ controls:
                 access points passwords.
 
     - id: '3.1'
-      title: Processes and mechanisms for protecting stored account data are defined and understood.
+      title: >-
+        Processes and mechanisms for protecting stored account data are defined and understood.
       levels:
           - base
       status: pending
       controls:
           - id: 3.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                3 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 3
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -604,8 +629,9 @@ controls:
                 elements specified in this requirement.
 
           - id: 3.1.2
-            title: Roles and responsibilities for performing activities in Requirement 3 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 3 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -621,8 +647,9 @@ controls:
       status: pending
       controls:
           - id: 3.2.1
-            title: Account data storage is kept to a minimum through implementation of data retention
-                and disposal policies, procedures, and processes.
+            title: >-
+              Account data storage is kept to a minimum through implementation of data retention
+              and disposal policies, procedures, and processes.
             description: |-
                 Account data storage is kept to a minimum through implementation of data retention and
                 disposal policies, procedures, and processes that include at least the following:
@@ -651,8 +678,10 @@ controls:
       status: not applicable
       controls:
           - id: 3.3.1
-            title: SAD is not retained after authorization, even if encrypted. All sensitive authentication
-                data received is rendered unrecoverable upon completion of the authorization process.
+            title: >-
+              SAD is not retained after authorization, even if encrypted. All sensitive
+              authentication data received is rendered unrecoverable upon completion of the
+              authorization process.
             description: |-
                 This requirement is not eligible for the customized approach. This requirement does not
                 apply to issuers and companies that support issuing services (where SAD is needed for a
@@ -670,8 +699,9 @@ controls:
 
             controls:
                 - id: 3.3.1.1
-                  title: The full contents of any track are not retained upon completion of the authorization
-                      process.
+                  title: >-
+                    The full contents of any track are not retained upon completion of the
+                    authorization process.
                   description: |-
                       This requirement is not eligible for the customized approach. In the normal course of
                       business, the following data elements from the track may need to be retained:
@@ -688,8 +718,9 @@ controls:
                       appropriately store and dispose of this data.
 
                 - id: 3.3.1.2
-                  title: The card verification code is not retained upon completion of the authorization
-                      process.
+                  title: >-
+                    The card verification code is not retained upon completion of the authorization
+                    process.
                   description: |-
                       This requirement is not eligible for the customized approach. The card verification code
                       is the three- or four-digit number printed on the front or back of a payment card used
@@ -702,8 +733,9 @@ controls:
                       application to appropriately store and dispose of this data.
 
                 - id: 3.3.1.3
-                  title: The personal identification number (PIN) and the PIN block are not retained
-                      upon completion of the authorization process.
+                  title: >-
+                    The personal identification number (PIN) and the PIN block are not retained
+                    upon completion of the authorization process.
                   description: |-
                       This requirement is not eligible for the customized approach. PIN blocks are encrypted
                       during the natural course of transaction processes, but even if an entity encrypts the
@@ -717,8 +749,9 @@ controls:
                       application to appropriately dispose of this data.
 
           - id: 3.3.2
-            title: SAD that is stored electronically prior to completion of authorization is encrypted
-                using strong cryptography.
+            title: >-
+              SAD that is stored electronically prior to completion of authorization is encrypted
+              using strong cryptography.
             description: |-
                 This requirement is not eligible for the customized approach. Whether SAD is permitted to
                 be stored prior to authorization is determined by the organizations that manage compliance
@@ -739,8 +772,9 @@ controls:
                 appropriately store and dispose of this data.
 
           - id: 3.3.3
-            title: Additional requirement for issuers and companies that support issuing services and
-                store sensitive authentication data.
+            title: >-
+              Additional requirement for issuers and companies that support issuing services and
+              store sensitive authentication data.
             description: |-
                 Additional requirement for issuers and companies that support issuing services and store
                 sensitive authentication data: Any storage of sensitive authentication data is:
@@ -762,9 +796,10 @@ controls:
       status: not applicable
       controls:
           - id: 3.4.1
-            title: PAN is masked when displayed (the BIN and last four digits are the maximum number
-                of digits to be displayed), such that only personnel with a legitimate business need
-                can see more than the BIN and last four digits of the PAN.
+            title: >-
+              PAN is masked when displayed (the BIN and last four digits are the maximum number of
+              digits to be displayed), such that only personnel with a legitimate business need can
+              see more than the BIN and last four digits of the PAN.
             description: |-
                 PAN displays are restricted to the minimum number of digits necessary to meet a defined
                 business need. This requirement does not supersede stricter requirements in place for
@@ -780,9 +815,10 @@ controls:
                 Handling and masking the PAN is resposibility of the application installed.
 
           - id: 3.4.2
-            title: When using remote-access technologies, technical controls prevent copy and/or relocation
-                of PAN for all personnel, except for those with documented, explicit authorization and
-                a legitimate, defined business need.
+            title: >-
+              When using remote-access technologies, technical controls prevent copy and/or
+              relocation of PAN for all personnel, except for those with documented, explicit
+              authorization and a legitimate, defined business need.
             description: |-
                 PAN cannot be copied or relocated by unauthorized personnel using remote-access
                 technologies. Storing or relocating PAN onto local hard drives, removable electronic
@@ -819,9 +855,11 @@ controls:
             status: partial
             controls:
                 - id: 3.5.1.1
-                  title: Hashes used to render PAN unreadable (per the first bullet of Requirement 3.5.1)
-                      are keyed cryptographic hashes of the entire PAN, with associated key-management
-                      processes and procedures in accordance with Requirements 3.6 and 3.7.
+                  title: >-
+                    Hashes used to render PAN unreadable (per the first bullet of Requirement
+                    3.5.1) are keyed cryptographic hashes of the entire PAN, with associated
+                    key-management processes and procedures in accordance with Requirements 3.6 and
+                    3.7.
                   description: |-
                       This requirement applies to PANs stored in primary storage (databases, or flat files
                       such as text files spreadsheets) as well as non-primary storage (backup, audit logs,
@@ -838,10 +876,11 @@ controls:
                       Handling and masking the PAN is resposibility of the workload / application installed.
 
                 - id: 3.5.1.2
-                  title: If disk-level or partition-level encryption (rather than file-, column-, or
-                      field-level database encryption) is used to render PAN unreadable, it is implemented
-                      only on removable electronic media or complemented by another mechanism that meets
-                      Requirement 3.5.1
+                  title: >-
+                    If disk-level or partition-level encryption (rather than file-, column-, or
+                    field-level database encryption) is used to render PAN unreadable, it is
+                    implemented only on removable electronic media or complemented by another
+                    mechanism that meets Requirement 3.5.1
                   levels:
                       - base
                   status: not applicable
@@ -851,8 +890,10 @@ controls:
                       Handling and masking the PAN is resposibility of the workload / application installed.
 
                 - id: 3.5.1.3
-                  title: If disk-level or partition-level encryption is used (rather than file-, column-,
-                      or field--level database encryption) to render PAN unreadable, it is managed.
+                  title: >-
+                    If disk-level or partition-level encryption is used (rather than file-,
+                    column-, or field--level database encryption) to render PAN unreadable, it is
+                    managed.
                   description: |-
                       If disk-level or partition-level encryption is used (rather than file-, column-, or
                       field--level database encryption) to render PAN unreadable, it is managed as follows:
@@ -917,8 +958,9 @@ controls:
           and the organization's processes.
       controls:
           - id: 3.6.1
-            title: Procedures are defined and implemented to protect cryptographic keys used to protect
-                stored account data against disclosure and misuse.
+            title: >-
+              Procedures are defined and implemented to protect cryptographic keys used to protect
+              stored account data against disclosure and misuse.
             description: |-
                 Procedures are defined and implemented to protect cryptographic keys used to protect
                 stored account data against disclosure and misuse that include:
@@ -931,8 +973,9 @@ controls:
             status: pending
             controls:
                 - id: 3.6.1.1
-                  title: 'Additional requirement for service providers only: A documented description
-                      of the cryptographic architecture is maintained'
+                  title: >-
+                    Additional requirement for service providers only: A documented description of
+                    the cryptographic architecture is maintained
                   description: |-
                       Additional requirement for service providers only: A documented description of the
                       cryptographic architecture is maintained that includes:
@@ -975,8 +1018,9 @@ controls:
                   status: inherently met
 
                 - id: 3.6.1.2
-                  title: Secret and private keys used to encrypt/decrypt stored account data are stored
-                      in secure forms.
+                  title: >-
+                    Secret and private keys used to encrypt/decrypt stored account data are stored
+                    in secure forms.
                   description: |-
                       Secret and private keys used to encrypt/decrypt stored account data are stored in one
                       (or more) of the following forms at all times:
@@ -997,8 +1041,9 @@ controls:
                   status: inherently met
 
                 - id: 3.6.1.3
-                  title: Access to cleartext cryptographic key components is restricted to the fewest
-                      number of custodians necessary.
+                  title: >-
+                    Access to cleartext cryptographic key components is restricted to the fewest
+                    number of custodians necessary.
                   description: |-
                       Access to cleartext cryptographic key components is restricted to necessary personnel.
                   levels:
@@ -1049,15 +1094,17 @@ controls:
                         See https://github.com/latchset/tang
 
     - id: '3.7'
-      title: Where cryptography is used to protect stored account data, key management processes and
-          procedures covering all aspects of the key lifecycle are defined and implemented.
+      title: >-
+        Where cryptography is used to protect stored account data, key management processes and
+        procedures covering all aspects of the key lifecycle are defined and implemented.
       levels:
           - base
       status: not applicable
       controls:
           - id: 3.7.1
-            title: Key-management policies and procedures are implemented to include generation of strong
-                cryptographic keys used to protect stored account data.
+            title: >-
+              Key-management policies and procedures are implemented to include generation of
+              strong cryptographic keys used to protect stored account data.
             description: |-
                 Strong cryptographic keys are generated.
             levels:
@@ -1071,8 +1118,9 @@ controls:
                 operations team in order to cover all aspects of cardholder data protection.
 
           - id: 3.7.2
-            title: Key-management policies and procedures are implemented to include secure distribution
-                of cryptographic keys used to protect stored account data.
+            title: >-
+              Key-management policies and procedures are implemented to include secure distribution
+              of cryptographic keys used to protect stored account data.
             description: |-
                 Cryptographic keys are secured during distribution.
             levels:
@@ -1080,8 +1128,9 @@ controls:
             status: not applicable
 
           - id: 3.7.3
-            title: Key-management policies and procedures are implemented to include secure storage of
-                cryptographic keys used to protect stored account data.
+            title: >-
+              Key-management policies and procedures are implemented to include secure storage of
+              cryptographic keys used to protect stored account data.
             description: |-
                 Cryptographic keys are secured when stored.
             levels:
@@ -1091,9 +1140,11 @@ controls:
                 TPM
 
           - id: 3.7.4
-            title: Key management policies and procedures are implemented for cryptographic key changes
-                for keys that have reached the end of their cryptoperiod, as defined by the associated
-                application vendor or key owner, and based on industry best practices and guidelines.
+            title: >-
+              Key management policies and procedures are implemented for cryptographic key changes
+              for keys that have reached the end of their cryptoperiod, as defined by the
+              associated application vendor or key owner, and based on industry best practices and
+              guidelines.
             description: |-
                 Key management policies and procedures are implemented for cryptographic key changes for
                 keys that have reached the end of their cryptoperiod, as defined by the associated
@@ -1116,8 +1167,10 @@ controls:
             status: not applicable
 
           - id: 3.7.5
-            title: Key management policies procedures are implemented to include the retirement, replacement,
-                or destruction of keys used to protect stored account data, as deemed necessary.
+            title: >-
+              Key management policies procedures are implemented to include the retirement,
+              replacement, or destruction of keys used to protect stored account data, as deemed
+              necessary.
             description: |-
                 Key management policies procedures are implemented to include the retirement, replacement,
                 or destruction of keys used to protect stored account data, as deemed necessary when:
@@ -1135,9 +1188,10 @@ controls:
             status: not applicable
 
           - id: 3.7.6
-            title: Where manual cleartext cryptographic key-management operations are performed by personnel,
-                key-management policies and procedures are implemented include managing these operations
-                using split knowledge and dual control.
+            title: >-
+              Where manual cleartext cryptographic key-management operations are performed by
+              personnel, key-management policies and procedures are implemented include managing
+              these operations using split knowledge and dual control.
             description: |-
                 Cleartext secret or private keys cannot be known by anyone. Operations involving cleartext
                 keys cannot be carried out by a single person. This control is applicable for manual
@@ -1153,8 +1207,9 @@ controls:
             status: not applicable
 
           - id: 3.7.7
-            title: Key management policies and procedures are implemented to include the prevention of
-                unauthorized substitution of cryptographic keys.
+            title: >-
+              Key management policies and procedures are implemented to include the prevention of
+              unauthorized substitution of cryptographic keys.
             description: |-
                 Cryptographic keys cannot be substituted by unauthorized personnel.
             levels:
@@ -1172,9 +1227,10 @@ controls:
             status: not applicable
 
           - id: 3.7.8
-            title: Key management policies and procedures are implemented to include that cryptographic
-                key custodians formally acknowledge (in writing or electronically) that they understand
-                and accept their key-custodian responsibilities.
+            title: >-
+              Key management policies and procedures are implemented to include that cryptographic
+              key custodians formally acknowledge (in writing or electronically) that they
+              understand and accept their key-custodian responsibilities.
             description: |-
                 Key custodians are knowledgeable about their responsibilities in relation to cryptographic
                 operations and can access assistance and guidance when required.
@@ -1188,10 +1244,11 @@ controls:
             status: not applicable
 
           - id: 3.7.9
-            title: 'Additional requirement for service providers only: Where a service provider shares
-                cryptographic keys with its customers for transmission or storage of account data, guidance
-                on secure transmission, storage and updating of such keys is documented and distributed
-                to the service provider’s customers.'
+            title: >-
+              Additional requirement for service providers only: Where a service provider shares
+              cryptographic keys with its customers for transmission or storage of account data,
+              guidance on secure transmission, storage and updating of such keys is documented and
+              distributed to the service provider’s customers.
             description: |-
                 Customers are provided with appropriate key management guidance whenever they receive
                 shared cryptographic keys. This requirement applies only when the entity being assessed is
@@ -1201,22 +1258,25 @@ controls:
             status: not applicable
 
     - id: '4.1'
-      title: Processes and mechanisms for protecting cardholder data with strong cryptography during
-          transmission over open, public networks are defined and documented.
+      title: >-
+        Processes and mechanisms for protecting cardholder data with strong cryptography during
+        transmission over open, public networks are defined and documented.
       levels:
           - base
       status: not applicable
       controls:
           - id: 4.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                4 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 4
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
 
           - id: 4.1.2
-            title: Roles and responsibilities for performing activities in Requirement 4 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 4 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -1232,8 +1292,9 @@ controls:
       status: partial
       controls:
           - id: 4.2.1
-            title: Strong cryptography and security protocols are implemented as follows to safeguard
-                PAN during transmission over open, public networks.
+            title: >-
+              Strong cryptography and security protocols are implemented as follows to safeguard
+              PAN during transmission over open, public networks.
             description: |-
                 Strong cryptography and security protocols are implemented as follows to safeguard PAN
                 during transmission over open, public networks:
@@ -1267,8 +1328,9 @@ controls:
 
             controls:
                 - id: 4.2.1.1
-                  title: An inventory of the entity's trusted keys and certificates used to protect PAN
-                      during transmission is maintained.
+                  title: >-
+                    An inventory of the entity's trusted keys and certificates used to protect PAN
+                    during transmission is maintained.
                   description: |-
                       All keys and certificates used to protect PAN during transmission are identified and
                       confirmed as trusted. This requirement is a best practice until 31 March 2025, after
@@ -1281,8 +1343,9 @@ controls:
                       protecting them is responsibility of the payment application.
 
                 - id: 4.2.1.2
-                  title: Wireless networks transmitting PAN or connected to the CDE use industry best
-                      practices to implement strong cryptography for authentication and transmission.
+                  title: >-
+                    Wireless networks transmitting PAN or connected to the CDE use industry best
+                    practices to implement strong cryptography for authentication and transmission.
                   description: |-
                       Cleartext PAN cannot be read or intercepted from wireless network transmissions.
                   levels:
@@ -1292,8 +1355,9 @@ controls:
                       OpenShift doesn't manage wireless environments nor their security configurations.
 
           - id: 4.2.2
-            title: PAN is secured with strong cryptography whenever it is sent via end-user messaging
-                technologies.
+            title: >-
+              PAN is secured with strong cryptography whenever it is sent via end-user messaging
+              technologies.
             description: |-
                 Cleartext PAN cannot be read or intercepted from transmissions using end-user messaging
                 technologies. This requirement also applies if a customer, or other third-party, requests
@@ -1311,15 +1375,17 @@ controls:
                 securing PAN.
 
     - id: '5.1'
-      title: Processes and mechanisms for protecting all systems and networks from malicious software
-          are defined and understood.
+      title: >-
+        Processes and mechanisms for protecting all systems and networks from malicious software
+        are defined and understood.
       levels:
           - base
       status: not applicable
       controls:
           - id: 5.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                5 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 5
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -1328,8 +1394,9 @@ controls:
                 policies and procedures is on the payment service and its operations team.
 
           - id: 5.1.2
-            title: Roles and responsibilities for performing activities in Requirement 5 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 5 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -1346,9 +1413,10 @@ controls:
           Related measures are covered by 1.2.6, 1.4.5 and 3.4.2.
       controls:
           - id: 5.2.1
-            title: An anti-malware solution(s) is deployed on all system components, except for those
-                system components identified in periodic evaluations per Requirement 5.2.3 that concludes
-                the system components are not at risk from malware.
+            title: >-
+              An anti-malware solution(s) is deployed on all system components, except for those
+              system components identified in periodic evaluations per Requirement 5.2.3 that
+              concludes the system components are not at risk from malware.
             description: |-
                 Automated mechanisms are implemented to prevent systems from becoming an attack vector for
                 malware.
@@ -1381,8 +1449,9 @@ controls:
                 - file_integrity_exists
 
           - id: 5.2.2
-            title: The deployed anti-malware solution(s) detects all known types of malware and removes,
-                blocks, or contains all known types of malware.
+            title: >-
+              The deployed anti-malware solution(s) detects all known types of malware and removes,
+              blocks, or contains all known types of malware.
             levels:
                 - base
             status: not applicable
@@ -1391,7 +1460,8 @@ controls:
                 cover the required malware types.
 
           - id: 5.2.3
-            title: Any system components that are not at risk for malware are evaluated periodically.
+            title: >-
+              Any system components that are not at risk for malware are evaluated periodically.
             description: |-
                 Any system components that are not at risk for malware are evaluated periodically to
                 include the following:
@@ -1407,9 +1477,10 @@ controls:
                 component is at risk of a malware attack.
             controls:
                 - id: 5.2.3.1
-                  title: The frequency of periodic evaluations of system components identified as not
-                      at risk for malware is defined in the entity's targeted risk analysis, which is
-                      performed according to all elements specified in Requirement 12.3.1.
+                  title: >-
+                    The frequency of periodic evaluations of system components identified as not at
+                    risk for malware is defined in the entity's targeted risk analysis, which is
+                    performed according to all elements specified in Requirement 12.3.1.
                   description: |-
                       Systems not known to be at risk from malware are re-evaluated at a frequency that
                       addresses the entity's risk. This requirement is a best practice until 31 March 2025,
@@ -1436,16 +1507,18 @@ controls:
             status: not applicable
 
           - id: 5.3.2
-            title: The anti-malware solution(s) performs periodic scans and active or real-time scans
-                or performs continuous behavioral analysis of systems or processes.
+            title: >-
+              The anti-malware solution(s) performs periodic scans and active or real-time scans or
+              performs continuous behavioral analysis of systems or processes.
             levels:
                 - base
             status: not applicable
             controls:
                 - id: 5.3.2.1
-                  title: If periodic malware scans are performed to meet Requirement 5.3.2, the frequency
-                      of scans is defined in the entity's targeted risk analysis, which is performed
-                      according to all elements specified in Requirement 12.3.1.
+                  title: >-
+                    If periodic malware scans are performed to meet Requirement 5.3.2, the
+                    frequency of scans is defined in the entity's targeted risk analysis, which is
+                    performed according to all elements specified in Requirement 12.3.1.
                   description: |-
                       Scans by the malware solution are performed at a frequency that addresses the entity's
                       risk. This requirement applies to entities conducting periodic malware scans to meet
@@ -1456,17 +1529,19 @@ controls:
                   status: not applicable
 
           - id: 5.3.3
-            title: For removable electronic media, the anti-malware solution(s) performs automatic scans
-                of when the media is inserted, connected, or logically mounted, or Performs continuous
-                behavioral analysis of systems or processes when the media is inserted, connected, or
-                logically mounted.
+            title: >-
+              For removable electronic media, the anti-malware solution(s) performs automatic scans
+              of when the media is inserted, connected, or logically mounted, or Performs
+              continuous behavioral analysis of systems or processes when the media is inserted,
+              connected, or logically mounted.
             levels:
                 - base
             status: not applicable
 
           - id: 5.3.4
-            title: Audit logs for the anti-malware solution(s) are enabled and retained in accordance
-                with Requirement 10.5.1.
+            title: >-
+              Audit logs for the anti-malware solution(s) are enabled and retained in accordance
+              with Requirement 10.5.1.
             description: |-
                 Historical records of anti-malware actions are immediately available and retained for at
                 least 12 months.
@@ -1475,8 +1550,10 @@ controls:
             status: not applicable
 
           - id: 5.3.5
-            title: Anti-malware mechanisms cannot be disabled or altered by users, unless specifically
-                documented, and authorized by management on a case-by-case basis for a limited time period.
+            title: >-
+              Anti-malware mechanisms cannot be disabled or altered by users, unless specifically
+              documented, and authorized by management on a case-by-case basis for a limited time
+              period.
             description: |-
                 Anti-malware mechanisms cannot be modified by unauthorized personnel.Anti-malware
                 solutions may be temporarily disabled only if there is a legitimate technical need, as
@@ -1495,8 +1572,9 @@ controls:
       status: pending
       controls:
           - id: 5.4.1
-            title: Processes and automated mechanisms are in place to detect and protect personnel against
-                phishing attacks.
+            title: >-
+              Processes and automated mechanisms are in place to detect and protect personnel
+              against phishing attacks.
             description: |-
                 Mechanisms are in place to protect against and mitigate risk posed by phishing attacks.
                 This requirement applies to the automated mechanism. It is not intended that the systems
@@ -1519,15 +1597,17 @@ controls:
                 - sysctl_net_ipv4_conf_all_log_martians
 
     - id: '6.1'
-      title: Processes and mechanisms for developing and maintaining secure systems and software are
-          defined and understood.
+      title: >-
+        Processes and mechanisms for developing and maintaining secure systems and software are
+        defined and understood.
       levels:
           - base
       status: not applicable
       controls:
           - id: 6.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                6 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 6
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -1537,8 +1617,9 @@ controls:
                 payment entity and its operations team.
 
           - id: 6.1.2
-            title: Roles and responsibilities for performing activities in Requirement 6 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 6 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -1571,8 +1652,9 @@ controls:
             status: not applicable
 
           - id: 6.2.2
-            title: Software development personnel working on bespoke and custom software are trained
-                at least once every 12 months
+            title: >-
+              Software development personnel working on bespoke and custom software are trained at
+              least once every 12 months
             description: |-
                 Software development personnel working on bespoke and custom software are trained at least
                 once every 12 months as follows:
@@ -1585,8 +1667,9 @@ controls:
             status: not applicable
 
           - id: 6.2.3
-            title: Bespoke and custom software is reviewed prior to being released into production or
-                to customers, to identify and correct potential coding vulnerabilities.
+            title: >-
+              Bespoke and custom software is reviewed prior to being released into production or to
+              customers, to identify and correct potential coding vulnerabilities.
             description: |-
                 Bespoke and custom software is reviewed prior to being released into production or to
                 customers, to identify and correct potential coding vulnerabilities, as follows:
@@ -1598,8 +1681,9 @@ controls:
             status: not applicable
             controls:
                 - id: 6.2.3.1
-                  title: If manual code reviews are performed for bespoke and custom software prior to
-                      release to production code changes co-reviewed and approved.
+                  title: >-
+                    If manual code reviews are performed for bespoke and custom software prior to
+                    release to production code changes co-reviewed and approved.
                   description: |-
                       If manual code reviews are performed for bespoke and custom software prior to release
                       to production code changes are:
@@ -1611,9 +1695,10 @@ controls:
                   status: not applicable
 
           - id: 6.2.4
-            title: Software engineering techniques or other methods are defined and in use by software
-                development personnel to prevent or mitigate common software attacks and related vulnerabilities
-                in bespoke and custom software.
+            title: >-
+              Software engineering techniques or other methods are defined and in use by software
+              development personnel to prevent or mitigate common software attacks and related
+              vulnerabilities in bespoke and custom software.
             levels:
                 - base
             status: not applicable
@@ -1645,9 +1730,10 @@ controls:
                 the systems in use, including bespoke and custom software.
 
           - id: 6.3.2
-            title: An inventory of bespoke and custom software, and third-party software components incorporated
-                into bespoke and custom software is maintained to facilitate vulnerability and patch
-                management.
+            title: >-
+              An inventory of bespoke and custom software, and third-party software components
+              incorporated into bespoke and custom software is maintained to facilitate
+              vulnerability and patch management.
             description: |-
                 Known vulnerabilities in third-party software components cannot be exploited in bespoke
                 and custom software.This requirement is a best practice until 31 March 2025, after which
@@ -1657,8 +1743,9 @@ controls:
             status: not applicable
 
           - id: 6.3.3
-            title: All system components are protected from known vulnerabilities by installing applicable
-                security patches/updates.
+            title: >-
+              All system components are protected from known vulnerabilities by installing
+              applicable security patches/updates.
             description: |-
                 All system components are protected from known vulnerabilities by installing
                 applicable security patches/updates as follows:
@@ -1686,8 +1773,9 @@ controls:
       status: partial
       controls:
           - id: 6.4.1
-            title: For public-facing web applications, new threats and vulnerabilities are addressed
-                on an ongoing basis and these applications are protected against known attacks.
+            title: >-
+              For public-facing web applications, new threats and vulnerabilities are addressed on
+              an ongoing basis and these applications are protected against known attacks.
             description: |-
                 For public-facing web applications, new threats and vulnerabilities are addressed on an
                 ongoing basis and these applications are protected against known attacks as follows:
@@ -1716,8 +1804,9 @@ controls:
                 Depending on the approach taken OpenShift can provide support, see req. 6.4.2, for more details.
 
           - id: 6.4.2
-            title: For public-facing web applications, an automated technical solution is deployed that
-                continually detects and prevents web-based attacks.
+            title: >-
+              For public-facing web applications, an automated technical solution is deployed that
+              continually detects and prevents web-based attacks.
             levels:
                 - base
             status: partial
@@ -1737,8 +1826,9 @@ controls:
                 - security_profiles_operator_exists
 
           - id: 6.4.3
-            title: All payment page scripts that are loaded and executed in the consumer's browser are
-                managed
+            title: >-
+              All payment page scripts that are loaded and executed in the consumer's browser are
+              managed
             description: |-
                 All payment page scripts that are loaded and executed in the consumer's browser are
                 managed as follows:
@@ -1757,16 +1847,18 @@ controls:
       status: not applicable
       controls:
           - id: 6.5.1
-            title: Changes to all system components in the production environment are made according
-                to established procedures.
+            title: >-
+              Changes to all system components in the production environment are made according to
+              established procedures.
             levels:
                 - base
             status: not applicable
 
           - id: 6.5.2
-            title: Upon completion of a significant change, all applicable PCI DSS requirements are confirmed
-                to be in place on all new or changed systems and networks, and documentation is updated
-                as applicable.
+            title: >-
+              Upon completion of a significant change, all applicable PCI DSS requirements are
+              confirmed to be in place on all new or changed systems and networks, and
+              documentation is updated as applicable.
             description: |-
                 All system components are verified after a significant change to be compliant with the
                 applicable PCI DSS requirements.These significant changes should also be captured and
@@ -1777,8 +1869,9 @@ controls:
             status: not applicable
 
           - id: 6.5.3
-            title: Pre-production environments are separated from production environments and the separation
-                is enforced with access controls.
+            title: >-
+              Pre-production environments are separated from production environments and the
+              separation is enforced with access controls.
             description: |-
                 Pre-production environments cannot introduce risks and vulnerabilities into production
                 environments.
@@ -1787,8 +1880,9 @@ controls:
             status: not applicable
 
           - id: 6.5.4
-            title: Roles and functions are separated between production and pre-production environments
-                to provide accountability such that only reviewed and approved changes are deployed.
+            title: >-
+              Roles and functions are separated between production and pre-production environments
+              to provide accountability such that only reviewed and approved changes are deployed.
             description: |-
                 Job roles and accountability that differentiate between pre-production and production
                 activities are defined and managed to minimize the risk of unauthorized, unintentional,
@@ -1803,8 +1897,10 @@ controls:
             status: not applicable
 
           - id: 6.5.5
-            title: Live PANs are not used in pre-production environments, except where those environments
-                are included in the CDE and protected in accordance with all applicable PCI DSS requirements.
+            title: >-
+              Live PANs are not used in pre-production environments, except where those
+              environments are included in the CDE and protected in accordance with all applicable
+              PCI DSS requirements.
             description: |-
                 Live PANs cannot be present in pre-production environments outside the CDE.s
             levels:
@@ -1812,8 +1908,9 @@ controls:
             status: not applicable
 
           - id: 6.5.6
-            title: Test data and test accounts are removed from system components before the system goes
-                into production.
+            title: >-
+              Test data and test accounts are removed from system components before the system goes
+              into production.
             description: |-
                 Test data and test accounts cannot exist in production environments.
             levels:
@@ -1821,15 +1918,17 @@ controls:
             status: not applicable
 
     - id: '7.1'
-      title: Processes and mechanisms for restricting access to system components and cardholder data
-          by business need to know are defined and understood.
+      title: >-
+        Processes and mechanisms for restricting access to system components and cardholder data by
+        business need to know are defined and understood.
       levels:
           - base
       status: not applicable
       controls:
           - id: 7.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                7 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 7
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
@@ -1839,8 +1938,9 @@ controls:
                 elements specified in this requirement.
 
           - id: 7.1.2
-            title: Roles and responsibilities for performing activities in Requirement 7 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 7 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
@@ -1880,8 +1980,9 @@ controls:
                 - rbac_cluster_roles_defined
 
           - id: 7.2.2
-            title: Access is assigned to users, including privileged users, based on job classification
-                and function, and least privileges necessary to perform job responsibilities.
+            title: >-
+              Access is assigned to users, including privileged users, based on job classification
+              and function, and least privileges necessary to perform job responsibilities.
             levels:
                 - base
             status: not applicable
@@ -1902,8 +2003,9 @@ controls:
                 appropriate and documented.
 
           - id: 7.2.4
-            title: All user accounts and related access privileges, including third-party/vendor accounts,
-                are reviewed
+            title: >-
+              All user accounts and related access privileges, including third-party/vendor
+              accounts, are reviewed
             description: |-
                 All user accounts and related access privileges, including third-party/vendor accounts,
                 are reviewed as follows:
@@ -1919,8 +2021,9 @@ controls:
                 appropriate and documented.
 
           - id: 7.2.5
-            title: All application and system accounts and related access privileges are assigned and
-                managed.
+            title: >-
+              All application and system accounts and related access privileges are assigned and
+              managed.
             description: |-
                 All application and system accounts and related access privileges are assigned and managed
                 as follows:
@@ -1934,8 +2037,9 @@ controls:
                 General access are restricted by 2.2.6 and 8.2 section.
             controls:
                 - id: 7.2.5.1
-                  title: All access by application and system accounts and related access privileges
-                      are reviewed.
+                  title: >-
+                    All access by application and system accounts and related access privileges are
+                    reviewed.
                   levels:
                       - base
                   status: not applicable
@@ -1958,8 +2062,9 @@ controls:
       status: planned
       controls:
           - id: 7.3.1
-            title: An access control system(s) is in place that restricts access based on a user's need
-                to know and covers all system components.
+            title: >-
+              An access control system(s) is in place that restricts access based on a user's need
+              to know and covers all system components.
             description: |-
                 Access rights and privileges are managed via mechanisms intended for that purpose.
             levels:
@@ -1973,8 +2078,9 @@ controls:
                 All objects in Kubernetes/OpenShift are bound to RBAC permissions.
 
           - id: 7.3.2
-            title: The access control system(s) is configured to enforce permissions assigned to individuals,
-                applications, and systems based on job classification and function.
+            title: >-
+              The access control system(s) is configured to enforce permissions assigned to
+              individuals, applications, and systems based on job classification and function.
             description: |-
                 Individual account access rights and privileges to systems, applications, and data are
                 only inherited from group membership.
@@ -1999,29 +2105,33 @@ controls:
                 Role or ClusterRule is bound to the entity making the request.
 
     - id: '8.1'
-      title: Processes and mechanisms for identifying users and authenticating access to system components
-          are defined and understood.
+      title: >-
+        Processes and mechanisms for identifying users and authenticating access to system
+        components are defined and understood.
       levels:
           - base
       status: pending
       controls:
           - id: 8.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                8 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 8
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
 
           - id: 8.1.2
-            title: Roles and responsibilities for performing activities in Requirement 8 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 8 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
 
     - id: '8.2'
-      title: User identification and related accounts for users and administrators are strictly managed
-          throughout an account's lifecycle.
+      title: >-
+        User identification and related accounts for users and administrators are strictly managed
+        throughout an account's lifecycle.
       levels:
           - base
       status: automated
@@ -2033,8 +2143,9 @@ controls:
           - kubeadmin_removed
       controls:
           - id: 8.2.1
-            title: All users are assigned a unique ID before access to system components or cardholder
-                data is allowed.
+            title: >-
+              All users are assigned a unique ID before access to system components or cardholder
+              data is allowed.
             description: |-
                 All actions by all users are attributable to an individual. This requirement is not
                 intended to apply to user accounts within point-of-sale terminals that have access to only
@@ -2064,8 +2175,9 @@ controls:
                 - audit_rules_immutable_login_uids
 
           - id: 8.2.2
-            title: Group, shared, or generic accounts, or other shared authentication credentials are
-                only used when necessary on an exception basis, and are managed.
+            title: >-
+              Group, shared, or generic accounts, or other shared authentication credentials are
+              only used when necessary on an exception basis, and are managed.
             description: |-
                 - Account use is prevented unless needed for an exceptional circumstance.
                 - Use is limited to the time needed for the exceptional circumstance.
@@ -2086,8 +2198,10 @@ controls:
                 - no_direct_root_logins
 
           - id: 8.2.3
-            title: 'Additional requirement for service providers only: Service providers with remote
-                access to customer premises use unique authentication factors for each customer premises.'
+            title: >-
+              Additional requirement for service providers only: Service providers with remote
+              access to customer premises use unique authentication factors for each customer
+              premises.
             levels:
                 - base
             status: not applicable
@@ -2098,8 +2212,9 @@ controls:
                 for whom it was issued.
 
           - id: 8.2.4
-            title: Addition, deletion, and modification of user IDs, authentication factors, and other
-                identifier objects are managed
+            title: >-
+              Addition, deletion, and modification of user IDs, authentication factors, and other
+              identifier objects are managed
             levels:
                 - base
             status: not applicable
@@ -2134,8 +2249,9 @@ controls:
             rules: []
 
           - id: 8.2.7
-            title: Accounts used by third parties to access, support, or maintain system components via
-                remote access are managed.
+            title: >-
+              Accounts used by third parties to access, support, or maintain system components via
+              remote access are managed.
             levels:
                 - base
             status: not applicable
@@ -2145,8 +2261,9 @@ controls:
                 entity.
 
           - id: 8.2.8
-            title: If a user session has been idle for more than 15 minutes, the user is required to
-                re-authenticate to re-activate the terminal or session.
+            title: >-
+              If a user session has been idle for more than 15 minutes, the user is required to
+              re-authenticate to re-activate the terminal or session.
             description: |-
                 A user session cannot be used except by the authorized user. This requirement is not
                 intended to apply to user accounts on point-of-sale terminals that have access to only one
@@ -2177,7 +2294,8 @@ controls:
           - kubeadmin_removed
       controls:
           - id: 8.3.1
-            title: All user access to system components for users and administrators is authenticated.
+            title: >-
+              All user access to system components for users and administrators is authenticated.
             description: |-
                 All user access to system components for users and administrators is authenticated via at
                 least one of the following authentication factors:
@@ -2193,8 +2311,9 @@ controls:
                 to OpenShift by the identity provider
 
           - id: 8.3.2
-            title: Strong cryptography is used to render all authentication factors unreadable during
-                transmission and storage on all system components.
+            title: >-
+              Strong cryptography is used to render all authentication factors unreadable during
+              transmission and storage on all system components.
             description: |-
                 Cleartext authentication factors cannot be obtained, derived, or reused from the
                 interception of communications or from stored data.
@@ -2246,8 +2365,9 @@ controls:
                 - ocp_idp_no_htpasswd
 
           - id: 8.3.5
-            title: If passwords/passphrases are used as authentication factors to meet Requirement 8.3.1,
-                they are set and reset for each user.
+            title: >-
+              If passwords/passphrases are used as authentication factors to meet Requirement
+              8.3.1, they are set and reset for each user.
             description: |-
                 - Set to a unique value for first-time use and upon reset.
                 - Forced to be changed immediately after the first use.
@@ -2260,8 +2380,9 @@ controls:
                 the password on first use are handled by the third-party identity provider.
 
           - id: 8.3.6
-            title: If passwords/passphrases are used as authentication factors to meet Requirement 8.3.1,
-                they meet the minimum level of complexity.
+            title: >-
+              If passwords/passphrases are used as authentication factors to meet Requirement
+              8.3.1, they meet the minimum level of complexity.
             description: |-
                 - A minimum length of 12 characters (or IF the system does not support 12 characters, a
                 minimum length of eight characters).
@@ -2277,8 +2398,9 @@ controls:
                 the password on first use are handled by the third-party identity provider.
 
           - id: 8.3.7
-            title: Individuals are not allowed to submit a new password/passphrase that is the same as
-                any of the last four passwords/passphrases used.
+            title: >-
+              Individuals are not allowed to submit a new password/passphrase that is the same as
+              any of the last four passwords/passphrases used.
             description: |-
                 A previously used password cannot be used to gain access to an account for at least 12
                 months.
@@ -2291,15 +2413,17 @@ controls:
                 the password on first use are handled by the third-party identity provider.
 
           - id: 8.3.8
-            title: Authentication policies and procedures are documented and communicated to all users.
+            title: >-
+              Authentication policies and procedures are documented and communicated to all users.
             levels:
                 - base
             status: not applicable
 
           - id: 8.3.9
-            title: If passwords/passphrases are used as the only authentication factor for user access
-                (i.e., in any single-factor authentication implementation) they should have a limited
-                lifetime.
+            title: >-
+              If passwords/passphrases are used as the only authentication factor for user access
+              (i.e., in any single-factor authentication implementation) they should have a limited
+              lifetime.
             description: |-
                 If passwords/passphrases are used as the only authentication factor for user access (i.e.,
                 in any single-factor authentication implementation) then either:
@@ -2316,18 +2440,21 @@ controls:
                 the password on first use are handled by the third-party identity provider.
 
           - id: 8.3.10
-            title: 'Additional requirement for service providers only: If passwords/passphrases are used
-                as the only authentication factor for customer user access to cardholder data (i.e.,
-                in any single-factor authentication implementation) then guidance is provided to customer
-                users.'
+            title: >-
+              Additional requirement for service providers only: If passwords/passphrases are used
+              as the only authentication factor for customer user access to cardholder data (i.e.,
+              in any single-factor authentication implementation) then guidance is provided to
+              customer users.
             levels:
                 - base
             status: not applicable
             controls:
                 - id: 8.3.10.1
-                  title: 'Additional requirement for service providers only: If passwords/passphrases
-                      are used as the only authentication factor for customer user access (i.e., in any
-                      single-factor authentication implementation) they should have a limited lifetime.'
+                  title: >-
+                    Additional requirement for service providers only: If passwords/passphrases are
+                    used as the only authentication factor for customer user access (i.e., in any
+                    single-factor authentication implementation) they should have a limited
+                    lifetime.
                   levels:
                       - base
                   status: not applicable
@@ -2337,9 +2464,10 @@ controls:
                       the password on first use are handled by the third-party identity provider.
 
           - id: 8.3.11
-            title: Where authentication factors such as physical or logical security tokens, smart cards,
-                or certificates are used, factors are not shared among multiple users and the usage is
-                controlled.'
+            title: >-
+              Where authentication factors such as physical or logical security tokens, smart
+              cards, or certificates are used, factors are not shared among multiple users and the
+              usage is controlled.'
             levels:
                 - base
             status: not applicable
@@ -2357,8 +2485,9 @@ controls:
           Multi-factor authenticators are managed externally to OpenShift by the identity provider
       controls:
           - id: 8.4.1
-            title: MFA is implemented for all non-console access into the CDE for personnel with administrative
-                access.
+            title: >-
+              MFA is implemented for all non-console access into the CDE for personnel with
+              administrative access.
             levels:
                 - base
             status: not applicable
@@ -2372,8 +2501,9 @@ controls:
             status: not applicable
 
           - id: 8.4.3
-            title: MFA is implemented for all remote network access originating from outside the entity's
-                network that could access or impact the CDE.
+            title: >-
+              MFA is implemented for all remote network access originating from outside the
+              entity's network that could access or impact the CDE.
             levels:
                 - base
             status: not applicable
@@ -2400,15 +2530,17 @@ controls:
             status: not applicable
 
     - id: '8.6'
-      title: Use of application and system accounts and associated authentication factors is strictly
-          managed.
+      title: >-
+        Use of application and system accounts and associated authentication factors is strictly
+        managed.
       levels:
           - base
       status: supported
       controls:
           - id: 8.6.1
-            title: If accounts used by systems or applications can be used for interactive login, they
-                are managed.
+            title: >-
+              If accounts used by systems or applications can be used for interactive login, they
+              are managed.
             description: |-
                 - Interactive use is prevented unless needed for an exceptional circumstance.
                 - Interactive use is limited to the time needed for the exceptional circumstance.
@@ -2428,9 +2560,10 @@ controls:
                 - securetty_root_login_console_only
 
           - id: 8.6.2
-            title: Passwords/passphrases for any application and system accounts that can be used for
-                interactive login are not hard coded in scripts, configuration/property files, or bespoke
-                and custom source code.
+            title: >-
+              Passwords/passphrases for any application and system accounts that can be used for
+              interactive login are not hard coded in scripts, configuration/property files, or
+              bespoke and custom source code.
             description: |-
                 Passwords/passphrases used by application and system accounts cannot be used by
                 unauthorized personnel.
@@ -2441,8 +2574,9 @@ controls:
                 OpenShift can be integrated with a Vault to manage secrets.
 
           - id: 8.6.3
-            title: Passwords/passphrases for any application and system accounts are protected against
-                misuse.
+            title: >-
+              Passwords/passphrases for any application and system accounts are protected against
+              misuse.
             description: |-
                 - Passwords/passphrases are changed periodically (at the frequency defined in the entity's
                 targeted risk analysis, which is performed according to all elements specified in
@@ -2458,36 +2592,41 @@ controls:
                 the password on first use are handled by the third-party identity provider.
 
     - id: '9.1'
-      title: Processes and mechanisms for restricting physical access to cardholder data are defined
-          and understood.
+      title: >-
+        Processes and mechanisms for restricting physical access to cardholder data are defined and
+        understood.
       levels:
           - base
       status: not applicable
       controls:
           - id: 9.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                9 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement 9
+              are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
 
           - id: 9.1.2
-            title: Roles and responsibilities for performing activities in Requirement 9 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 9 are documented,
+              assigned, and understood.
             levels:
                 - base
             status: not applicable
 
     - id: '9.2'
-      title: Physical access controls manage entry into facilities and systems containing cardholder
-          data.
+      title: >-
+        Physical access controls manage entry into facilities and systems containing cardholder
+        data.
       levels:
           - base
       status: not applicable
       controls:
           - id: 9.2.1
-            title: Appropriate facility entry controls are in place to restrict physical access to systems
-                in the CDE.
+            title: >-
+              Appropriate facility entry controls are in place to restrict physical access to
+              systems in the CDE.
             description: |-
                 System components in the CDE cannot be physically accessed by unauthorized personnel.
             levels:
@@ -2495,15 +2634,17 @@ controls:
             status: not applicable
             controls:
                 - id: 9.2.1.1
-                  title: Individual physical access to sensitive areas within the CDE is monitored with
-                      either video cameras or physical access control mechanisms (or both).
+                  title: >-
+                    Individual physical access to sensitive areas within the CDE is monitored with
+                    either video cameras or physical access control mechanisms (or both).
                   levels:
                       - base
                   status: not applicable
 
           - id: 9.2.2
-            title: Physical and/or logical controls are implemented to restrict use of publicly accessible
-                network jacks within the facility.
+            title: >-
+              Physical and/or logical controls are implemented to restrict use of publicly
+              accessible network jacks within the facility.
             description: |-
                 Unauthorized devices cannot connect to the entity's network from public areas within the
                 facility.
@@ -2512,8 +2653,9 @@ controls:
             status: not applicable
 
           - id: 9.2.3
-            title: Physical access to wireless access points, gateways, networking/communications hardware,
-                and telecommunication lines within the facility is restricted
+            title: >-
+              Physical access to wireless access points, gateways, networking/communications
+              hardware, and telecommunication lines within the facility is restricted
             description: |-
                 Physical networking equipment cannot be accessed by unauthorized personnel.
             levels:
@@ -2535,27 +2677,31 @@ controls:
       status: not applicable
       controls:
           - id: 9.3.1
-            title: Procedures are implemented for authorizing and managing physical access of personnel
-                to the CDE.
+            title: >-
+              Procedures are implemented for authorizing and managing physical access of personnel
+              to the CDE.
             levels:
                 - base
             status: not applicable
             controls:
                 - id: 9.3.1.1
-                  title: Physical access to sensitive areas within the CDE for personnel is controlled
+                  title: >-
+                    Physical access to sensitive areas within the CDE for personnel is controlled
                   levels:
                       - base
                   status: not applicable
 
           - id: 9.3.2
-            title: Procedures are implemented for authorizing and managing visitor access to the CDE.
+            title: >-
+              Procedures are implemented for authorizing and managing visitor access to the CDE.
             levels:
                 - base
             status: not applicable
 
           - id: 9.3.3
-            title: Visitor badges or identification are surrendered or deactivated before visitors leave
-                the facility or at the date of expiration.
+            title: >-
+              Visitor badges or identification are surrendered or deactivated before visitors leave
+              the facility or at the date of expiration.
             description: |-
                 Visitor identification or badges cannot be reused after expiration.
             levels:
@@ -2563,8 +2709,9 @@ controls:
             status: not applicable
 
           - id: 9.3.4
-            title: A visitor log is used to maintain a physical record of visitor activity within the
-                facility and within sensitive areas.
+            title: >-
+              A visitor log is used to maintain a physical record of visitor activity within the
+              facility and within sensitive areas.
             levels:
                 - base
             status: not applicable
@@ -2589,7 +2736,8 @@ controls:
                 they have control over its location and physical access.
             controls:
                 - id: 9.4.1.1
-                  title: Offline media backups with cardholder data are stored in a secure location.
+                  title: >-
+                    Offline media backups with cardholder data are stored in a secure location.
                   description: |-
                       Offline backups cannot be accessed by unauthorized personnel.
                   levels:
@@ -2597,8 +2745,9 @@ controls:
                   status: not applicable
 
                 - id: 9.4.1.2
-                  title: The security of the offline media backup location(s) with cardholder data is
-                      reviewed at least once every 12 months.
+                  title: >-
+                    The security of the offline media backup location(s) with cardholder data is
+                    reviewed at least once every 12 months.
                   description: |-
                       The security controls protecting offline backups are verified periodically by
                       inspection.
@@ -2607,8 +2756,9 @@ controls:
                   status: not applicable
 
           - id: 9.4.2
-            title: All media with cardholder data is classified in accordance with the sensitivity of
-                the data.
+            title: >-
+              All media with cardholder data is classified in accordance with the sensitivity of
+              the data.
             description: |-
                 Media are classified and protected appropriately.
             levels:
@@ -2628,8 +2778,9 @@ controls:
             status: not applicable
 
           - id: 9.4.4
-            title: Management approves all media with cardholder data that is moved outside the facility
-                (including when media is distributed to individuals).
+            title: >-
+              Management approves all media with cardholder data that is moved outside the facility
+              (including when media is distributed to individuals).
             description: |-
                 Media cannot leave a facility without the approval of accountable personnel. Individuals
                 approving media movements should have the appropriate level of management authority to
@@ -2648,8 +2799,9 @@ controls:
             status: not applicable
             controls:
                 - id: 9.4.5.1
-                  title: Inventories of electronic media with cardholder data are conducted at least
-                      once every 12 months.
+                  title: >-
+                    Inventories of electronic media with cardholder data are conducted at least
+                    once every 12 months.
                   description: |-
                       Media inventories are verified periodically.
                   levels:
@@ -2657,15 +2809,17 @@ controls:
                   status: not applicable
 
           - id: 9.4.6
-            title: Hard-copy materials with cardholder data are destroyed when no longer needed for business
-                or legal reasons.
+            title: >-
+              Hard-copy materials with cardholder data are destroyed when no longer needed for
+              business or legal reasons.
             levels:
                 - base
             status: not applicable
 
           - id: 9.4.7
-            title: Electronic media with cardholder data is destroyed when no longer needed for business
-                or legal reasons.
+            title: >-
+              Electronic media with cardholder data is destroyed when no longer needed for business
+              or legal reasons.
             description: |-
                 - The electronic media is destroyed.
                 - The cardholder data is rendered unrecoverable so that it cannot be reconstructed.
@@ -2674,14 +2828,17 @@ controls:
             status: not applicable
 
     - id: '9.5'
-      title: Point-of-interaction (POI) devices are protected from tampering and unauthorized substitution.
+      title: >-
+        Point-of-interaction (POI) devices are protected from tampering and unauthorized
+        substitution.
       levels:
           - base
       status: not applicable
       controls:
           - id: 9.5.1
-            title: POI devices that capture payment card data via direct physical interaction with the
-                payment card form factor are protected from tampering and unauthorized substitution.
+            title: >-
+              POI devices that capture payment card data via direct physical interaction with the
+              payment card form factor are protected from tampering and unauthorized substitution.
             levels:
                 - base
             status: not applicable
@@ -2693,8 +2850,9 @@ controls:
                   status: not applicable
 
                 - id: 9.5.1.2
-                  title: POI device surfaces are periodically inspected to detect tampering and unauthorized
-                      substitution.
+                  title: >-
+                    POI device surfaces are periodically inspected to detect tampering and
+                    unauthorized substitution.
                   description: |-
                       Point of Interaction Devices cannot be tampered with, substituted without authorization,
                       or have skimming attachments installed without timely detection.
@@ -2703,9 +2861,11 @@ controls:
                   status: not applicable
                   controls:
                       - id: 9.5.1.2.1
-                        title: The frequency of periodic POI device inspections and the type of inspections
-                            performed is defined in the entity's targeted risk analysis, which is performed
-                            according to all elements specified in Requirement 12.3.1.
+                        title: >-
+                          The frequency of periodic POI device inspections and the type of
+                          inspections performed is defined in the entity's targeted risk analysis,
+                          which is performed according to all elements specified in Requirement
+                          12.3.1.
                         description: |-
                             POI devices are inspected at a frequency that addresses the entity's risk.
                             This requirement is a best practice until 31 March 2025, after which it will be
@@ -2715,36 +2875,41 @@ controls:
                         status: not applicable
 
                 - id: 9.5.1.3
-                  title: Training is provided for personnel in POI environments to be aware of attempted
-                      tampering or replacement of POI devices.
+                  title: >-
+                    Training is provided for personnel in POI environments to be aware of attempted
+                    tampering or replacement of POI devices.
                   levels:
                       - base
                   status: not applicable
 
     - id: '10.1'
-      title: Processes and mechanisms for logging and monitoring all access to system components and
-          cardholder data are defined and documented.
+      title: >-
+        Processes and mechanisms for logging and monitoring all access to system components and
+        cardholder data are defined and documented.
       levels:
           - base
       status: not applicable
       controls:
           - id: 10.1.1
-            title: All security policies and operational procedures that are identified in Requirement
-                10 are Documented, Kept up to date, In use and Known to all affected parties.
+            title: >-
+              All security policies and operational procedures that are identified in Requirement
+              10 are Documented, Kept up to date, In use and Known to all affected parties.
             levels:
                 - base
             status: not applicable
 
           - id: 10.1.2
-            title: Roles and responsibilities for performing activities in Requirement 10 are documented,
-                assigned, and understood.
+            title: >-
+              Roles and responsibilities for performing activities in Requirement 10 are
+              documented, assigned, and understood.
             levels:
                 - base
             status: not applicable
 
     - id: '10.2'
-      title: Audit logs are implemented to support the detection of anomalies and suspicious activity,
-          and the forensic analysis of events.
+      title: >-
+        Audit logs are implemented to support the detection of anomalies and suspicious activity,
+        and the forensic analysis of events.
       levels:
           - base
       status: inherently met
@@ -2767,9 +2932,8 @@ controls:
                   status: inherently met
                   notes: >-
                       All user and/or service account accesses to OpenShift components are logged.
-                      However, the payment entity still is responsible for logging events for access
-                      to
-                      applications within workloads hosted in containers in OpenShift.
+                      However, the payment entity still is responsible for logging events for
+                      access to applications within workloads hosted in containers in OpenShift.
 
                 - id: 10.2.1.2
                   title: Audit logs capture all actions taken by any individual with administrative access,
@@ -2780,12 +2944,10 @@ controls:
                       - base
                   status: inherently met
                   notes: >-
-                      All actions taken by individual with root or administrative privileges to OpenShift
-                      and
-                      Red Hat CoreOS are logged.
-                      However, the payment entity still is responsible for logging events for access
-                      to
-                      applications within workloads hosted in containers in OpenShift.
+                      All actions taken by individual with root or administrative privileges to
+                      OpenShift and Red Hat CoreOS are logged. However, the payment entity still is
+                      responsible for logging events for access to applications within workloads
+                      hosted in containers in OpenShift.
 
                 - id: 10.2.1.3
                   title: Audit logs capture all access to audit logs.
@@ -2795,16 +2957,11 @@ controls:
                       - base
                   status: inherently met
                   notes: >-
-                      Access to audit trails relative to OpenShift are made available at the OS level
-                      with
-                      administrator accounts.
-                      Red Hat CoreOS can be configured to log access to the journal or log file. For
-                      better
-                      protection of audit trails, including improved access controls, it is recommended
-                      to
-                      direct logs to an external log server or Security Information Event Management
-                      (SIEM)
-                      solution.
+                      Access to audit trails relative to OpenShift are made available at the OS
+                      level with administrator accounts. Red Hat CoreOS can be configured to log
+                      access to the journal or log file. For better protection of audit trails,
+                      including improved access controls, it is recommended to direct logs to an
+                      external log server or Security Information Event Management (SIEM) solution.
                   rules:
                       - audit_logging_enabled
 
@@ -2898,11 +3055,11 @@ controls:
                 - base
             status: planned
             notes: >-
-                Limited access to the audit trails on OpenShift hosts provides minimal protection from
-                unauthorized modification.
-                Use of an external log collector or SIEM solution may provide improved protections against
-                unauthorized modifications by adding additional features such as file integrity monitoring,
-                digital signing, or Write Once, Read Many (WORM) storage.
+                Limited access to the audit trails on OpenShift hosts provides minimal protection
+                from unauthorized modification. Use of an external log collector or SIEM solution
+                may provide improved protections against unauthorized modifications by adding
+                additional features such as file integrity monitoring, digital signing, or Write
+                Once, Read Many (WORM) storage.
             rules:
                 - directory_access_var_log_kube_audit
                 - directory_access_var_log_oauth_audit
@@ -2974,8 +3131,9 @@ controls:
                   status: not applicable
 
           - id: 10.4.2
-            title: Logs of all other system components (those not specified in Requirement 10.4.1) are
-                reviewed periodically.
+            title: >-
+              Logs of all other system components (those not specified in Requirement 10.4.1) are
+              reviewed periodically.
             description: |-
                 Potentially suspicious or anomalous activities for other system components (not included
                 in 10.4.1) are reviewed in accordance with the entity's identified risk. This requirement
@@ -2985,9 +3143,11 @@ controls:
             status: not applicable
             controls:
                 - id: 10.4.2.1
-                  title: The frequency of periodic log reviews for all other system components (not defined
-                      in Requirement 10.4.1) is defined in the entity's targeted risk analysis, which
-                      is performed according to all elements specified in Requirement 12.3.1
+                  title: >-
+                    The frequency of periodic log reviews for all other system components (not
+                    defined in Requirement 10.4.1) is defined in the entity's targeted risk
+                    analysis, which is performed according to all elements specified in Requirement
+                    12.3.1
                   description: |-
                       Log reviews for lower-risk system components are performed at a frequency that addresses
                       the entity's risk. This requirement is a best practice until 31 March 2025, after which
@@ -3162,8 +3322,9 @@ controls:
             status: manual
 
     - id: '11.1'
-      title: Processes and mechanisms for regularly testing security of systems and networks are defined
-          and understood.
+      title: >-
+        Processes and mechanisms for regularly testing security of systems and networks are defined
+        and understood.
       levels:
           - base
       status: not applicable
@@ -3445,8 +3606,9 @@ controls:
             status: not applicable
 
           - id: 12.3.2
-            title: A targeted risk analysis is performed for each PCI DSS requirement that the entity
-                meets with the customized approach
+            title: >-
+              A targeted risk analysis is performed for each PCI DSS requirement that the entity
+              meets with the customized approach
             levels:
                 - base
             status: not applicable
@@ -3483,9 +3645,10 @@ controls:
             status: not applicable
 
           - id: 12.4.2
-            title: 'Additional requirement for service providers only: Reviews are performed at least
-                once every three months to confirm that personnel are performing their tasks in accordance
-                with all security policies and operational procedures.'
+            title: >-
+              Additional requirement for service providers only: Reviews are performed at least
+              once every three months to confirm that personnel are performing their tasks in
+              accordance with all security policies and operational procedures.
             description: |-
                 Reviews are performed by personnel other than those responsible for performing the given
                 task.
@@ -3538,9 +3701,11 @@ controls:
                   status: not applicable
 
           - id: 12.5.3
-            title: 'Additional requirement for service providers only: Significant changes to organizational
-                structure result in a documented (internal) review of the impact to PCI DSS scope and
-                applicability of controls, with results communicated to executive management.'
+            title: >-
+              Additional requirement for service providers only: Significant changes to
+              organizational structure result in a documented (internal) review of the impact to
+              PCI DSS scope and applicability of controls, with results communicated to executive
+              management.
             description: |-
                 PCI DSS scope is confirmed after significant organizational change. This requirement
                 applies only when the entity being assessed is a service provider. This requirement is a
@@ -3569,7 +3734,8 @@ controls:
             status: not applicable
 
           - id: 12.6.2
-            title: The security awareness program is updated and reviewed at least once every 12 months.
+            title: >-
+              The security awareness program is updated and reviewed at least once every 12 months.
             levels:
                 - base
             status: not applicable
@@ -3619,8 +3785,9 @@ controls:
             status: not applicable
 
     - id: '12.8'
-      title: Risk to information assets associated with third-party service provider (TPSP) relationships
-          is managed.
+      title: >-
+        Risk to information assets associated with third-party service provider (TPSP)
+        relationships is managed.
       levels:
           - base
       status: not applicable
@@ -3667,8 +3834,10 @@ controls:
             status: not applicable
 
           - id: 12.8.5
-            title: Information is maintained about which PCI DSS requirements are managed by each TPSP,
-                which are managed by the entity, and any that are shared between the TPSP and the entity.
+            title: >-
+              Information is maintained about which PCI DSS requirements are managed by each TPSP,
+              which are managed by the entity, and any that are shared between the TPSP and the
+              entity.
             description: |-
                 Records detailing the PCI DSS requirements and related system components for which each
                 TPSP is solely or jointly responsible, are maintained and reviewed periodically.
@@ -3759,8 +3928,9 @@ controls:
                   status: not applicable
 
           - id: 12.10.5
-            title: The security incident response plan includes monitoring and responding to alerts from
-                security monitoring systems.
+            title: >-
+              The security incident response plan includes monitoring and responding to alerts from
+              security monitoring systems.
             levels:
                 - base
             status: not applicable
@@ -3888,8 +4058,9 @@ controls:
             status: pending
 
           - id: A2.1.3
-            title: 'Additional requirement for service providers only: All service providers provide
-                a secure service offering.'
+            title: >-
+              Additional requirement for service providers only: All service providers provide a
+              secure service offering.
             description: |-
                 This requirement is not eligible for the customized approach. This requirement applies
                 only when the entity being assessed is a service provider.

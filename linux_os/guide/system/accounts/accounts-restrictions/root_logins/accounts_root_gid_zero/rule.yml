@@ -24,7 +24,9 @@ references:
     cis@sle15: 5.4.3
     pcidss: Req-8.1.1
 
-ocil_clause: 'root has a primary gid not equal to zero or other non-system accounts has a primary gid equal to zero'
+ocil_clause: >-
+  root has a primary gid not equal to zero or other non-system accounts has a primary gid equal to
+  zero
 
 ocil: |-
     To verify that root's primary group is zero run the following command:

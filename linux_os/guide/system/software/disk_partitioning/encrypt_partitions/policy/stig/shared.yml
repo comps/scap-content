@@ -7,7 +7,6 @@ vuldiscussion: |-
     Selection of a cryptographic mechanism is based on the need to protect the integrity of organizational information. The strength of the mechanism is commensurate with the security category and/or classification of the information. Organizations have the flexibility to either encrypt all information on storage devices (i.e., full disk encryption) or encrypt specific data structures (e.g., files, records, or fields).
 
 
-
 checktext: |-
     Note: If there is a documented and approved reason for not having data-at-rest encryption at the operating system level, such as encryption provided by a hypervisor or a disk storage array in a virtualized environment, this requirement is Not Applicable.
 
@@ -57,5 +56,3 @@ fixtext: |-
     Encrypting a partition in an already installed system is more difficult, because existing partitions will need to be resized and changed.
 
     To encrypt an entire partition, dedicate a partition for encryption in the partition layout.
-
-

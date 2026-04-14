@@ -158,5 +158,6 @@ cpes:
       check_id: installed_app_is_ocp4_on_openshiftsdn
 
 
-# Requirement string, see: https://setuptools.readthedocs.io/en/latest/pkg_resources.html#requirements-parsing
+# Requirement string, see:
+# https://setuptools.readthedocs.io/en/latest/pkg_resources.html#requirements-parsing
 # requires: "openscap>=1.3.4"

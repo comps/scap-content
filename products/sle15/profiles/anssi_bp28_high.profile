@@ -105,4 +105,3 @@ selections:
     - '!audit_rules_mac_modification_etc_selinux'
     - '!no_nis_in_nsswitch'
     - '!audit_rules_immutable'
-

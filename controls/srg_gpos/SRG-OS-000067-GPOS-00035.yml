@@ -7,4 +7,3 @@ controls:
         status: manual
         rules:
             - ssh_keys_passphrase_protected
-

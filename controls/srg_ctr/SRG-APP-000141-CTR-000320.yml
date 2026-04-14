@@ -21,4 +21,3 @@ controls:
     Remove all container images from the container platform registry that
     are not being used or contain features and functions not supported by
     the platform.
-

@@ -22,7 +22,9 @@
 
   - name: "Ex. 1: Introduce a typo 1/2"
     replace:
-      dest: "{{ LAB_DIR }}/linux_os/guide/system/accounts/accounts-pam/password_quality/password_quality_pwquality/accounts_password_pam_minlen/rule.yml"
+      dest: >-
+        {{ LAB_DIR
+        }}/linux_os/guide/system/accounts/accounts-pam/password_quality/password_quality_pwquality/accounts_password_pam_minlen/rule.yml
       regexp: '(    after pam_pwquality to set minimum password length requirements.)'
       replace: '\1\n\1'
     when: EXERCISE == TRACK_1_LABEL
@@ -40,7 +42,9 @@
       state: absent
     when: EXERCISE == TRACK_3_LABEL
 
-  - name: "Ex. 4: Remove the Ansible content from rule accounts_tmout so that the attendees can create them themselves"
+  - name: >-
+      Ex. 4: Remove the Ansible content from rule accounts_tmout so that the attendees can create
+      them themselves
     file:
       path: "{{ LAB_DIR }}/linux_os/guide/system/accounts/accounts-session/accounts_tmout/ansible/"
       state: absent
@@ -85,7 +89,9 @@
 
   - name: "Ex. 5: Bust the OVAL"
     replace:
-      dest: "{{ LAB_DIR }}/linux_os/guide/system/accounts/accounts-session/accounts_tmout/oval/shared.xml"
+      dest: >-
+        {{ LAB_DIR
+        }}/linux_os/guide/system/accounts/accounts-session/accounts_tmout/oval/shared.xml
       regexp: '(operation=")greater than or equal(")'
       replace: '\1equals\2'
     when: EXERCISE == TRACK_5_LABEL

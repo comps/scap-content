@@ -19,5 +19,3 @@ fixtext: |-
     Configure the "/var/log" directory to a mode of "0755" by running the following command:
 
     $ sudo chmod 0755 /var/log
-
-

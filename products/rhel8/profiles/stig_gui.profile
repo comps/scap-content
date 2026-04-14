@@ -43,5 +43,6 @@ selections:
     # RHEL-08-040001
     - '!package_libreport-plugin-rhtsupport_removed'
 
-    # locking of idle sessions is handled by screensaver when GUI is present, the following rule is therefore redundant
+    # locking of idle sessions is handled by screensaver when GUI is present, the following rule is
+    # therefore redundant
     - '!logind_session_timeout'

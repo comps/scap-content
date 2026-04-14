@@ -17,7 +17,7 @@ controls:
       This is individual depending on the system workload
       therefore needs to be audited manually.
     related_rules:
-       - systemd_target_multi_use
+      - systemd_target_multi_use
   - id: R4
     title: Configure authentication
     description: >-
@@ -28,7 +28,7 @@ controls:
         title: Disable administrator accounts
         automated: yes
         rules:
-          -  accounts_passwords_pam_faillock_deny_root
+          - accounts_passwords_pam_faillock_deny_root
       - id: R4.b
         title: Enforce password quality standards
         automated: yes
@@ -37,7 +37,9 @@ controls:
           - accounts_password_pam_ocredit
           - var_password_pam_ocredit=1
       - id: R5
-        title: The product must provide automated mechanisms for supporting account management functions.
+        title: >-
+          The product must provide automated mechanisms for supporting account management
+          functions.
         status: does not meet
         fixtext: There is no fixtext.
         check: There is no check.
@@ -52,4 +54,3 @@ controls:
           A manual process for account management functions adds the risk of a potential oversight or other errors.
         status_justification:
           Mitigate with third-party software.
-

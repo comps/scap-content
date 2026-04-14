@@ -60,4 +60,3 @@ template:
         filepath: /var/log/syslog
         uid_or_name: syslog
 {{%- endif %}}
-

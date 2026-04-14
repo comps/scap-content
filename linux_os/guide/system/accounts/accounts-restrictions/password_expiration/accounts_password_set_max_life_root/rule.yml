@@ -31,4 +31,3 @@ ocil: |-
 fixtext: |-
     Configure non-compliant accounts to enforce a {{{ xccdf_value("var_accounts_maximum_age_root") }}}-day maximum password lifetime restriction.
     $ sudo chage -M {{{ xccdf_value("var_accounts_maximum_age_root") }}} root
-

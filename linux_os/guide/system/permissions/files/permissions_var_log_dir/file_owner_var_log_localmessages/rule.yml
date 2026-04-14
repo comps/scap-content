@@ -21,4 +21,3 @@ template:
         filepath: /var/log/
         file_regex: .*localmessages.*
         uid_or_name: 'syslog|root'
-

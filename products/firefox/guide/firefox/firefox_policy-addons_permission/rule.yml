@@ -21,4 +21,4 @@ template:
     vars:
         name: Disable extension installation
         policies:
-          - {path: "InstallAddonsPermission", parameter: "Default", value: false}
+            - {path: "InstallAddonsPermission", parameter: "Default", value: false}

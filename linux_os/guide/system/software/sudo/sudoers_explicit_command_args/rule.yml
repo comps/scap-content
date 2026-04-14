@@ -29,7 +29,9 @@ identifiers:
     cce@sle15: CCE-91192-5
     cce@sle16: CCE-95946-0
 
-ocil_clause: '/etc/sudoers file contains user specifications that allow execution of commands with any arguments'
+ocil_clause: >-
+  /etc/sudoers file contains user specifications that allow execution of commands with any
+  arguments
 
 ocil: |-
     To determine if arguments that commands can be executed with are restricted, run the following command:

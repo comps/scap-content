@@ -1,4 +1,3 @@
-
 title: Ensure that EBS volumes use by cluster nodes are encrypted
 
 platform: ocp4-on-aws

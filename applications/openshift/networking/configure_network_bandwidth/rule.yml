@@ -30,7 +30,7 @@ severity: unknown
 
 identifiers:
     cce@ocp4: CCE-87610-2
-   
+
 ocil_clause: 'Limiting Pod network bandwidth on OCP 4'
 
 rationale: |-

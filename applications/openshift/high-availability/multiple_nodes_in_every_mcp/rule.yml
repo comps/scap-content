@@ -2,7 +2,7 @@ documentation_complete: true
 
 title: 'Ensure every MachineConfigPool consists of More Than One Node'
 
-description: |- 
+description: |-
     To ensure, that workloads are able to be provisioned highly available, every node MachineConfigPool
     should consist of more than one node. This enables workloads to be scheduled across multiple nodes and
     stay available in case one node of a MachineConfigPool is unavailable. Different MachineConfigPools

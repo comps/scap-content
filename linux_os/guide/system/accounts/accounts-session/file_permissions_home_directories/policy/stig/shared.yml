@@ -21,5 +21,3 @@ fixtext: |-
     Note: The example will be for the user "wadea".
 
     $ sudo chmod 0750 /home/wadea
-
-

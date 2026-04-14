@@ -12,5 +12,5 @@ spec:
       version: 3.1.0
     systemd:
       units:
-      - name: ctrl-alt-del.target
-        mask: true
+        - name: ctrl-alt-del.target
+          mask: true

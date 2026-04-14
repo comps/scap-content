@@ -3,7 +3,8 @@
 #
 # $ cat kustomization.yaml
 # resources:
-#   - https://raw.githubusercontent.com/ComplianceAsCode/content/buildconfig/ocp-resources/content-cluster-build.yaml
+#   -
+#   https://raw.githubusercontent.com/ComplianceAsCode/content/buildconfig/ocp-resources/content-cluster-build.yaml
 # patchesStrategicMerge:
 #   - jakubs_repo.yaml
 # $ cat jakubs_repo.yaml

@@ -202,4 +202,3 @@ templates:
 - mount_option
 - mount_option_remote_filesystems
 - mount_option_removable_partitions
-

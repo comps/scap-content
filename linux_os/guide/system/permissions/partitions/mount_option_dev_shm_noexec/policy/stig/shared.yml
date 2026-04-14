@@ -15,5 +15,3 @@ checktext: |-
 
 fixtext: |-
     Modify "/etc/fstab" to use the "noexec" option on the "/dev/shm" file system.
-
-

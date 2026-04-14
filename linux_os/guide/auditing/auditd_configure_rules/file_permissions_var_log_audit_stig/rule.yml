@@ -28,4 +28,3 @@ fixtext: |-
     configure the audit log files to have a mode of "0600" or
     less permissive by using the following command:
     <pre>$ sudo chmod 0600 /var/log/audit/*</pre>
-

@@ -22,6 +22,5 @@ checktext: |-
     If the "UsePrivilegeSeparation" keyword is set to "no", the returned line is commented out, or no output is returned, this is a finding.
 
 
-
 vuldiscussion: |-
     SSH daemon privilege separation causes the SSH process to drop root privileges when not needed, which would decrease the impact of software vulnerabilities in the nonprivileged section.

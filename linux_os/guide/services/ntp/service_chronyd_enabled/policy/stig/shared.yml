@@ -19,5 +19,3 @@ fixtext: |-
     To enable the chronyd service run the following command:
 
     $ sudo systemctl enable --now chronyd
-
-

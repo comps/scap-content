@@ -7,7 +7,7 @@ levels:
   - id: low
   - id: medium
     inherits_from:
-    - low
+      - low
   - id: high
     inherits_from:
-    - medium
+      - medium

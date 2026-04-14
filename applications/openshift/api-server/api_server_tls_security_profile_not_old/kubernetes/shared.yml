@@ -7,4 +7,3 @@ spec:
     tlsSecurityProfile:
         intermediate: {}
         type: Intermediate
-

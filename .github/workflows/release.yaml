@@ -1,7 +1,7 @@
 name: Release
 on:
   push:
-    tags: [ 'v*.*.*' ]
+    tags: ['v*.*.*']
 jobs:
   release-fedora:
     name: Release on Fedora Latest (Container)
@@ -10,7 +10,9 @@ jobs:
       image: fedora:latest
     steps:
       - name: Install Deps
-        run: dnf install -y cmake ninja-build openscap-utils python3-pip python3-devel gcc-c++ ansible ansible-lint libxslt
+        run: >-
+          dnf install -y cmake ninja-build openscap-utils python3-pip python3-devel gcc-c++ ansible
+          ansible-lint libxslt
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
       - name: Install python deps
@@ -43,7 +45,7 @@ jobs:
         with:
           configuration: .github/workflows/release-changelog.json
         env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release
         uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
         with:

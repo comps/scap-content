@@ -7,7 +7,6 @@ vuldiscussion: |-
     Using more hashing rounds makes password cracking attacks more difficult.
 
 
-
 fixtext: |-
     Configure {{{ full_name }}} to use 100000 hashing rounds for hashing passwords.
 
@@ -25,4 +24,3 @@ checktext: |-
     password sufficient pam_unix.so sha512 rounds=100000
 
     If a matching line is not returned or "rounds" is less than 100000, this a finding.
-

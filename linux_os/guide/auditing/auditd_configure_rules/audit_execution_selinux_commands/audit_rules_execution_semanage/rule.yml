@@ -27,7 +27,7 @@ identifiers:
     cce@sle15: CCE-85819-1
     cce@sle16: CCE-95748-0
     cce@slmicro5: CCE-94098-1
-    cce@slmicro6: CCE-95095-6 
+    cce@slmicro6: CCE-95095-6
 
 references:
     cis-csc: 1,12,13,14,15,16,2,3,5,6,7,8,9

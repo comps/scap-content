@@ -13,5 +13,3 @@ checktext: |-
 
 fixtext: |-
     Edit the file "/etc/group" and provide each group that has a duplicate GID with a unique GID.
-
-

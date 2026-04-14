@@ -17,5 +17,3 @@ fixtext: |-
     The "tftp-server" package can be removed with the following command:
 
     $ sudo dnf remove tftp-server
-
-

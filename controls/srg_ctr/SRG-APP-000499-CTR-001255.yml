@@ -34,4 +34,3 @@ controls:
   - audit_rules_usergroup_modification_passwd
   - audit_rules_usergroup_modification_shadow
   status: automated
-

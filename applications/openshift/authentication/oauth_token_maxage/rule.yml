@@ -1,4 +1,3 @@
-
 title: "Configure OAuth server so that tokens have a maximum age set"
 
 {{% set default_jqfilter = '.spec' %}}

@@ -64,4 +64,3 @@ template:
             - /sbin/rsyslogd
             - /sbin/augenrules
         gid_or_name: '0'
-

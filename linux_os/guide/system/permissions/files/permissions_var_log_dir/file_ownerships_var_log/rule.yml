@@ -30,4 +30,3 @@ ocil_clause: 'not all log files owned by root or syslog'
 ocil: |-
     Verify the operating system has all system log files under the
     <pre>/var/log</pre> directory, that are not excluded, with an owner set to root | syslog,
-

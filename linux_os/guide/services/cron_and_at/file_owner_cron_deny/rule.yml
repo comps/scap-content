@@ -37,4 +37,3 @@ template:
     vars:
         filepath: /etc/cron.deny
         uid_or_name: '0'
-

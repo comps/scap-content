@@ -26,7 +26,8 @@ selections:
     # More tests are needed to identify which rule is conflicting with rpm_verify_permissions.
     # https://github.com/ComplianceAsCode/content/issues/11285
     - '!rpm_verify_permissions'
-    # these rules do not apply to AlmaLinux but they have to keep the prodtype for historical reasons
+    # these rules do not apply to AlmaLinux but they have to keep the prodtype for historical
+    # reasons
     # most of these packages are no longer available in EL9 distributions
     - '!package_audit-audispd-plugins_installed'
     - '!service_ntp_enabled'

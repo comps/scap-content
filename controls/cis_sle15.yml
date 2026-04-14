@@ -1364,7 +1364,8 @@ controls:
           - audit_rules_networkconfig_modification
 
     - id: 4.1.6
-      title: Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
+      title: >-
+        Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -1394,7 +1395,9 @@ controls:
           - audit_rules_session_events
 
     - id: 4.1.9
-      title: Ensure discretionary access control permission modification events are collected (Automated)
+      title: >-
+        Ensure discretionary access control permission modification events are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -1496,7 +1499,7 @@ controls:
       levels:
           - l2_server
           - l2_workstation
-      status: manual 
+      status: manual
 
     - id: 4.2.1.1
       title: Ensure rsyslog is installed (Automated)

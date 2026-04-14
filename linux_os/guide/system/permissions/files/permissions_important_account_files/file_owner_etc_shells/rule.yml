@@ -3,7 +3,7 @@ documentation_complete: true
 
 title: 'Verify Who Owns /etc/shells File'
 
-description:  |-
+description: |-
     {{{ describe_file_owner(file="/etc/shells", owner="root") }}}
 
 rationale: |-

@@ -17,5 +17,3 @@ fixtext: |-
     To enable the rsyslog service, run the following command:
 
     $ sudo systemctl enable --now rsyslog
-
-

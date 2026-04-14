@@ -17,5 +17,3 @@ fixtext: |-
     To enable the systemd-journald service, run the following command:
 
     $ sudo systemctl enable --now systemd-journald
-
-

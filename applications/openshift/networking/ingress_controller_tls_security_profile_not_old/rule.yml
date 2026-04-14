@@ -50,12 +50,12 @@ warnings:
 
 template:
     name: yamlfile_value
-    vars: 
+    vars:
         ocp_data: "true"
         filepath: "/apis/operator.openshift.io/v1/namespaces/openshift-ingress-operator/ingresscontrollers/default"
         yamlpath: ".spec.tlsSecurityProfile.type"
         check_existence: "any_exist"
-        values: 
+        values:
             - value: "Old"
               type: "string"
               operation: "not equal"

@@ -49,13 +49,13 @@ warnings:
         {{{ openshift_cluster_setting("/apis/config.openshift.io/v1/apiservers/cluster") | indent(8) }}}
 
 template:
-template: 
+template:
     name: yamlfile_value
-    vars: 
+    vars:
         ocp_data: "true"
         filepath: "/apis/config.openshift.io/v1/apiservers/cluster"
         yamlpath: ".spec.tlsSecurityProfile.custom.minTLSVersion"
         check_existence: "any_exist"
-        values: 
+        values:
             - value: "^(?!VersionTLS10|VersionTLS11)"
               operation: "pattern match"

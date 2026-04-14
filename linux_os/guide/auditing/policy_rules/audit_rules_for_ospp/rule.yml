@@ -29,7 +29,6 @@ description: |-
     </pre>
 
 
-
 rationale: |-
     The audit rules defined in <tt>/usr/share/doc/audit/rules</tt> are the recommended way to meet compliance with OSPP v4.2.1.
 

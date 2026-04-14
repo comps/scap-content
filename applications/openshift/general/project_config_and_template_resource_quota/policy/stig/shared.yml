@@ -44,4 +44,3 @@ fixtext: |-
 
   Details regarding the configuration of resource quotas can be reviewed at the below documentation.
   https://docs.openshift.com/container-platform/latest/applications/quotas/quotas-setting-per-project.html
-

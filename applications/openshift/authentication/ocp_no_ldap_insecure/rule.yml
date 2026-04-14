@@ -1,4 +1,3 @@
-
 title: "Only Use LDAP-based IdPs with TLS"
 
 {{% set default_jqfilter = '.spec' %}}

@@ -288,7 +288,7 @@ selections:
     - rsyslog_remote_loghost
     - auditd_audispd_syslog_plugin_activated
     - auditd_audispd_configure_remote_server
-    - auditd_audispd_encrypt_sent_records    
+    - auditd_audispd_encrypt_sent_records
 
     ### FMT_MOF_EXT.1 / AC-8(a)
     ### Set Logon Warning Banner
@@ -374,7 +374,6 @@ selections:
 #    - audit_rules_dac_modification_lchown
 
 
-
     ### FAU_GEN.1.1.c / AU-2(a)
     ### Audit User and Group Management Events (Success/Failure)
 
@@ -421,7 +420,6 @@ selections:
     - audit_rules_etc_group_open_by_handle_at
 
     - audit_rules_privileged_commands_sudoedit
-
 
 
     ### FAU_GEN.1.1.c / AU-2(a)
@@ -805,13 +803,6 @@ selections:
     ### FPT_W^X_EXT.1.1: https://www.niap-ccevs.org/MMO/PP/-424-/#FPT_W^X_EXT.1.1
     ### The OS shall prevent allocation of any memory region with both write
     ### and execute permissions except for [assignment: list of exceptions]
-
-
-
-
-
-
-
 
 
     #######################################################

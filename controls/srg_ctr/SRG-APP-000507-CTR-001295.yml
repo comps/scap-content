@@ -24,4 +24,3 @@ controls:
   - audit_modify_failed
   - audit_access_failed
   status: automated
-

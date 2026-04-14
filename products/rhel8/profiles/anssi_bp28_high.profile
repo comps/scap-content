@@ -38,7 +38,8 @@ selections:
     - '!package_apparmor_installed'
     - '!package_pam_apparmor_installed'
 
-    # An alternative solution for R67 is using nss-pam-ldapd package, in this case ensures SSL and certificate configuration
+    # An alternative solution for R67 is using nss-pam-ldapd package, in this case ensures SSL and
+    # certificate configuration
     - ldap_client_start_tls
     - ldap_client_tls_cacertpath
 

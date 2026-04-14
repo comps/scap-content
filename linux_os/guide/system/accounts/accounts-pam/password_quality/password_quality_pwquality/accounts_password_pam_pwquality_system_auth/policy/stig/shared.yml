@@ -21,5 +21,3 @@ fixtext: |-
     Add the following line to the "/etc/pam.d/system-auth" file(or modify the line to have the required value):
 
     password required pam_pwquality.so
-
-

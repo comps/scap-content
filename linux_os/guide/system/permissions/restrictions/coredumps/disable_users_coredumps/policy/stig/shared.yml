@@ -21,5 +21,3 @@ fixtext: |-
     Add the following line to the top of the /etc/security/limits.conf or in a single ".conf" file defined in /etc/security/limits.d/:
 
     * hard core 0
-
-

@@ -5,7 +5,8 @@ metadata:
         - shaneboulden
         - tjbutt58
 
-reference: https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-linux-workstations-and-servers
+reference: >-
+  https://www.cyber.gov.au/acsc/view-all-content/publications/hardening-linux-workstations-and-servers
 
 title: 'Australian Cyber Security Centre (ACSC) Essential Eight'
 
@@ -39,7 +40,7 @@ selections:
 
   ### Admin privileges
   - accounts_no_uid_except_zero
-  
+
   ### Audit
   - service_auditd_enabled
   - var_auditd_flush=incremental_async
@@ -85,7 +86,8 @@ selections:
   - sshd_disable_user_known_hosts
   - sshd_enable_strictmodes
 
-  # See also: https://www.cyber.gov.au/acsc/view-all-content/guidance/asd-approved-cryptographic-algorithms
+  # See also:
+  # https://www.cyber.gov.au/acsc/view-all-content/guidance/asd-approved-cryptographic-algorithms
   - var_system_crypto_policy=default_nosha1
   - configure_crypto_policy
   - configure_ssh_crypto_policy

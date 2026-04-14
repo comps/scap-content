@@ -2,7 +2,8 @@ documentation_complete: true
 
 title: 'Maximum NTP or Chrony Poll'
 
-description: 'The maximum NTP or Chrony poll interval number in seconds specified as a power of two.'
+description: >-
+  The maximum NTP or Chrony poll interval number in seconds specified as a power of two.
 
 type: number
 

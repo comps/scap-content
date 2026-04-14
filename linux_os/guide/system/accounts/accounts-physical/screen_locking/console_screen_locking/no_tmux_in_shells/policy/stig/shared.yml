@@ -13,4 +13,3 @@ checktext: |-
 
 fixtext: |-
     Configure {{{ full_name }}} to prevent users from disabling the tmux terminal multiplexer by editing the "/etc/shells" configuration file to remove any instances of tmux.
-

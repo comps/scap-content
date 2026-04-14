@@ -17,5 +17,3 @@ fixtext: |-
     Change the group of the file /etc/shadow to root by running the following command:
 
     $ sudo chgrp root /etc/shadow
-
-

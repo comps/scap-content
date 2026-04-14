@@ -35,7 +35,7 @@ references:
     srg: SRG-OS-000258-GPOS-00099
 
 ocil_clause: 'any of these directories are not owned by root group'
- 
+
 ocil: |-
     System commands are stored in the following directories:
     <pre>/bin

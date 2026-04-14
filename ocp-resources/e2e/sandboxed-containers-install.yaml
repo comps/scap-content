@@ -13,7 +13,7 @@ metadata:
   namespace: openshift-sandboxed-containers-operator
 spec:
   targetNamespaces:
-  - openshift-sandboxed-containers-operator
+    - openshift-sandboxed-containers-operator
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription

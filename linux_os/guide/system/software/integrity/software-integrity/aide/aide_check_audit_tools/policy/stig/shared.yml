@@ -11,7 +11,6 @@ vuldiscussion: |-
     To address this risk, audit tools must be cryptographically signed to provide the capability to identify when the audit tools have been modified, manipulated, or replaced. An example is a checksum hash of the file or files.
 
 
-
 checktext: |-
     Check that AIDE is properly configured to protect the integrity of the audit tools with the following command:
 

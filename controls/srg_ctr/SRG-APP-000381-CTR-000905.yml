@@ -7,4 +7,3 @@ controls:
   rules:
   - audit_rules_suid_privilege_function
   status: automated
-

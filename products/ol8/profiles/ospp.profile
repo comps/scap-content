@@ -25,7 +25,8 @@ selections:
     #######################################################
     - ospp:all
 
-    # special unused variables since we can't unselect variables. So we select the default value again
+    # special unused variables since we can't unselect variables. So we select the default value
+    # again
     - 'var_logind_session_timeout=5_minutes'
 
     # readd rules that are not present in the OSPP control file

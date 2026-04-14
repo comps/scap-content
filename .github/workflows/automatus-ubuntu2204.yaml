@@ -1,7 +1,7 @@
 name: Automatus Ubuntu 22.04
 on:
   pull_request:
-    branches: [ master, 'stabilization*' ]
+    branches: [master, 'stabilization*']
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.run_id }}
   cancel-in-progress: true

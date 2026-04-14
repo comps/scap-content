@@ -11,4 +11,6 @@ operator: equals
 interactive: false
 
 options:
-    default: '[.data."config.yaml" | fromjson | if .extendedArguments["secure-port"][]=="10257" then true else false end]'
+    default: >-
+      [.data."config.yaml" | fromjson | if .extendedArguments["secure-port"][]=="10257" then true
+      else false end]

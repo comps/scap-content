@@ -19,8 +19,8 @@ controls:
     - id: '1.2'
       title: Proper BIOS or UEFI Configuration
       description: >-
-          Users should disable features and devices in the BIOS or UEFI that are not in use and should
-          only include trusted devices in the boot order.
+          Users should disable features and devices in the BIOS or UEFI that are not in use and
+          should only include trusted devices in the boot order.
       status: manual
 
     - id: '1.3'
@@ -40,7 +40,8 @@ controls:
     - id: '2.2'
       title: Disk Partitioning
       description: >-
-          Users should put the /home, /tmp, /var, /var/tmp and /var/log directories on separate partitions.
+          Users should put the /home, /tmp, /var, /var/tmp and /var/log directories on separate
+          partitions.
       status: manual
 
     - id: '2.3'
@@ -52,8 +53,8 @@ controls:
     - id: '2.4'
       title: Disk Encryption
       description: >-
-          Users should encrypt their disk with a passphrase that adheres to the password rules in rule
-          4.1.
+          Users should encrypt their disk with a passphrase that adheres to the password rules in
+          rule 4.1.
       status: manual
     ###
     ### 3. General system configuration
@@ -61,8 +62,8 @@ controls:
     - id: '3.1'
       title: Bootloader Security
       description: >-
-          If the BIOS or UEFI does not allow password protection of the boot process, users should set
-          a bootloader password.
+          If the BIOS or UEFI does not allow password protection of the boot process, users should
+          set a bootloader password.
       status: partial
       rules:
           # BIOS
@@ -93,7 +94,8 @@ controls:
     - id: '3.3'
       title: Filesystem Configuration
       description: >-
-          Directories /home (-noexec), /tmp, /var, /var/tmp and /var/log mount option configuration.
+          Directories /home (-noexec), /tmp, /var, /var/tmp and /var/log mount option
+          configuration.
       status: automated
       rules:
           - mount_option_home_nodev
@@ -105,7 +107,8 @@ controls:
     - id: '3.4'
       title: Crypto Policy
       description: >-
-          System cryto policy configuation and ensuring it is not overridden in critical components.
+          System cryto policy configuation and ensuring it is not overridden in critical
+          components.
       status: automated
       rules:
           - configure_crypto_policy
@@ -194,8 +197,8 @@ controls:
     - id: '3.6'
       title: Files, Permissions, and Ownership
       description: >-
-          User and critical system file permissions and ownership, user and group file and directory
-          ownership, identifiers.
+          User and critical system file permissions and ownership, user and group file and
+          directory ownership, identifiers.
       status: partial
       rules:
           # file config
@@ -256,7 +259,8 @@ controls:
     - id: '3.8'
       title: GUI Configuration
       description: >-
-          Do not show user list, disable xdmpc and auto login, set up idle lock and protect the settings.
+          Do not show user list, disable xdmpc and auto login, set up idle lock and protect the
+          settings.
       status: automated
       rules:
           - gnome_gdm_disable_xdmcp
@@ -337,8 +341,9 @@ controls:
     - id: '4.1'
       title: Account Protection
       description: >-
-          All account passwords must be passphrases of at least 4 words and 15 characters with at least
-          three character classes, generated with a large wordlist and a source of randomness.
+          All account passwords must be passphrases of at least 4 words and 15 characters with at
+          least three character classes, generated with a large wordlist and a source of
+          randomness.
       status: partial
       rules:
           - no_empty_passwords
@@ -432,7 +437,8 @@ controls:
     - id: '5.1'
       title: General Network Configuration
       description: >-
-          If users did not configure IPv6 on the system and it is not needed, it should be disabled.
+          If users did not configure IPv6 on the system and it is not needed, it should be
+          disabled.
       status: partial
       rules:
           - kernel_module_sctp_disabled
@@ -477,8 +483,8 @@ controls:
     - id: '5.2'
       title: Firewall Configuration
       description: >-
-          Users should ensure that all network interfaces are in the appropriate firewall zone and that
-          ports and services allowed by the firewall are reduced to the necessary minimum.
+          Users should ensure that all network interfaces are in the appropriate firewall zone and
+          that ports and services allowed by the firewall are reduced to the necessary minimum.
       status: partial
       rules:
           - package_firewalld_installed
@@ -490,9 +496,9 @@ controls:
     - id: '6.1'
       title: Web Browser
       description: >-
-          Users should install the Firefox Flatpak from FlatHub and use it instead of the default Firefox
-          application. If the default Firefox application must be used, the users should apply the Common
-          User Security Profile for Mozilla Firefox CaC profile.
+          Users should install the Firefox Flatpak from FlatHub and use it instead of the default
+          Firefox application. If the default Firefox application must be used, the users should
+          apply the Common User Security Profile for Mozilla Firefox CaC profile.
       status: manual
     ###
     ### 7. Advanced security features
@@ -516,6 +522,6 @@ controls:
     - id: '7.2'
       title: Periodic Compliance Scans
       description: >-
-          Users should perform periodic system scans and remediations with the Common User Security Profile
-          by using the oscap tool or SCAP Workbench.
+          Users should perform periodic system scans and remediations with the Common User Security
+          Profile by using the oscap tool or SCAP Workbench.
       status: manual

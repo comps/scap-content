@@ -24,4 +24,3 @@
   when:
     - result_newaliases_present.stat.exists
     - aliases_postmaster_changed is changed
-

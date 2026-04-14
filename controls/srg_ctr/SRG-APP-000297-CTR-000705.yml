@@ -7,4 +7,3 @@ controls:
   status: automated
   rules:
     - oauth_logout_url_set
-

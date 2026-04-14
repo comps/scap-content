@@ -59,5 +59,5 @@ options:
     NF_BR_PRI_BRNF: 0
     NF_BR_PRI_NAT_DST_OTHER: 100
     NF_BR_PRI_FILTER_OTHER: 200
-    NF_BR_PRI_NAT_SRC: 300 
+    NF_BR_PRI_NAT_SRC: 300
     chain_priorities: "0,0,0"

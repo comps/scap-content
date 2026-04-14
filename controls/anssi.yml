@@ -63,7 +63,8 @@ controls:
     # From ANSSI DAT-24
     # R11 Password protect the BIOS
     # R12 Deactivate peripherals not needed
-    # R13 The boot order list should give highest preference to component on which final OS is installed
+    # R13 The boot order list should give highest preference to component on which final OS is
+    # installed
     # R14 Enable NX/XD bit
     # - bios_enable_execution_restrictions  # Doesn't have check
     # R15 Disable VT-x/AMD-V functionality
@@ -75,12 +76,11 @@ controls:
       description: >-
           It is recommended to apply UEFI Secure Boot configuration of the distribution.
       notes: >-
-          Secure Boot needs to be enabled in the UEFI Setup program.
-          Enabling Secure Boot can't be accomplished from the operating system.
-          Also, OVAL doesn't provide any reliable ways to detect the Secure Boot status.
-          Therefore, we will not provide any rules to automate this requirement.
-          We recommend checking the Secure Boot status using the `mokutil --sb-state` or `bootctl status`
-          commands.
+          Secure Boot needs to be enabled in the UEFI Setup program. Enabling Secure Boot can't be
+          accomplished from the operating system. Also, OVAL doesn't provide any reliable ways to
+          detect the Secure Boot status. Therefore, we will not provide any rules to automate this
+          requirement. We recommend checking the Secure Boot status using the `mokutil --sb-state`
+          or `bootctl status` commands.
       status: manual
 
     - id: R4
@@ -120,13 +120,12 @@ controls:
           It is recommended that UEFI Secure Boot is used to protect the Linux Kernel
           command line parameters during boot.
       notes: >-
-          To protect the Linux Kernel command line one needs to create an Unified Kernel Image and use
-          it with the UEFI Secure Boot mechanism.
-          To check if the Kernel image contains the kernel command one needs to inspect the binary, on
-          the command line one can use the objdump command. But unfortunately OVAL is not able to
-          inspect kernel images.
-          Also, it is not trivial to automate creation of such image or configuration of the
-          Secure Boot mechanism.
+          To protect the Linux Kernel command line one needs to create an Unified Kernel Image and
+          use it with the UEFI Secure Boot mechanism. To check if the Kernel image contains the
+          kernel command one needs to inspect the binary, on the command line one can use the
+          objdump command. But unfortunately OVAL is not able to inspect kernel images. Also, it is
+          not trivial to automate creation of such image or configuration of the Secure Boot
+          mechanism.
       status: manual
 
     - id: R7
@@ -574,8 +573,8 @@ controls:
       levels:
           - high
       notes: >-
-          If the system can function without support for kernel modules, module support should be disabled
-          by setting CONFIG_MODULES=n.
+          If the system can function without support for kernel modules, module support should be
+          disabled by setting CONFIG_MODULES=n.
       status: automated
       rules:
           - kernel_config_kexec
@@ -697,8 +696,9 @@ controls:
           In any case, access to the /boot folder should only be allowed for the root user.
       notes: >-
           The /boot partition mounted is essential to perform certain administrative actions, for
-          example updating the kernel. Therefore, for better stability, in this requirement only rules
-          to restrict the access to /boot are selected. It is not changed how the /boot is mounted.
+          example updating the kernel. Therefore, for better stability, in this requirement only
+          rules to restrict the access to /boot are selected. It is not changed how the /boot is
+          mounted.
       status: automated
       rules:
           - file_groupowner_efi_grub2_cfg
@@ -801,11 +801,11 @@ controls:
       levels:
           - intermediary
       description: >-
-          Local user sessions (console TTY, graphical session) must be locked after a certain period
-          of inactivity.
+          Local user sessions (console TTY, graphical session) must be locked after a certain
+          period of inactivity.
       notes: >-
-          ANSSI doesn't specify the length of the inactivity period, we are choosing 10 minutes as reasonable
-          number.
+          ANSSI doesn't specify the length of the inactivity period, we are choosing 10 minutes as
+          reasonable number.
       status: automated
       rules:
           - logind_session_timeout
@@ -863,11 +863,11 @@ controls:
       description: >-
           The default value of UMASK for the shells must be set to 0077 in order to allow read and
           write access to its owner only. This value can be defined in the configuration file
-          /etc/profile that most shells (bash, dash, ksh…) will use.
-          The default value of UMASK for services must be determined for each service, but in most
-          cases, it should be set to 0027 (or more restrictive). This allows read access to its owner
-          and its group, and a full access to its owner. For services such as systemd, this value can
-          be defined directly in the configuration file of the service with the directive UMask=0027.
+          /etc/profile that most shells (bash, dash, ksh…) will use. The default value of UMASK for
+          services must be determined for each service, but in most cases, it should be set to 0027
+          (or more restrictive). This allows read access to its owner and its group, and a full
+          access to its owner. For services such as systemd, this value can be defined directly in
+          the configuration file of the service with the directive UMask=0027.
       notes: >-
           There are cases of Systemd services which would stop working in case umask
           would be configured to 0027 for all services. One such example is the
@@ -1004,8 +1004,8 @@ controls:
       levels:
           - high
       description: >-
-          Interactive non-privileged users of a system must be confined by associating them with a SELinux
-          confined user.
+          Interactive non-privileged users of a system must be confined by associating them with a
+          SELinux confined user.
       notes: Interactive users who still need to perform administrative tasks should not be confined
           with user_u.
       status: manual
@@ -1015,12 +1015,12 @@ controls:
       levels:
           - high
       description: >-
-          It is recommended to set the following Booleans:
-          allow_execheap to off, forbids processes to make their heap executable;
-          allow_execmem to off, forbids processes to have both write and execute rights on memory pages;
-          allow_execstack to off, forbids processes to make their stack executable;
-          secure_mode_insmod to on, prohibits dynamic loading of modules by any process;
-          ssh_sysadm_login to off, forbids SSH logins to connect directly in sysadmin role.
+          It is recommended to set the following Booleans: allow_execheap to off, forbids processes
+          to make their heap executable; allow_execmem to off, forbids processes to have both write
+          and execute rights on memory pages; allow_execstack to off, forbids processes to make
+          their stack executable; secure_mode_insmod to on, prohibits dynamic loading of modules by
+          any process; ssh_sysadm_login to off, forbids SSH logins to connect directly in sysadmin
+          role.
       notes: In RHEL, the SELinux boolean allow_execheap is renamed to selinuxuser_execheap, and the
           boolean allow_execstack is renamed to selinuxuser_execstack. And allow_execmem is not available,
           deny_execmem provides the same functionality.
@@ -1199,14 +1199,11 @@ controls:
       levels:
           - minimal
       notes: >-
-          Only programs specifically designed to be used with setuid or setgid bits can have these privilege
-          bits set.
-          This requirement considers apropriate for setuid and setgid bits the binaries that are installed
-          from
-          recognized and authorized repositories (covered in R15).
-          The remediation resets the sticky bit to intended value by vendor/developer, any finding after
-          remediation
-          should be reviewed.
+          Only programs specifically designed to be used with setuid or setgid bits can have these
+          privilege bits set. This requirement considers apropriate for setuid and setgid bits the
+          binaries that are installed from recognized and authorized repositories (covered in R15).
+          The remediation resets the sticky bit to intended value by vendor/developer, any finding
+          after remediation should be reviewed.
       status: automated
       rules:
           - file_permissions_unauthorized_suid
@@ -1217,10 +1214,9 @@ controls:
       levels:
           - enhanced
       description: >-
-          The executables with setuid executables root and setgid root special rights should be as few
-          as possible.
-          When only administrators are expected to execute them, these special rights should
-          be removed and prefer them commands like su or sudo, which can be monitored
+          The executables with setuid executables root and setgid root special rights should be as
+          few as possible. When only administrators are expected to execute them, these special
+          rights should be removed and prefer them commands like su or sudo, which can be monitored
       notes: There could be rules to list all executables with setuid root or setgid root rights.
       status: manual
 
@@ -1232,10 +1228,9 @@ controls:
           The selection of packages installed should be as small as possible,
           limiting itself to select only what is required.
       notes: >-
-          It is not possible to automatically decide in general way if a package is required or not for
-          given system.
-          As a future improvement, there could be rules assisting assessment by listing the installed
-          packages.
+          It is not possible to automatically decide in general way if a package is required or not
+          for given system. As a future improvement, there could be rules assisting assessment by
+          listing the installed packages.
       status: manual
 
     - id: R59
@@ -1244,11 +1239,11 @@ controls:
           - minimal
       description: Only up-to-date official repositories of the distribution must be used.
       notes: >-
-          It is not trivial to distinguish an official repository from an unofficial one.
-          We cannot draw conclusions from the repo name or URL of the repo (as they can be arbitrary
-          or behind a proxy).
-          One approach to check the origin of installed packages is to check the signature of the packages.
-          If the public key of a repository is not installed, the repo is not trusted.
+          It is not trivial to distinguish an official repository from an unofficial one. We cannot
+          draw conclusions from the repo name or URL of the repo (as they can be arbitrary or
+          behind a proxy). One approach to check the origin of installed packages is to check the
+          signature of the packages. If the public key of a repository is not installed, the repo
+          is not trusted.
       status: automated
       rules:
           - ensure_gpgcheck_never_disabled
@@ -1339,9 +1334,10 @@ controls:
           The deployed services must have their access restricted to the system
           strict minimum, especially when it comes to files, processes or network.
       notes: >-
-          SELinux policies limit the privileges of services and daemons just to those which are required.
-          The policies should be enough to restrict the services' privileges to its essentials, but the
-          automated content cannot assess whether they are the minimum required for the deployment.
+          SELinux policies limit the privileges of services and daemons just to those which are
+          required. The policies should be enough to restrict the services' privileges to its
+          essentials, but the automated content cannot assess whether they are the minimum required
+          for the deployment.
       status: automated
       rules:
           - selinux_policytype
@@ -1399,7 +1395,8 @@ controls:
           - minimal
       description: Any password must be protected by cryptographic mechanisms.
       notes: >-
-          The selection of rules doesn't cover the use of hardware devices to protect the passwords.
+          The selection of rules doesn't cover the use of hardware devices to protect the
+          passwords.
       status: supported
       rules:
           - var_password_hashing_algorithm=yescrypt
@@ -1445,11 +1442,10 @@ controls:
           (DAT-PA-012 v2.0) accessible on the ANSSI website
           (https://www.ssi.gouv.fr/journalisation).
       notes: >-
-          A lot of recommendations and requirements from the DAT-PA-012 document are administrative and
-          hard to automate.
-          The rules selected below address a few of the aspects that can be covered, keep in mind that
-          these configurations should
-          be customized for the systems deployment requirements.
+          A lot of recommendations and requirements from the DAT-PA-012 document are administrative
+          and hard to automate. The rules selected below address a few of the aspects that can be
+          covered, keep in mind that these configurations should be customized for the systems
+          deployment requirements.
       status: automated
       rules:
           # Based on DAT-PA-012 R5
@@ -1662,5 +1658,6 @@ controls:
       description: All network services must be listening on the correct network intefaces.
       notes: >-
           Manual review is necessary to decide if the list of resident daemons is minimal.
-          Assisting rules could be created to list sevices listening on the network for manual review.
+          Assisting rules could be created to list sevices listening on the network for manual
+          review.
       status: manual

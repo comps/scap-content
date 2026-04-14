@@ -21,5 +21,3 @@ fixtext: |-
     Add or modify the following line in the "/usr/lib/systemd/system/emergency.service" file:
 
     ExecStart=-/usr/lib/systemd/systemd-sulogin-shell emergency
-
-

@@ -19,5 +19,3 @@ fixtext: |-
     Modify the postfix configuration file to restrict client connections to the local network with the following command:
 
     $ sudo postconf -e 'smtpd_client_restrictions = permit_mynetworks,reject'
-
-

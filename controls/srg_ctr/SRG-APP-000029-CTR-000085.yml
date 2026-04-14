@@ -33,4 +33,3 @@ controls:
   - audit_rules_privileged_commands_unix_chkpwd
   - audit_rules_privileged_commands_write
   status: automated
-

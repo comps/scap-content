@@ -87,4 +87,5 @@
   when: bootargcheck.rc != 0
 
 - name: Update bootloader menu
-  ansible.builtin.command: /sbin/grubby --update-kernel=ALL --args="fips=1 boot=UUID={{ bootuuid.stdout }}"
+  ansible.builtin.command: >-
+    /sbin/grubby --update-kernel=ALL --args="fips=1 boot=UUID={{ bootuuid.stdout }}"

@@ -1,4 +1,3 @@
-
 title: Ensure authorization-mode Node is configured
 
 {{% set default_jqfilter = '.data."config.yaml" | fromjson' %}}

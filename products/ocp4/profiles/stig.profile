@@ -10,7 +10,8 @@ metadata:
         - rhmdnd
         - yuumasato
 
-reference: https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-x_V2R3_STIG.zip
+reference: >-
+  https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-x_V2R3_STIG.zip
 
 title: 'DISA STIG for Red Hat OpenShift Container Platform 4 - Platform level'
 

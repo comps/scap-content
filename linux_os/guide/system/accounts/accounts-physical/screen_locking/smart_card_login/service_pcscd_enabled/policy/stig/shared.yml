@@ -19,5 +19,3 @@ fixtext: |-
     To enable the pcscd socket, run the following command:
 
     $ sudo systemctl enable --now pcscd.socket
-
-

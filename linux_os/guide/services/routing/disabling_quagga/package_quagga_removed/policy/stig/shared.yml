@@ -19,5 +19,3 @@ fixtext: |-
     Remove the quagga package with the following command:
 
     $ sudo dnf remove quagga
-
-

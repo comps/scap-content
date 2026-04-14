@@ -11,4 +11,3 @@ controls:
   - configure_usbguard_auditbackend
   - usbguard_allow_hid_and_hub
   status: automated
-

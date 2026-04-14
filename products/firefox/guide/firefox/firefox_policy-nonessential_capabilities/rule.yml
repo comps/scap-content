@@ -1,7 +1,9 @@
 documentation_complete: true
 
 
-title: 'The Firefox New Tab page must not show Top Sites, Sponsored Top sites, Pocket Recommendations, Sponsored Pocket Stories, Searches, Highlights, or Snippets.'
+title: >-
+  The Firefox New Tab page must not show Top Sites, Sponsored Top sites, Pocket Recommendations,
+  Sponsored Pocket Stories, Searches, Highlights, or Snippets.
 
 description: |-
     Display of top sites may be disabled in an administrative policy by setting the following items under <tt>FirefoxHome</tt>

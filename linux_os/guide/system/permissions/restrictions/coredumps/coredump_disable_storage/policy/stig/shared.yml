@@ -19,5 +19,3 @@ fixtext: |-
     Add or modify the following line in /etc/systemd/coredump.conf:
 
     Storage=none
-
-

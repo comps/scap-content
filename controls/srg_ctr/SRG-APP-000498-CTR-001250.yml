@@ -18,4 +18,3 @@ controls:
   - audit_rules_execution_setsebool
   - audit_rules_usergroup_modification_opasswd
   status: automated
-

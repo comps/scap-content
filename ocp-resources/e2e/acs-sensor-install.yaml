@@ -15,7 +15,7 @@ metadata:
   namespace: stackrox
   labels:
     app: sensor
-    "app.kubernetes.io/name": stackrox  
+    "app.kubernetes.io/name": stackrox
 spec:
   replicas: 1
   minReadySeconds: 15
@@ -30,7 +30,7 @@ spec:
         app: sensor
     spec:
       containers:
-      - image: quay.io/fedora/fedora-toolbox
-        imagePullPolicy: Always
-        name: sensor
-        command: ["/bin/sh", "-c", "while true; do echo 'Hello, StackRox!'; sleep 3600; done"]
+        - image: quay.io/fedora/fedora-toolbox
+          imagePullPolicy: Always
+          name: sensor
+          command: ["/bin/sh", "-c", "while true; do echo 'Hello, StackRox!'; sleep 3600; done"]

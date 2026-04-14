@@ -26,7 +26,7 @@ interactive: true
 
 options:
     default: "filter,filter,filter"
-    filter: filter 
+    filter: filter
     route: route
     nat: nat
     chain_types: "filter,filter,filter"

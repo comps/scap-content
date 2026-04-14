@@ -27,4 +27,3 @@ fixtext: |-
     DTLS.MinProtocol = DTLSv1.2
 
     A reboot is required for the changes to take effect.
-

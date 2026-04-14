@@ -13,4 +13,3 @@ interactive: false
 options:
     default: "default"
     alt: "alternate"
-

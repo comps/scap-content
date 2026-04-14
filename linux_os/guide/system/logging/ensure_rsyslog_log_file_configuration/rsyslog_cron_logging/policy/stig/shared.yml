@@ -32,5 +32,3 @@ fixtext: |-
     The rsyslog daemon must be restarted for the changes to take effect:
 
     $ sudo systemctl restart rsyslog.service
-
-

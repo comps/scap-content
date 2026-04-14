@@ -23,7 +23,7 @@ interactive: true
 
 options:
     default: "input,forward,output"
-    ingress: ingress 
+    ingress: ingress
     prerouting: prerouting
     input: input
     forward: forward

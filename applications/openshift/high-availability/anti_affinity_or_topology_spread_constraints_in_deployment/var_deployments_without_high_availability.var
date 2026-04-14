@@ -2,7 +2,9 @@ documentation_complete: true
 
 title: 'Permitted Deployments without high availability'
 
-description: 'A regular expression that lists all deployments that are ignored in rules for high-availability and evenly spread across nodes and zones'
+description: >-
+  A regular expression that lists all deployments that are ignored in rules for high-availability
+  and evenly spread across nodes and zones
 
 type: string
 

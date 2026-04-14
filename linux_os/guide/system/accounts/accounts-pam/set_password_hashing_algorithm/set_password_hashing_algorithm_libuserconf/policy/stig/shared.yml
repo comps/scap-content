@@ -21,4 +21,3 @@ fixtext: |-
     Add or change the following line in the "[default]" section of "/etc/libuser.conf" file:
 
     crypt_style = sha512
-

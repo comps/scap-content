@@ -22,6 +22,6 @@ references:
 template:
     name: firefox_policy-setting
     vars:
-      name: Disable DNS over HTTPS 
+      name: Disable DNS over HTTPS
       policies:
         - {path: "DNSOverHTTPS", parameter: "Enabled", value: false}

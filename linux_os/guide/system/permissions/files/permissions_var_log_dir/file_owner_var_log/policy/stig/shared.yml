@@ -19,5 +19,3 @@ fixtext: |-
     Configure the owner of the directory "/var/log" to "root" by running the following command:
 
     $ sudo chown root /var/log
-
-

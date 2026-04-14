@@ -38,7 +38,7 @@ controls:
     automated: yes
   - id: R4
     title: Configure authentication
-    description: >- 
+    description: >-
       Ensure authentication methods are functional to prevent
       unauthorized access to the system.
     controls:
@@ -46,7 +46,7 @@ controls:
         title: Disable administrator accounts
         automated: yes
         rules:
-          -  accounts_passwords_pam_faillock_deny_root
+          - accounts_passwords_pam_faillock_deny_root
       - id: R4.b
         title: Enforce password quality standards
         automated: yes
@@ -54,19 +54,20 @@ controls:
           - accounts_password_pam_minlen
           - accounts_password_pam_ocredit
           - var_password_pam_ocredit=1
-  -   id: R5
-      title: The product must provide automated mechanisms for supporting account management functions.
-      status: does not meet
-      fixtext: There is no fixtext.
-      check: There is no check.
-      mitigation: |-
-        Mitigate with third-party software.
+  - id: R5
+    title: >-
+      The product must provide automated mechanisms for supporting account management functions.
+    status: does not meet
+    fixtext: There is no fixtext.
+    check: There is no check.
+    mitigation: |-
+      Mitigate with third-party software.
 
-        Although the listed mitigation is supporting the security function, it is not sufficient to reduce the residual risk of this requirement.
-      description:
-        The operating system must provide automated mechanisms for supporting account management functions.
-      rationale:
-        Enterprise environments make account management challenging and complex.
-        A manual process for account management functions adds the risk of a potential oversight or other errors.
-      status_justification:
-        Mitigate with third-party software.
+      Although the listed mitigation is supporting the security function, it is not sufficient to reduce the residual risk of this requirement.
+    description:
+      The operating system must provide automated mechanisms for supporting account management functions.
+    rationale:
+      Enterprise environments make account management challenging and complex.
+      A manual process for account management functions adds the risk of a potential oversight or other errors.
+    status_justification:
+      Mitigate with third-party software.

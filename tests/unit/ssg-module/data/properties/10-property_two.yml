@@ -5,4 +5,3 @@ overrides:
 {{% if property_one == "one" %}}
   property_two: two
 {{% endif %}}
-

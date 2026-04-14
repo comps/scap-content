@@ -21,7 +21,7 @@ controls:
         artifact_description:
             When logging off from a SSH terminal session, SSH prints "Connection to <host> closed".
             This is hard coded in client_loop() in clientloop.c, https://github.com/openssh/openssh-portable/blob/master/clientloop.c
-            When the remote ends the connection, a message is also printed. "Connection to <host> closed by remote host". 
+            When the remote ends the connection, a message is also printed. "Connection to <host> closed by remote host".
             This message is hard-code in client_process_net_input() in clientloop.c
         status_justification:
           {{{ full_name }}} meets this requirement and it is not configurable.

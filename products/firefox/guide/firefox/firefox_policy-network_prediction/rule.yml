@@ -32,4 +32,4 @@ template:
     vars:
         name: Disable addon and plugin automatic update
         policies:
-          - {path: "policies", parameter: "NetworkPrediction", value: false}
+            - {path: "policies", parameter: "NetworkPrediction", value: false}

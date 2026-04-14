@@ -27,5 +27,3 @@ fixtext: |-
     # usbguard generate-policy --no-hash &gt; /etc/usbguard/rules.conf
 
     Note: Enabling and starting usbguard without properly configuring it for an individual system will immediately prevent any access over a usb device such as a keyboard or mouse.
-
-

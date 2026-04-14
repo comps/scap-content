@@ -2,7 +2,7 @@ documentation_complete: true
 
 title: 'Ensure Control Plane / Master Nodes are Distributed Across Three Failure Zones'
 
-description: |- 
+description: |-
     Distributing Kubernetes control plane nodes across failure zones enhances security by mitigating
     the risk of a single point of failure and reducing the impact of API inavailability or attacks
     targeting a specific zone. Maintaining three instances of etcd across different failure zones 

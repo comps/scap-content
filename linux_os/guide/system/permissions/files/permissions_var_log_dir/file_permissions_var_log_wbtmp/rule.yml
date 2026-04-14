@@ -12,7 +12,6 @@ rationale: |-
 severity: medium
 
 
-
 ocil_clause: '{{{ ocil_clause_file_permissions(file="/var/log/(b|w)tmp(.*|-*)", perms="-rw-rw-r--") }}}'
 
 ocil: |-

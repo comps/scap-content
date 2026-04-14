@@ -27,4 +27,4 @@ template:
     vars:
         name: Disable telemetry
         policies:
-          - {path: "policies", parameter: "DisableTelemetry", value: true}
+            - {path: "policies", parameter: "DisableTelemetry", value: true}

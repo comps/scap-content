@@ -28,4 +28,4 @@ template:
     vars:
         name: Disable autoplay for videos with audio content
         policies:
-          - {path: "Permissions Autoplay", parameter: "Default", value: "block-audio-video"}
+            - {path: "Permissions Autoplay", parameter: "Default", value: "block-audio-video"}

@@ -12,4 +12,3 @@ controls:
   - audit_rules_login_events_faillock
   - audit_rules_login_events_lastlog
   status: automated
-

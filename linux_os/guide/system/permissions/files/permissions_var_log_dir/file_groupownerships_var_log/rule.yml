@@ -30,4 +30,3 @@ ocil_clause: 'not all log files group-owned by root or adm'
 ocil: |-
     Verify the operating system has all system log files under the
     <pre>/var/log</pre> directory, that are not excluded, with a group owner set to root | adm,
-

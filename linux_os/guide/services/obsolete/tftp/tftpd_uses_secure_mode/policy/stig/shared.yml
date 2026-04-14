@@ -35,4 +35,3 @@ fixtext: |-
     2. Edit the ExecStart line on that file to add the -s option with a subdirectory.
 
     ExecStart=/usr/sbin/in.tftpd -s /var/lib/tftpboot
-

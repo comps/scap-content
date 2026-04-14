@@ -46,7 +46,7 @@ options:
     npa: npa
     oberthur: oberthur
     openpgp: openpgp
-    other: 
+    other:
     PIV-II: PIV-II
     rutoken_ecp: rutoken_ecp
     rutoken: rutoken

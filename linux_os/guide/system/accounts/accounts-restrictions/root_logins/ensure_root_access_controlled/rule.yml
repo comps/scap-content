@@ -44,5 +44,3 @@ ocil: |-
 warnings:
   - general: This rule doesn't come with a remediation, as the exact requirement allows root to have a password.
 {{% endif %}}
-
-

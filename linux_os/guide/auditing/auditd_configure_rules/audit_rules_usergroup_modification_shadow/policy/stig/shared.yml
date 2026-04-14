@@ -24,4 +24,3 @@ fixtext: |-
     -a always,exit -F arch=b64 -F path=/etc/shadow -F perm=wa -F key=identity
 
     The audit daemon must be restarted for the changes to take effect.
-

@@ -64,4 +64,3 @@ template:
         parameter: Compression
         xccdf_variable: var_sshd_disable_compression
         datatype: string
-

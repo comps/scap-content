@@ -11,7 +11,6 @@ vuldiscussion: |-
     Allocating an audit_backlog_limit of sufficient size is critical in maintaining a stable boot process. With an insufficient limit allocated, the system is susceptible to boot failures and crashes.
 
 
-
 checktext: |-
     Verify {{{ full_name }}} allocates a sufficient audit_backlog_limit to capture processes that start prior to the audit daemon with the following command:
 
@@ -23,5 +22,3 @@ fixtext: |-
     Configure {{{ full_name }}} to allocate sufficient audit_backlog_limit to capture processes that start prior to the audit daemon with the following command:
 
     $ sudo grubby --update-kernel=ALL --args=audit_backlog_limit=8192
-
-

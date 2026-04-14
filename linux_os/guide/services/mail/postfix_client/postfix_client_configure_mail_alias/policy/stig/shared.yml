@@ -32,5 +32,3 @@ fixtext: |-
     and then update the aliases database with the command:
 
     $ sudo newaliases
-
-

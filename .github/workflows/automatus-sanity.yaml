@@ -1,7 +1,7 @@
 name: Automatus Sanity
 on:
   pull_request:
-    branches: [ master, 'stabilization*' ]
+    branches: [master, 'stabilization*']
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.run_id }}
   cancel-in-progress: true
@@ -15,7 +15,9 @@ jobs:
       image: fedora:latest
     steps:
       - name: Install Deps
-        run: dnf install -y cmake make openscap-utils python3-pyyaml python3-jinja2 git python3-pip python3-setuptools
+        run: >-
+          dnf install -y cmake make openscap-utils python3-pyyaml python3-jinja2 git python3-pip
+          python3-setuptools
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
         with:
@@ -33,13 +35,17 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Install Deps
-        run: sudo apt-get update && sudo apt-get install cmake ninja-build libopenscap8 libxml2-utils xsltproc python3-jinja2 python3-yaml ansible-lint podman
+        run: >-
+          sudo apt-get update && sudo apt-get install cmake ninja-build libopenscap8 libxml2-utils
+          xsltproc python3-jinja2 python3-yaml ansible-lint podman
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
       - name: Generate id_rsa key
         run: ssh-keygen -N '' -t rsa -f ~/.ssh/id_rsa
       - name: Build test suite container
-        run: podman build --build-arg "CLIENT_PUBLIC_KEY=$(cat ~/.ssh/id_rsa.pub)" -t ssg_test_suite -f test_suite-fedora
+        run: >-
+          podman build --build-arg "CLIENT_PUBLIC_KEY=$(cat ~/.ssh/id_rsa.pub)" -t ssg_test_suite
+          -f test_suite-fedora
         working-directory: ./Dockerfiles
       - name: Get oscap-ssh
         run: |
@@ -53,22 +59,38 @@ jobs:
         with:
           name: ${{ env.DATASTREAM }}
       - name: Check One Rule
-        run: ./tests/automatus.py rule --remove-platforms --make-applicable-in-containers --logdir log_rule --datastream ssg-fedora-ds.xml --container ssg_test_suite package_sudo_installed
+        run: >-
+          ./tests/automatus.py rule --remove-platforms --make-applicable-in-containers --logdir
+          log_rule --datastream ssg-fedora-ds.xml --container ssg_test_suite package_sudo_installed
       - name: Check One Rule - Ansible
-        run: ./tests/automatus.py rule --remove-platforms --make-applicable-in-containers --logdir log_rule_ansible --remediate-using ansible --datastream ssg-fedora-ds.xml --container ssg_test_suite file_owner_etc_passwd
+        run: >-
+          ./tests/automatus.py rule --remove-platforms --make-applicable-in-containers --logdir
+          log_rule_ansible --remediate-using ansible --datastream ssg-fedora-ds.xml --container
+          ssg_test_suite file_owner_etc_passwd
       - name: Check Profile Mode
-        run: ./tests/automatus.py profile --remove-platforms --make-applicable-in-containers --logdir log_profile --datastream ssg-fedora-ds.xml --container ssg_test_suite test
+        run: >-
+          ./tests/automatus.py profile --remove-platforms --make-applicable-in-containers --logdir
+          log_profile --datastream ssg-fedora-ds.xml --container ssg_test_suite test
       - name: Check Combined Mode
-        run: ./tests/automatus.py combined --remove-platforms --make-applicable-in-containers --logdir log_combined --datastream ssg-fedora-ds.xml --container ssg_test_suite test
+        run: >-
+          ./tests/automatus.py combined --remove-platforms --make-applicable-in-containers --logdir
+          log_combined --datastream ssg-fedora-ds.xml --container ssg_test_suite test
       - name: Check Template Mode
-        run: ./tests/automatus.py template --logdir log_template --datastream ssg-fedora-ds.xml --container ssg_test_suite --slice 1 15 file_owner
+        run: >-
+          ./tests/automatus.py template --logdir log_template --datastream ssg-fedora-ds.xml
+          --container ssg_test_suite --slice 1 15 file_owner
       - name: Check for ERROR in logs
-        run: grep -q "^ERROR" log_rule/test_suite.log log_rule_ansible/test_suite.log log_profile/test_suite.log log_combined/test_suite.log log_template/test_suite.log
+        run: >-
+          grep -q "^ERROR" log_rule/test_suite.log log_rule_ansible/test_suite.log
+          log_profile/test_suite.log log_combined/test_suite.log log_template/test_suite.log
         id: check_results
         # when grep returns 1 means it didn't find the ^ERROR string in the test_suite.log file
-        # and this means tests finished successfully without errors. So the job needs to keep going.
-        # By using continue-on-error: true the "conclusion" parameter is set to true so it's not possible to use
-        # it to determine whether the task has failed or succeed. The "outcome" parameter has to be used instead.
+        # and this means tests finished successfully without errors. So the job needs to keep
+        # going.
+        # By using continue-on-error: true the "conclusion" parameter is set to true so it's not
+        # possible to use
+        # it to determine whether the task has failed or succeed. The "outcome" parameter has to be
+        # used instead.
         # See the step below
         continue-on-error: true
       - name: Fail in case of ERROR present in logs

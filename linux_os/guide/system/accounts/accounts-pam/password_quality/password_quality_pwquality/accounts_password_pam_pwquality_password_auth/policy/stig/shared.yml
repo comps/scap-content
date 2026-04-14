@@ -5,7 +5,6 @@ vuldiscussion: |-
     Enabling PAM password complexity permits enforcement of strong passwords and consequently makes the system less prone to dictionary attacks.
 
 
-
 checktext: |-
     Verify {{{ full_name }}} uses "pwquality" to enforce the password complexity rules in the password-auth file with the following command:
 
@@ -23,5 +22,3 @@ fixtext: |-
     Add the following line to the "/etc/pam.d/password-auth" file (or modify the line to have the required value):
 
     password required pam_pwquality.so
-
-

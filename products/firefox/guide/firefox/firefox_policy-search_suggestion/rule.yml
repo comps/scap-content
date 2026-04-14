@@ -27,4 +27,4 @@ template:
     vars:
         name: Disable search suggestion
         policies:
-          - {path: "policies", parameter: "SearchSuggestEnabled", value: false}
+            - {path: "policies", parameter: "SearchSuggestEnabled", value: false}

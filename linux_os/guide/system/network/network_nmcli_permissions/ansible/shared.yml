@@ -18,8 +18,8 @@
     no_extra_spaces: yes
     create: yes
   loop:
-    - { option: 'Identity', value: 'default' }
-    - { option: 'Action', value: 'org.freedesktop.NetworkManager.*' }
-    - { option: 'ResultAny', value: 'no' }
-    - { option: 'ResultInactive', value: 'no' }
-    - { option: 'ResultActive', value: 'auth_admin' }
+    - {option: 'Identity', value: 'default'}
+    - {option: 'Action', value: 'org.freedesktop.NetworkManager.*'}
+    - {option: 'ResultAny', value: 'no'}
+    - {option: 'ResultInactive', value: 'no'}
+    - {option: 'ResultActive', value: 'auth_admin'}

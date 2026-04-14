@@ -49,13 +49,13 @@ warnings:
         {{{ openshift_cluster_setting("/apis/operator.openshift.io/v1/namespaces/openshift-ingress-operator/ingresscontrollers/default") | indent(8) }}}
 
 template:
-template: 
+template:
     name: yamlfile_value
-    vars: 
+    vars:
         ocp_data: "true"
         filepath: "/apis/operator.openshift.io/v1/namespaces/openshift-ingress-operator/ingresscontrollers/default"
         yamlpath: ".spec.tlsSecurityProfile.custom.minTLSVersion"
         check_existence: "any_exist"
-        values: 
+        values:
             - value: "^(?!VersionTLS10|VersionTLS11)"
               operation: "pattern match"

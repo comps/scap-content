@@ -21,5 +21,3 @@ fixtext: |-
     The opensc package can be installed with the following command:
 
     $ sudo dnf install opensc
-
-

@@ -79,4 +79,3 @@ selections:
     - '!no_nis_in_nsswitch'
     - '!service_chronyd_enabled'
     - '!audit_rules_immutable'
-

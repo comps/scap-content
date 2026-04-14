@@ -17,5 +17,3 @@ checktext: |-
 
 fixtext: |-
     Update each NFS mounted file system to use the "nosuid" option on file systems that are being imported via NFS.
-
-

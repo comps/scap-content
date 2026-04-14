@@ -17,5 +17,3 @@ fixtext: |-
     Change the mode of the file "/etc/group" to "0644" by running the following command:
 
     $ sudo chmod 0644 /etc/group
-
-

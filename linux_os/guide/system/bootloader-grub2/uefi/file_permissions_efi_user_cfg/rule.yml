@@ -1,7 +1,6 @@
 documentation_complete: true
 
 
-
 title: 'Verify {{{ grub2_uefi_boot_path }}}/user.cfg Permissions'
 
 description: |-

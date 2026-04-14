@@ -179,10 +179,12 @@ controls:
 
     - id: 164.308(a)(3)
       title: 'Workforce security'
-      description: Implement policies and procedures to ensure that all members of its workforce have
-          appropriate access to electronic protected health information, as provided under paragraph
-          (a)(4) of this section, and to prevent those workforce members who do not have access under
-          paragraph (a)(4) of this section from obtaining access to electronic protected health information.
+      description: >-
+        Implement policies and procedures to ensure that all members of its workforce have
+        appropriate access to electronic protected health information, as provided under paragraph
+        (a)(4) of this section, and to prevent those workforce members who do not have access under
+        paragraph (a)(4) of this section from obtaining access to electronic protected health
+        information.
       levels:
           - base
       rules:
@@ -215,8 +217,9 @@ controls:
 
     - id: 164.308(a)(3)(ii)(A)
       title: 'Authorization and/or supervision (Addressable)'
-      description: 'Implement procedures for the authorization and/or supervision of workforce members
-          who work with electronic protected health information or in locations where it might be accessed.'
+      description: >-
+        Implement procedures for the authorization and/or supervision of workforce members who work
+        with electronic protected health information or in locations where it might be accessed.
       levels:
           - required
       rules:
@@ -1427,7 +1430,9 @@ controls:
       status: automated
 
     - id: 164.312(c)(2)
-      title: 'Implementation specification: Mechanism to authenticate electronic protected health information'
+      title: >-
+        Implementation specification: Mechanism to authenticate electronic protected health
+        information
       description: |-
           Implement electronic mechanisms to corroborate that electronic protected health information has not been
           altered or destroyed in an unauthorized manner.

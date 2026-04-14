@@ -19,5 +19,3 @@ fixtext: |-
     Configure the group owner of the directory "/var/log" to "root" by running the following command:
 
     $ sudo chgrp root /var/log
-
-

@@ -19,5 +19,3 @@ fixtext: |-
     Remove the tftp package with the following command:
 
     $ sudo dnf remove tftp
-
-

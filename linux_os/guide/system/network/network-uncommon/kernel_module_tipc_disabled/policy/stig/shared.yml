@@ -23,5 +23,3 @@ fixtext: |-
 
     install tipc /bin/false
     blacklist tipc
-
-

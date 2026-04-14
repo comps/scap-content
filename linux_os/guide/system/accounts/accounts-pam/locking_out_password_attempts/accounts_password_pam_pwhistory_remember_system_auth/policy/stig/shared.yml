@@ -25,4 +25,3 @@ fixtext: |-
     Add the following line in "/etc/pam.d/system-auth" (or modify the line to have the required value):
 
     password required pam_pwhistory.so use_authtok remember=5 retry=3
-

@@ -41,4 +41,3 @@ template:
       - value: security-profiles-operator\.v.*
         operation: pattern match
         type: string
-

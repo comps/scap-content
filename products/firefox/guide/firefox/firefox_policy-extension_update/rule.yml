@@ -30,4 +30,4 @@ template:
     vars:
         name: Disable addon and plugin automatic update
         policies:
-          - {path: "policies", parameter: "ExtensionUpdate", value: false}
+            - {path: "policies", parameter: "ExtensionUpdate", value: false}

@@ -2,7 +2,7 @@ documentation_complete: true
 
 title: 'Ensure Infrastructure Nodes are Distributed Across Three Failure Zones'
 
-description: |- 
+description: |-
     Distributing Kubernetes infrastructure nodes across failure zones enhances security by mitigating
     the risk of a single point of failure and reducing the impact of infrastructure service
     inavailability or attacks targeting a specific zone.

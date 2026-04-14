@@ -20,4 +20,4 @@ template:
     vars:
         name: Disable form fill history.
         policies:
-          - {path: "policies", parameter: "DisableFormHistory", value: true}
+            - {path: "policies", parameter: "DisableFormHistory", value: true}

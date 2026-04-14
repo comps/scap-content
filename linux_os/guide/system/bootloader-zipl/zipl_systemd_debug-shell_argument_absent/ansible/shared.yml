@@ -35,4 +35,6 @@
         backrefs: yes
         regexp: '^(.*)\s*systemd.debug-shell\b\S*(.*)$'
         line: '\1\2'
-      when: cmdline_stat is defined and cmdline_stat.stat.exists and cmdline_find is defined and cmdline_find.matched >= 1
+      when: >-
+        cmdline_stat is defined and cmdline_stat.stat.exists and cmdline_find is defined and
+        cmdline_find.matched >= 1

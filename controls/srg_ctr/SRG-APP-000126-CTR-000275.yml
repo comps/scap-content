@@ -8,4 +8,3 @@ controls:
   - fips_mode_enabled_on_all_nodes
   - audit_log_forwarding_uses_tls
   status: automated
-

@@ -41,6 +41,6 @@ ocil: |-
 
 warnings:
     - general:
-        A remediation is not provided for this rule as each system has unique requirements.
+          A remediation is not provided for this rule as each system has unique requirements.
 
 platform: sssd-ldap

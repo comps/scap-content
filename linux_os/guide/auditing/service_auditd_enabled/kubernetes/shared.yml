@@ -1,5 +1,6 @@
 ---
-# platform = multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_rhcos,multi_platform_almalinux
+# platform =
+# multi_platform_rhel,multi_platform_fedora,multi_platform_ol,multi_platform_rhv,multi_platform_rhcos,multi_platform_almalinux
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 spec:
@@ -8,5 +9,5 @@ spec:
       version: 3.1.0
     systemd:
       units:
-      - name: auditd.service
-        enabled: true
+        - name: auditd.service
+          enabled: true

@@ -19,8 +19,8 @@
     create: yes
     mode: 0600
   with_items:
-    - { section: sssd, option: domains, value: default}
-    - { section: domain/default, option: id_provider, value: files }
+    - {section: sssd, option: domains, value: default}
+    - {section: domain/default, option: id_provider, value: files}
   when:
     - test_grep_domain.stdout is defined
     - test_grep_domain.stdout | length < 1

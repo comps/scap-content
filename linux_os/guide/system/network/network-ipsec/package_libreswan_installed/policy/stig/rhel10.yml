@@ -21,5 +21,3 @@ fixtext: |-
     Install the libreswan service (if it is not already installed) with the following command:
 
     $ sudo dnf install libreswan
-
-

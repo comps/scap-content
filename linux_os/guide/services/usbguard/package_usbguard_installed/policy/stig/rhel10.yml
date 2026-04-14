@@ -35,4 +35,3 @@ fixtext: |-
     $ sudo systemctl status usbguard
 
     Note: usbguard will need to be configured to allow authorized devices once it is enabled on {{{ full_name }}}.
-

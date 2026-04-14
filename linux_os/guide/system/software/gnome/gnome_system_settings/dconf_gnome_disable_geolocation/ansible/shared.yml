@@ -40,4 +40,6 @@
 
 - name: Dconf Update
   ansible.builtin.command: dconf update
-  when: result_ini1 is changed or result_ini2 is changed or result_lineinfile1 is changed or result_lineinfile2 is changed
+  when: >-
+    result_ini1 is changed or result_ini2 is changed or result_lineinfile1 is changed or
+    result_lineinfile2 is changed

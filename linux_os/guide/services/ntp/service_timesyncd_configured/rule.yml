@@ -23,7 +23,7 @@ platform: package[systemd]
 
 identifiers:
     cce@sle12: CCE-92374-8
-    cce@sle15: CCE-92538-8 
+    cce@sle15: CCE-92538-8
 
 references:
     cis@sle12: 2.2.1.2

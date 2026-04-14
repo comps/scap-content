@@ -5,7 +5,6 @@ vuldiscussion: |-
     If an account has an empty password, anyone could log on and run commands with the privileges of that account. Accounts with empty passwords should never be used in operational environments.
 
 
-
 checktext: |-
     Verify that {{{ full_name }}} remote access using SSH prevents logging on with a blank password with the following command:
 
@@ -23,5 +22,3 @@ fixtext: |-
     Restart the SSH daemon for the settings to take effect:
 
     $ sudo systemctl restart sshd.service
-
-

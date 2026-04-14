@@ -18,7 +18,6 @@ rationale: |-
 severity: unknown
 
 
-
 identifiers:
     cce@rhel8: CCE-83387-1
     cce@rhel9: CCE-90846-7

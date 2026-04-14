@@ -78,4 +78,3 @@ fixtext: |-
 
     To make the cryptographic settings effective for already running services and applications, restart the system:
     $ sudo reboot
-

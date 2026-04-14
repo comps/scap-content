@@ -2,7 +2,8 @@ documentation_complete: true
 
 title: 'BSI SYS.1.1 and SYS.1.3'
 
-reference: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Grundschutz/International/bsi_it_gs_comp_2022.pdf
+reference: >-
+  https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Grundschutz/International/bsi_it_gs_comp_2022.pdf
 
 metadata:
     SMEs:

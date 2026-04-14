@@ -17,4 +17,3 @@ checktext: |-
 
 fixtext: |-
     Upgrade to a supported version of {{{ full_name }}}.
-

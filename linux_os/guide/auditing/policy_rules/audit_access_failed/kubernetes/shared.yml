@@ -12,4 +12,3 @@
 -a always,exit -F arch=b64 -S open,openat,openat2,open_by_handle_at -F exit=-EPERM -F auid>={{{ auid }}} -F auid!=unset -F key=unsuccessful-access
 {{% endmacro %}}
 {{{ kubernetes_machine_config_file(path='/etc/audit/rules.d/30-ospp-v42-3-access-failed.rules', file_permissions_mode='0600', source=file_contents_audit_access_failed()) }}}
-

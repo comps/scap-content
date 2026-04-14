@@ -5,7 +5,9 @@ title: 'Ensure All Groups on the System Have Unique Group Names'
 
 description: 'Change the group name or delete groups, so each has a unique name.'
 
-rationale: 'To assure accountability and prevent unauthenticated access, groups must be identified uniquely to prevent potential misuse and compromise of the system.'
+rationale: >-
+  To assure accountability and prevent unauthenticated access, groups must be identified uniquely
+  to prevent potential misuse and compromise of the system.
 
 severity: medium
 

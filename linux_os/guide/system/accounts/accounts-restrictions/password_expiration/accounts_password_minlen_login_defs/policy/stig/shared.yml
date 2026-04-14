@@ -18,7 +18,6 @@ checktext: |-
     If the command does not return a "PASS_MIN_LEN" value of "15" or greater, does not return a line, or the line is commented out, this is a finding.
 
 
-
 vuldiscussion: |-
     The shorter the password, the lower the number of possible combinations that need to be tested before the password is compromised.
 

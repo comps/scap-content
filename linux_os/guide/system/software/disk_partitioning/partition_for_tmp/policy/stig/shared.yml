@@ -15,4 +15,3 @@ checktext: |-
 
 fixtext: |-
     Migrate the "/tmp" path onto a separate file system.
-

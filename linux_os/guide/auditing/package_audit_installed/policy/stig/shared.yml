@@ -9,7 +9,6 @@ vuldiscussion: |-
     Associating event types with detected events in audit logs provides a means of investigating an attack, recognizing resource utilization or capacity thresholds, or identifying an improperly configured {{{ full_name }}} system.
 
 
-
 checktext: |-
     Verify that the {{{ full_name }}} audit service package is installed.
 
@@ -27,5 +26,3 @@ fixtext: |-
     Install the audit service package (if the audit service is not already installed) with the following command:
 
     $ sudo dnf install audit
-
-

@@ -22,7 +22,7 @@ metadata:
   namespace: openshift-file-integrity
 spec:
   targetNamespaces:
-  - openshift-file-integrity
+    - openshift-file-integrity
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription

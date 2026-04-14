@@ -19,4 +19,3 @@ fixtext: |-
     Configure {{{ full_name }}} to enforce session lock after a period of 15 minutes of inactivity by adding the following line to the "/etc/tmux.conf" global configuration file:
 
     set -g lock-after-time 900
-

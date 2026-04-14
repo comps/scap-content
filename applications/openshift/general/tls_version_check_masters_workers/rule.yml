@@ -1,4 +1,3 @@
-
 platform: ocp4-node
 
 title: Ensure TLS v1.2 is minimum for Openshift master and worker nodes
@@ -49,5 +48,5 @@ template:
     filepath: /etc/kubernetes/kubelet.conf
     yamlpath: ".tlsMinVersion"
     values:
-    - value: 'VersionTLS1[2-9]{1}'
-      operation: 'pattern match'
+      - value: 'VersionTLS1[2-9]{1}'
+        operation: 'pattern match'

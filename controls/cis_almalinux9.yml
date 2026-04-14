@@ -729,7 +729,8 @@ controls:
           - dconf_gnome_disable_automount_open
 
     - id: 1.8.7
-      title: Ensure GDM disabling automatic mounting of removable media is not overridden (Automated)
+      title: >-
+        Ensure GDM disabling automatic mounting of removable media is not overridden (Automated)
       levels:
           - l1_server
           - l2_workstation
@@ -2234,7 +2235,9 @@ controls:
           - aide_periodic_cron_checking
 
     - id: 6.1.3
-      title: Ensure cryptographic mechanisms are used to protect the integrity of audit tools (Automated)
+      title: >-
+        Ensure cryptographic mechanisms are used to protect the integrity of audit tools
+        (Automated)
       levels:
           - l1_server
           - l1_workstation
@@ -2598,7 +2601,9 @@ controls:
           - audit_rules_usergroup_modification_shadow
 
     - id: 6.3.3.9
-      title: Ensure discretionary access control permission modification events are collected (Automated)
+      title: >-
+        Ensure discretionary access control permission modification events are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2660,7 +2665,8 @@ controls:
           - audit_rules_file_deletion_events_unlinkat
 
     - id: 6.3.3.14
-      title: Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
+      title: >-
+        Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2670,7 +2676,9 @@ controls:
           - audit_rules_mac_modification_usr_share
 
     - id: 6.3.3.15
-      title: Ensure successful and unsuccessful attempts to use the chcon command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the chcon command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2679,7 +2687,9 @@ controls:
           - audit_rules_execution_chcon
 
     - id: 6.3.3.16
-      title: Ensure successful and unsuccessful attempts to use the setfacl command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the setfacl command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2688,7 +2698,9 @@ controls:
           - audit_rules_execution_setfacl
 
     - id: 6.3.3.17
-      title: Ensure successful and unsuccessful attempts to use the chacl command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the chacl command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2697,7 +2709,9 @@ controls:
           - audit_rules_execution_chacl
 
     - id: 6.3.3.18
-      title: Ensure successful and unsuccessful attempts to use the usermod command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the usermod command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation

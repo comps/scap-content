@@ -24,5 +24,3 @@ fixtext: |-
     Restart the SSH daemon for the changes to take effect:
 
     $ sudo systemctl restart sshd.service
-
-

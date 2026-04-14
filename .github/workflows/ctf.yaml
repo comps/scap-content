@@ -1,14 +1,17 @@
 name: Gating
 on:
   pull_request:
-    branches: [ master, 'stabilization*' ]
+    branches: [master, 'stabilization*']
 jobs:
   content-test-filtering:
     name: Content Test Filtering on Ubuntu Latest
     runs-on: ubuntu-latest
     steps:
       - name: Install Deps
-        run: sudo apt-get update && sudo apt-get install git python3-jinja2 python3-yaml python3-setuptools python3-deepdiff python3-git python3-github python3-requests xmldiff python3-setuptools
+        run: >-
+          sudo apt-get update && sudo apt-get install git python3-jinja2 python3-yaml
+          python3-setuptools python3-deepdiff python3-git python3-github python3-requests xmldiff
+          python3-setuptools
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
         with:
@@ -20,7 +23,9 @@ jobs:
       - name: Find forking point
         env:
           BASE_BRANCH: ${{ github.base_ref }}
-        run: echo "FORK_POINT=$(git merge-base origin/$BASE_BRANCH ${{ github.event.pull_request.head.sha }})" >> $GITHUB_OUTPUT
+        run: >-
+          echo "FORK_POINT=$(git merge-base origin/$BASE_BRANCH ${{
+          github.event.pull_request.head.sha }})" >> $GITHUB_OUTPUT
         id: fork_point
       - name: Checkout fork point
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v4
@@ -33,7 +38,10 @@ jobs:
           repository: ComplianceAsCode/content-test-filtering
           path: ctf
       - name: Detect content changes in the PR
-        run: python3 ./ctf/content_test_filtering.py pr --base ${{ steps.fork_point.outputs.FORK_POINT }} --remote_repo ${{ github.server_url }}/${{ github.repository }} --verbose --rule --output json ${{ github.event.pull_request.number }} > output.json
+        run: >-
+          python3 ./ctf/content_test_filtering.py pr --base ${{ steps.fork_point.outputs.FORK_POINT
+          }} --remote_repo ${{ github.server_url }}/${{ github.repository }} --verbose --rule
+          --output json ${{ github.event.pull_request.number }} > output.json
       - name: Test if there are no content changes
         run: echo "CTF_OUTPUT_SIZE=$(stat --printf="%s" output.json)" >> $GITHUB_OUTPUT
         id: ctf

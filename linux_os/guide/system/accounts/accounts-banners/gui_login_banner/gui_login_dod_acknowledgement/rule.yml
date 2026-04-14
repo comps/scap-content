@@ -1,7 +1,8 @@
 documentation_complete: true
 
 
-title: 'Display the Standard Mandatory DoD Notice and Consent Banner until Explicit Acknowledgement'
+title: >-
+  Display the Standard Mandatory DoD Notice and Consent Banner until Explicit Acknowledgement
 
 description: |-
     Display of a standardized and approved use notification before granting access to the SUSE operating system ensures privacy and security notification verbiage used is consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.<br/><br/>
@@ -61,7 +62,8 @@ references:
     stigid@sle12: SLES-12-010020
     stigid@sle15: SLES-15-010050
 
-ocil_clause: 'the GNOME environment does not display the standard mandatory DoD notice and consent banner'
+ocil_clause: >-
+  the GNOME environment does not display the standard mandatory DoD notice and consent banner
 
 ocil: |-
     Verify the SUSE operating system displays the Standard Mandatory DoD Notice and Consent Banner until users acknowledge the usage conditions and take explicit actions to log on via the local GUI.

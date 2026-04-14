@@ -2,7 +2,7 @@ documentation_complete: true
 
 title: 'Ensure there are Three Machines in the Master MachineConfigPool'
 
-description: |- 
+description: |-
     To ensure, that the OpenShift control plane stays accessible on outage of a single master node,
     three control plane nodes are required.
 

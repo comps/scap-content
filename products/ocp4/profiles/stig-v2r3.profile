@@ -10,7 +10,8 @@ metadata:
         - rhmdnd
         - yuumasato
 
-reference: https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-x_V2R3_STIG.zip
+reference: >-
+  https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-x_V2R3_STIG.zip
 
 title: 'DISA STIG for Red Hat OpenShift Container Platform 4 - Platform level'
 
@@ -18,8 +19,9 @@ description: |-
     This profile contains configuration checks that align to the DISA STIG for
     Red Hat OpenShift Container Platform 4.
 
-filter_rules: '"ocp4-node" not in platform and "ocp4-master-node" not in platform and "ocp4-node-on-sdn"
-    not in platform and "ocp4-node-on-ovn" not in platform'
+filter_rules: >-
+  "ocp4-node" not in platform and "ocp4-master-node" not in platform and "ocp4-node-on-sdn" not in
+  platform and "ocp4-node-on-ovn" not in platform
 
 selections:
     - stig_ocp4:all

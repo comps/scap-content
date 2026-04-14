@@ -1,4 +1,3 @@
-
 title: Ensure that File Integrity Operator is scanning the cluster
 
 platform: not aarch64_arch and not ocp4-on-hypershift

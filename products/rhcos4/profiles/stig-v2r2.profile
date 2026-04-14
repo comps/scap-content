@@ -9,7 +9,8 @@ metadata:
 
 status: deprecated
 
-reference: https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-12_V2R2_STIG.zip
+reference: >-
+  https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RH_OpenShift_Container_Platform_4-12_V2R2_STIG.zip
 
 title: 'DISA STIG for Red Hat Enterprise Linux CoreOS'
 

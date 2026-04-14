@@ -55,7 +55,8 @@ selections:
     - '!audit_rules_dac_modification_fchmodat2'
     - '!ldap_client_tls_cacertpath'
     - '!package_sequoia-sq_installed'
-    # RHEL9 unified the paths for grub2 files. These rules are selected in control file by R5 and R29.
+    # RHEL9 unified the paths for grub2 files. These rules are selected in control file by R5 and
+    # R29.
     - '!file_groupowner_efi_grub2_cfg'
     - '!file_owner_efi_grub2_cfg'
     - '!file_permissions_efi_grub2_cfg'

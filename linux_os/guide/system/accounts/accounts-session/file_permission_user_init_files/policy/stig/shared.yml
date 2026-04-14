@@ -23,4 +23,3 @@ fixtext: |-
     Note: The example will be for the wadea user, who has a home directory of "/home/wadea".
 
     $ sudo chmod 0740 /home/wadea/.&ltINIT_FILE&gt
-

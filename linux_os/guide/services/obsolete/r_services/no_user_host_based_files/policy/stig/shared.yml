@@ -15,5 +15,3 @@ fixtext: |-
     Remove any found ".shosts" files from the system.
 
     $ sudo rm /[path]/[to]/[file]/.shosts
-
-

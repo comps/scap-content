@@ -5,7 +5,6 @@ vuldiscussion: |-
     USB mass storage permits easy introduction of unknown devices, thereby facilitating malicious activity.
 
 
-
 checktext: |-
     Verify that {{{ full_name }}} disables the ability to load the USB Storage kernel module with the following command:
 
@@ -21,5 +20,3 @@ fixtext: |-
 
     install usb-storage /bin/false
     blacklist usb-storage
-
-

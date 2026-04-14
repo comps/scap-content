@@ -1,4 +1,3 @@
-
 title: The authorization-mode cannot be AlwaysAllow
 
 {{% set default_jqfilter = '[.data."config.yaml" | fromjson]' %}}

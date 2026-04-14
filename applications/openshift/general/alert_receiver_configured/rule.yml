@@ -1,4 +1,3 @@
-
 title: Ensure the alert receiver is configured
 
 description: |-
@@ -34,5 +33,3 @@ ocil: |-
     Make sure that alert receiver has configured to send alerts to at least one real time external notification system.
 
 severity: medium
-
-

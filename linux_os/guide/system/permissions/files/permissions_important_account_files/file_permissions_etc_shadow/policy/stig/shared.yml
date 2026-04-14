@@ -17,5 +17,3 @@ fixtext: |-
     Change the mode of the file "/etc/shadow" to "0000" by running the following command:
 
     $ sudo chmod 0000 /etc/shadow
-
-

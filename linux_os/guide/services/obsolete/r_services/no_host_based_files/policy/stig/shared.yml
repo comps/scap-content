@@ -15,5 +15,3 @@ fixtext: |-
     Remove any found "shosts.equiv" files from the system.
 
     $ sudo rm /[path]/[to]/[file]/shosts.equiv
-
-

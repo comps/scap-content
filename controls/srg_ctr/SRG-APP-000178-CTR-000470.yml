@@ -17,4 +17,3 @@ controls:
     and obtain an OAuth token (or a x.509 certificate) in order send requests to the
     API server. In this way, the user's authentication credentials (username/password)
     are protected from discovery.
-

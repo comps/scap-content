@@ -17,7 +17,6 @@ vuldiscussion: |-
     Note that a port number was given as there is no standard port for RELP.
 
 
-
 checktext: |-
     Verify that {{{ full_name }}} audit system offloads audit records onto a different system or media from the system being audited via rsyslog using TCP with the following command:
 
@@ -33,5 +32,3 @@ fixtext: |-
     Configure {{{ full_name }}} to offload audit records onto a different system or media from the system being audited via TCP using rsyslog by specifying the remote logging server in "/etc/rsyslog.conf"" or "/etc/rsyslog.d/[customfile].conf" with the name or IP address of the log aggregation server.
 
     *.* @@[remoteloggingserver]:[port]"
-
-

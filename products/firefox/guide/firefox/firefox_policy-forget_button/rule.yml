@@ -27,4 +27,4 @@ template:
     vars:
         name: Disable Forget button
         policies:
-          - {path: "policies", parameter: "DisableForgetButton", value: true}
+            - {path: "policies", parameter: "DisableForgetButton", value: true}

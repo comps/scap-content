@@ -33,5 +33,3 @@ fixtext: |-
     Then run the following command to load the newly created rule(s):
 
     $ sudo firewall-cmd --reload
-
-

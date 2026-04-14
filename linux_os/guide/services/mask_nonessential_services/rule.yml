@@ -13,10 +13,10 @@ description: |-
     incoming packets from remote locations.
 
 rationale:
-    Services listening on the system pose a potential risk as an attack 
-    vector. These services should be reviewed, and if not required, the 
-    service should be stopped, and the package containing the service should 
-    be removed. If required packages have a dependency, the service should 
+    Services listening on the system pose a potential risk as an attack
+    vector. These services should be reviewed, and if not required, the
+    service should be stopped, and the package containing the service should
+    be removed. If required packages have a dependency, the service should
     be stopped and masked to reduce the attack surface of the system.
 
 severity: low

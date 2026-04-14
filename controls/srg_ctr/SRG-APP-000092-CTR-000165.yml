@@ -9,4 +9,3 @@ controls:
   - coreos_audit_option
   - coreos_audit_backlog_limit_kernel_argument
   status: automated
-

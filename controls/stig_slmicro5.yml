@@ -31,8 +31,9 @@ controls:
     - id: SLEM-05-211020
       levels:
           - medium
-      title: SLEM 5 must display the Standard Mandatory DOD Notice and Consent Banner before granting
-          any local or remote connection to the system.
+      title: >-
+        SLEM 5 must display the Standard Mandatory DOD Notice and Consent Banner before granting
+        any local or remote connection to the system.
       rules:
           - banner_etc_issue
           - login_banner_text=dod_banners
@@ -50,8 +51,9 @@ controls:
     - id: SLEM-05-212010
       levels:
           - high
-      title: SLEM 5 with a basic input/output system (BIOS) must require authentication upon booting
-          into single-user and maintenance modes.
+      title: >-
+        SLEM 5 with a basic input/output system (BIOS) must require authentication upon booting
+        into single-user and maintenance modes.
       rules:
           - grub2_password
       status: automated
@@ -59,8 +61,9 @@ controls:
     - id: SLEM-05-212015
       levels:
           - high
-      title: SLEM 5 with Unified Extensible Firmware Interface (UEFI) implemented must require authentication
-          upon booting into single-user mode and maintenance.
+      title: >-
+        SLEM 5 with Unified Extensible Firmware Interface (UEFI) implemented must require
+        authentication upon booting into single-user mode and maintenance.
       rules:
           - grub2_uefi_password
       status: automated
@@ -84,8 +87,9 @@ controls:
     - id: SLEM-05-213020
       levels:
           - medium
-      title: Address space layout randomization (ASLR) must be implemented by SLEM 5 to protect memory
-          from unauthorized code execution.
+      title: >-
+        Address space layout randomization (ASLR) must be implemented by SLEM 5 to protect memory
+        from unauthorized code execution.
       rules:
           - sysctl_kernel_randomize_va_space
       status: automated
@@ -93,7 +97,8 @@ controls:
     - id: SLEM-05-213025
       levels:
           - medium
-      title: SLEM 5 must implement kptr-restrict to prevent the leaking of internal kernel addresses.
+      title: >-
+        SLEM 5 must implement kptr-restrict to prevent the leaking of internal kernel addresses.
       rules:
           - sysctl_kernel_kptr_restrict
       status: automated
@@ -117,7 +122,9 @@ controls:
     - id: SLEM-05-214020
       levels:
           - medium
-      title: SLEM 5 must remove all outdated software components after updated versions have been installed.
+      title: >-
+        SLEM 5 must remove all outdated software components after updated versions have been
+        installed.
       rules:
           - clean_components_post_updating
       status: automated
@@ -141,8 +148,9 @@ controls:
     - id: SLEM-05-231010
       levels:
           - medium
-      title: A separate file system must be used for SLEM 5 user home directories (such as /home or an
-          equivalent).
+      title: >-
+        A separate file system must be used for SLEM 5 user home directories (such as /home or an
+        equivalent).
       rules:
           - partition_for_home
       status: automated
@@ -166,8 +174,9 @@ controls:
     - id: SLEM-05-231025
       levels:
           - medium
-      title: SLEM 5 file systems that are being imported via Network File System (NFS) must be mounted
-          to prevent files with the setuid and setgid bit set from being executed.
+      title: >-
+        SLEM 5 file systems that are being imported via Network File System (NFS) must be mounted
+        to prevent files with the setuid and setgid bit set from being executed.
       rules:
           - mount_option_nosuid_remote_filesystems
       status: automated
@@ -175,8 +184,9 @@ controls:
     - id: SLEM-05-231030
       levels:
           - medium
-      title: SLEM 5 file systems that are being imported via Network File System (NFS) must be mounted
-          to prevent binary files from being executed.
+      title: >-
+        SLEM 5 file systems that are being imported via Network File System (NFS) must be mounted
+        to prevent binary files from being executed.
       rules:
           - mount_option_noexec_remote_filesystems
       status: automated
@@ -184,8 +194,9 @@ controls:
     - id: SLEM-05-231035
       levels:
           - medium
-      title: SLEM 5 file systems that are used with removable media must be mounted to prevent files
-          with the setuid and setgid bit set from being executed.
+      title: >-
+        SLEM 5 file systems that are used with removable media must be mounted to prevent files
+        with the setuid and setgid bit set from being executed.
       rules:
           - mount_option_nosuid_removable_partitions
       status: automated
@@ -193,8 +204,10 @@ controls:
     - id: SLEM-05-231040
       levels:
           - high
-      title: All SLEM 5 persistent disk partitions must implement cryptographic mechanisms to prevent
-          unauthorized disclosure or modification of all information that requires at-rest protection.
+      title: >-
+        All SLEM 5 persistent disk partitions must implement cryptographic mechanisms to prevent
+        unauthorized disclosure or modification of all information that requires at-rest
+        protection.
       rules:
           - encrypt_partitions
       status: automated
@@ -202,8 +215,9 @@ controls:
     - id: SLEM-05-231045
       levels:
           - medium
-      title: SLEM 5 file systems that contain user home directories must be mounted to prevent files
-          with the setuid and setgid bit set from being executed.
+      title: >-
+        SLEM 5 file systems that contain user home directories must be mounted to prevent files
+        with the setuid and setgid bit set from being executed.
       rules:
           - mount_option_home_nosuid
       status: automated
@@ -219,7 +233,9 @@ controls:
     - id: SLEM-05-232010
       levels:
           - medium
-      title: SLEM 5 must have directories that contain system commands set to a mode of 755 or less permissive.
+      title: >-
+        SLEM 5 must have directories that contain system commands set to a mode of 755 or less
+        permissive.
       rules:
           - dir_permissions_binary_dirs
       status: automated
@@ -251,7 +267,8 @@ controls:
     - id: SLEM-05-232030
       levels:
           - medium
-      title: All SLEM 5 local interactive user home directories must have mode 750 or less permissive.
+      title: >-
+        All SLEM 5 local interactive user home directories must have mode 750 or less permissive.
       rules:
           - file_permissions_home_directories
       status: automated
@@ -363,8 +380,9 @@ controls:
     - id: SLEM-05-232100
       levels:
           - medium
-      title: All SLEM 5 local interactive user home directories must be group-owned by the home directory
-          owner's primary group.
+      title: >-
+        All SLEM 5 local interactive user home directories must be group-owned by the home
+        directory owner's primary group.
       rules:
           - file_groupownership_home_directories
       status: automated
@@ -372,8 +390,9 @@ controls:
     - id: SLEM-05-232105
       levels:
           - medium
-      title: All SLEM 5 world-writable directories must be group-owned by root, sys, bin, or an application
-          group.
+      title: >-
+        All SLEM 5 world-writable directories must be group-owned by root, sys, bin, or an
+        application group.
       rules:
           - dir_perms_world_writable_system_owned_group
       status: automated
@@ -397,8 +416,9 @@ controls:
     - id: SLEM-05-232120
       levels:
           - medium
-      title: SLEM 5 must generate error messages that provide information necessary for corrective actions
-          without revealing information that could be exploited by adversaries.
+      title: >-
+        SLEM 5 must generate error messages that provide information necessary for corrective
+        actions without revealing information that could be exploited by adversaries.
       rules:
           - permissions_local_var_log
       status: automated
@@ -406,9 +426,10 @@ controls:
     - id: SLEM-05-251010
       levels:
           - medium
-      title: SLEM 5 must be configured to prohibit or restrict the use of functions, ports, protocols,
-          and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category
-          Assignments List (CAL) and vulnerability assessments.
+      title: >-
+        SLEM 5 must be configured to prohibit or restrict the use of functions, ports, protocols,
+        and/or services as defined in the Ports, Protocols, and Services Management (PPSM) Category
+        Assignments List (CAL) and vulnerability assessments.
       rules:
           - service_firewalld_enabled
       status: automated
@@ -416,8 +437,9 @@ controls:
     - id: SLEM-05-252010
       levels:
           - medium
-      title: SLEM 5 clock must, for networked systems, be synchronized to an authoritative DOD time source
-          at least every 24 hours.
+      title: >-
+        SLEM 5 clock must, for networked systems, be synchronized to an authoritative DOD time
+        source at least every 24 hours.
       rules:
           - chronyd_or_ntpd_set_maxpoll
           - chronyd_specify_remote_server
@@ -428,7 +450,8 @@ controls:
     - id: SLEM-05-252015
       levels:
           - medium
-      title: SLEM 5 must not have network interfaces in promiscuous mode unless approved and documented.
+      title: >-
+        SLEM 5 must not have network interfaces in promiscuous mode unless approved and documented.
       rules:
           - network_sniffer_disabled
       status: automated
@@ -444,7 +467,9 @@ controls:
     - id: SLEM-05-253015
       levels:
           - medium
-      title: SLEM 5 must not forward Internet Protocol version 4 (IPv4) source-routed packets by default.
+      title: >-
+        SLEM 5 must not forward Internet Protocol version 4 (IPv4) source-routed packets by
+        default.
       rules:
           - sysctl_net_ipv4_conf_default_accept_source_route
       status: automated
@@ -452,8 +477,9 @@ controls:
     - id: SLEM-05-253020
       levels:
           - medium
-      title: SLEM 5 must prevent Internet Protocol version 4 (IPv4) Internet Control Message Protocol
-          (ICMP) redirect messages from being accepted.
+      title: >-
+        SLEM 5 must prevent Internet Protocol version 4 (IPv4) Internet Control Message Protocol
+        (ICMP) redirect messages from being accepted.
       rules:
           - sysctl_net_ipv4_conf_all_accept_redirects
       status: automated
@@ -461,8 +487,9 @@ controls:
     - id: SLEM-05-253025
       levels:
           - medium
-      title: SLEM 5 must not allow interfaces to accept Internet Protocol version 4 (IPv4) Internet Control
-          Message Protocol (ICMP) redirect messages by default.
+      title: >-
+        SLEM 5 must not allow interfaces to accept Internet Protocol version 4 (IPv4) Internet
+        Control Message Protocol (ICMP) redirect messages by default.
       rules:
           - sysctl_net_ipv4_conf_default_accept_redirects
       status: automated
@@ -470,8 +497,9 @@ controls:
     - id: SLEM-05-253030
       levels:
           - medium
-      title: SLEM 5 must not send Internet Protocol version 4 (IPv4) Internet Control Message Protocol
-          (ICMP) redirects.
+      title: >-
+        SLEM 5 must not send Internet Protocol version 4 (IPv4) Internet Control Message Protocol
+        (ICMP) redirects.
       rules:
           - sysctl_net_ipv4_conf_all_send_redirects
       status: automated
@@ -479,8 +507,9 @@ controls:
     - id: SLEM-05-253035
       levels:
           - medium
-      title: SLEM 5 must not allow interfaces to send Internet Protocol version 4 (IPv4) Internet Control
-          Message Protocol (ICMP) redirect messages by default.
+      title: >-
+        SLEM 5 must not allow interfaces to send Internet Protocol version 4 (IPv4) Internet
+        Control Message Protocol (ICMP) redirect messages by default.
       rules:
           - sysctl_net_ipv4_conf_default_send_redirects
       status: automated
@@ -488,8 +517,9 @@ controls:
     - id: SLEM-05-253040
       levels:
           - medium
-      title: SLEM 5 must not be performing Internet Protocol version 4 (IPv4) packet forwarding unless
-          the system is a router.
+      title: >-
+        SLEM 5 must not be performing Internet Protocol version 4 (IPv4) packet forwarding unless
+        the system is a router.
       rules:
           - sysctl_net_ipv4_ip_forward
       status: automated
@@ -513,7 +543,9 @@ controls:
     - id: SLEM-05-254015
       levels:
           - medium
-      title: SLEM 5 must not forward Internet Protocol version 6 (IPv6) source-routed packets by default.
+      title: >-
+        SLEM 5 must not forward Internet Protocol version 6 (IPv6) source-routed packets by
+        default.
       rules:
           - sysctl_net_ipv6_conf_default_accept_source_route
       status: automated
@@ -521,8 +553,9 @@ controls:
     - id: SLEM-05-254020
       levels:
           - medium
-      title: SLEM 5 must prevent Internet Protocol version 6 (IPv6) Internet Control Message Protocol
-          (ICMP) redirect messages from being accepted.
+      title: >-
+        SLEM 5 must prevent Internet Protocol version 6 (IPv6) Internet Control Message Protocol
+        (ICMP) redirect messages from being accepted.
       rules:
           - sysctl_net_ipv6_conf_all_accept_redirects
       status: automated
@@ -530,8 +563,9 @@ controls:
     - id: SLEM-05-254025
       levels:
           - medium
-      title: SLEM 5 must not allow interfaces to accept Internet Protocol version 6 (IPv6) Internet Control
-          Message Protocol (ICMP) redirect messages by default.
+      title: >-
+        SLEM 5 must not allow interfaces to accept Internet Protocol version 6 (IPv6) Internet
+        Control Message Protocol (ICMP) redirect messages by default.
       rules:
           - sysctl_net_ipv6_conf_default_accept_redirects
       status: automated
@@ -539,8 +573,9 @@ controls:
     - id: SLEM-05-254030
       levels:
           - medium
-      title: SLEM 5 must not be performing Internet Protocol version 6 (IPv6) packet forwarding unless
-          the system is a router.
+      title: >-
+        SLEM 5 must not be performing Internet Protocol version 6 (IPv6) packet forwarding unless
+        the system is a router.
       rules:
           - sysctl_net_ipv6_conf_all_forwarding
       status: automated
@@ -548,8 +583,9 @@ controls:
     - id: SLEM-05-254035
       levels:
           - medium
-      title: SLEM 5 must not be performing Internet Protocol version 6 (IPv6) packet forwarding by default
-          unless the system is a router.
+      title: >-
+        SLEM 5 must not be performing Internet Protocol version 6 (IPv6) packet forwarding by
+        default unless the system is a router.
       rules:
           - sysctl_net_ipv6_conf_default_forwarding
       status: automated
@@ -557,8 +593,9 @@ controls:
     - id: SLEM-05-255010
       levels:
           - high
-      title: SLEM 5 must have SSH installed to protect the confidentiality and integrity of transmitted
-          information.
+      title: >-
+        SLEM 5 must have SSH installed to protect the confidentiality and integrity of transmitted
+        information.
       rules:
           - package_openssh-server_installed
       status: automated
@@ -566,7 +603,9 @@ controls:
     - id: SLEM-05-255015
       levels:
           - high
-      title: SLEM 5 must use SSH to protect the confidentiality and integrity of transmitted information.
+      title: >-
+        SLEM 5 must use SSH to protect the confidentiality and integrity of transmitted
+        information.
       rules:
           - service_sshd_enabled
       status: automated
@@ -574,8 +613,9 @@ controls:
     - id: SLEM-05-255020
       levels:
           - medium
-      title: SLEM 5 must display the Standard Mandatory DOD Notice and Consent Banner before granting
-          access via SSH.
+      title: >-
+        SLEM 5 must display the Standard Mandatory DOD Notice and Consent Banner before granting
+        access via SSH.
       rules:
           - sshd_enable_warning_banner
       status: automated
@@ -592,8 +632,9 @@ controls:
     - id: SLEM-05-255030
       levels:
           - medium
-      title: SLEM 5 must be configured so that all network connections associated with SSH traffic terminate
-          after becoming unresponsive.
+      title: >-
+        SLEM 5 must be configured so that all network connections associated with SSH traffic
+        terminate after becoming unresponsive.
       rules:
           - sshd_set_keepalive
           - var_sshd_set_keepalive=1
@@ -602,8 +643,9 @@ controls:
     - id: SLEM-05-255035
       levels:
           - medium
-      title: SLEM 5 must be configured so that all network connections associated with SSH traffic are
-          terminated after 10 minutes of becoming unresponsive.
+      title: >-
+        SLEM 5 must be configured so that all network connections associated with SSH traffic are
+        terminated after 10 minutes of becoming unresponsive.
       rules:
           - sshd_set_idle_timeout
           - sshd_idle_timeout_value=10_minutes
@@ -612,8 +654,9 @@ controls:
     - id: SLEM-05-255040
       levels:
           - medium
-      title: SLEM 5 SSH daemon must disable forwarded remote X connections for interactive users, unless
-          to fulfill documented and validated mission requirements.
+      title: >-
+        SLEM 5 SSH daemon must disable forwarded remote X connections for interactive users, unless
+        to fulfill documented and validated mission requirements.
       rules:
           - sshd_disable_x11_forwarding
       status: automated
@@ -621,8 +664,9 @@ controls:
     - id: SLEM-05-255045
       levels:
           - high
-      title: SLEM 5 must implement DOD-approved encryption to protect the confidentiality of SSH remote
-          connections.
+      title: >-
+        SLEM 5 must implement DOD-approved encryption to protect the confidentiality of SSH remote
+        connections.
       rules:
           - sshd_use_approved_ciphers_ordered_stig
           - sshd_use_approved_ciphers
@@ -631,8 +675,9 @@ controls:
     - id: SLEM-05-255050
       levels:
           - high
-      title: SLEM 5 SSH daemon must be configured to only use Message Authentication Codes (MACs) employing
-          FIPS 140-2/140-3 approved cryptographic hash algorithms.
+      title: >-
+        SLEM 5 SSH daemon must be configured to only use Message Authentication Codes (MACs)
+        employing FIPS 140-2/140-3 approved cryptographic hash algorithms.
       rules:
           - sshd_use_approved_macs_ordered_stig
           - sshd_use_approved_macs
@@ -641,8 +686,9 @@ controls:
     - id: SLEM-05-255055
       levels:
           - high
-      title: SLEM 5 SSH server must be configured to use only FIPS 140-2/140-3 validated key exchange
-          algorithms.
+      title: >-
+        SLEM 5 SSH server must be configured to use only FIPS 140-2/140-3 validated key exchange
+        algorithms.
       rules:
           - sshd_use_approved_kex_ordered_stig
       status: automated
@@ -666,7 +712,9 @@ controls:
     - id: SLEM-05-255070
       levels:
           - medium
-      title: SLEM 5 must display the date and time of the last successful account logon upon an SSH logon.
+      title: >-
+        SLEM 5 must display the date and time of the last successful account logon upon an SSH
+        logon.
       rules:
           - sshd_print_last_log
       status: automated
@@ -674,7 +722,9 @@ controls:
     - id: SLEM-05-255075
       levels:
           - medium
-      title: SLEM 5 SSH daemon must be configured to not allow authentication using known hosts authentication.
+      title: >-
+        SLEM 5 SSH daemon must be configured to not allow authentication using known hosts
+        authentication.
       rules:
           - sshd_disable_user_known_hosts
       status: automated
@@ -682,7 +732,8 @@ controls:
     - id: SLEM-05-255080
       levels:
           - medium
-      title: SLEM 5 SSH daemon must perform strict mode checking of home directory configuration files.
+      title: >-
+        SLEM 5 SSH daemon must perform strict mode checking of home directory configuration files.
       rules:
           - sshd_enable_strictmodes
       status: automated
@@ -690,8 +741,9 @@ controls:
     - id: SLEM-05-255085
       levels:
           - medium
-      title: SLEM 5, for PKI-based authentication, must enforce authorized access to the corresponding
-          private key.
+      title: >-
+        SLEM 5, for PKI-based authentication, must enforce authorized access to the corresponding
+        private key.
       rules:
           - ssh_private_keys_have_passcode
       status: manual
@@ -715,7 +767,8 @@ controls:
     - id: SLEM-05-272010
       levels:
           - high
-      title: SLEM 5 must not allow unattended or automatic logon via the graphical user interface (GUI).
+      title: >-
+        SLEM 5 must not allow unattended or automatic logon via the graphical user interface (GUI).
       rules:
           - gnome_gdm_disable_unattended_automatic_login
       status: automated
@@ -739,7 +792,9 @@ controls:
     - id: SLEM-05-411010
       levels:
           - medium
-      title: All SLEM 5 local interactive user accounts, upon creation, must be assigned a home directory.
+      title: >-
+        All SLEM 5 local interactive user accounts, upon creation, must be assigned a home
+        directory.
       rules:
           - accounts_have_homedir_login_defs
       status: automated
@@ -747,8 +802,9 @@ controls:
     - id: SLEM-05-411015
       levels:
           - medium
-      title: SLEM 5 default permissions must be defined in such a way that all authenticated users can
-          only read and modify their own files.
+      title: >-
+        SLEM 5 default permissions must be defined in such a way that all authenticated users can
+        only read and modify their own files.
       rules:
           - accounts_umask_etc_login_defs
       status: automated
@@ -756,8 +812,9 @@ controls:
     - id: SLEM-05-411020
       levels:
           - medium
-      title: SLEM 5 shadow password suite must be configured to enforce a delay of at least five seconds
-          between logon prompts following a failed logon attempt.
+      title: >-
+        SLEM 5 shadow password suite must be configured to enforce a delay of at least five seconds
+        between logon prompts following a failed logon attempt.
       rules:
           - accounts_logon_fail_delay
           - var_accounts_fail_delay=5
@@ -766,8 +823,9 @@ controls:
     - id: SLEM-05-411025
       levels:
           - medium
-      title: All SLEM 5 local interactive users must have a home directory assigned in the /etc/passwd
-          file.
+      title: >-
+        All SLEM 5 local interactive users must have a home directory assigned in the /etc/passwd
+        file.
       rules:
           - accounts_user_interactive_home_directory_defined
       status: automated
@@ -775,8 +833,9 @@ controls:
     - id: SLEM-05-411030
       levels:
           - medium
-      title: All SLEM 5 local interactive user home directories defined in the /etc/passwd file must
-          exist.
+      title: >-
+        All SLEM 5 local interactive user home directories defined in the /etc/passwd file must
+        exist.
       rules:
           - accounts_user_interactive_home_directory_exists
       status: automated
@@ -784,8 +843,9 @@ controls:
     - id: SLEM-05-411035
       levels:
           - medium
-      title: All SLEM 5 local interactive user initialization files executable search paths must contain
-          only paths that resolve to the users' home directory.
+      title: >-
+        All SLEM 5 local interactive user initialization files executable search paths must contain
+        only paths that resolve to the users' home directory.
       rules:
           - accounts_user_home_paths_only
       status: automated
@@ -842,8 +902,9 @@ controls:
     - id: SLEM-05-411070
       levels:
           - medium
-      title: SLEM 5 must disable account identifiers (individuals, groups, roles, and devices) after
-          35 days of inactivity after password expiration.
+      title: >-
+        SLEM 5 must disable account identifiers (individuals, groups, roles, and devices) after 35
+        days of inactivity after password expiration.
       rules:
           - account_disable_post_pw_expiration
       status: automated
@@ -877,8 +938,9 @@ controls:
     - id: SLEM-05-412025
       levels:
           - medium
-      title: SLEM 5 must enforce a delay of at least five seconds between logon prompts following a failed
-          logon attempt via pluggable authentication modules (PAM).
+      title: >-
+        SLEM 5 must enforce a delay of at least five seconds between logon prompts following a
+        failed logon attempt via pluggable authentication modules (PAM).
       rules:
           - accounts_passwords_pam_faildelay_delay
           - var_password_pam_delay=4000000
@@ -887,8 +949,9 @@ controls:
     - id: SLEM-05-412035
       levels:
           - low
-      title: SLEM 5 must limit the number of concurrent sessions to 10 for all accounts and/or account
-          types.
+      title: >-
+        SLEM 5 must limit the number of concurrent sessions to 10 for all accounts and/or account
+        types.
       rules:
           - accounts_max_concurrent_login_sessions
           - var_accounts_max_concurrent_login_sessions=10
@@ -905,7 +968,8 @@ controls:
     - id: SLEM-05-431015
       levels:
           - high
-      title: SLEM 5 must use a Linux Security Module configured to enforce limits on system services.
+      title: >-
+        SLEM 5 must use a Linux Security Module configured to enforce limits on system services.
       rules:
           - selinux_state
           - var_selinux_state=enforcing
@@ -923,8 +987,9 @@ controls:
     - id: SLEM-05-431025
       levels:
           - medium
-      title: SLEM 5 must prevent nonprivileged users from executing privileged functions, including disabling,
-          circumventing, or altering implemented security safeguards/countermeasures.
+      title: >-
+        SLEM 5 must prevent nonprivileged users from executing privileged functions, including
+        disabling, circumventing, or altering implemented security safeguards/countermeasures.
       rules:
           - selinux_user_login_roles
       status: manual
@@ -932,7 +997,8 @@ controls:
     - id: SLEM-05-432010
       levels:
           - medium
-      title: SLEM 5 must use the invoking user's password for privilege escalation when using "sudo".
+      title: >-
+        SLEM 5 must use the invoking user's password for privilege escalation when using "sudo".
       rules:
           - sudoers_validate_passwd
       status: automated
@@ -940,7 +1006,9 @@ controls:
     - id: SLEM-05-432015
       levels:
           - medium
-      title: SLEM 5 must reauthenticate users when changing authenticators, roles, or escalating privileges.
+      title: >-
+        SLEM 5 must reauthenticate users when changing authenticators, roles, or escalating
+        privileges.
       rules:
           - sudo_require_authentication
           - sudo_remove_nopasswd
@@ -1023,8 +1091,9 @@ controls:
     - id: SLEM-05-611040
       levels:
           - medium
-      title: SLEM 5 must require the change of at least eight of the total number of characters when
-          passwords are changed.
+      title: >-
+        SLEM 5 must require the change of at least eight of the total number of characters when
+        passwords are changed.
       rules:
           - cracklib_accounts_password_pam_difok
       status: automated
@@ -1042,8 +1111,9 @@ controls:
     - id: SLEM-05-611050
       levels:
           - medium
-      title: SLEM 5 must configure the Linux Pluggable Authentication Modules (PAM) to only store encrypted
-          representations of passwords.
+      title: >-
+        SLEM 5 must configure the Linux Pluggable Authentication Modules (PAM) to only store
+        encrypted representations of passwords.
       rules:
           - set_password_hashing_algorithm_systemauth
       status: automated
@@ -1093,8 +1163,9 @@ controls:
     - id: SLEM-05-611080
       levels:
           - high
-      title: SLEM 5 must employ FIPS 140-2/140-3-approved cryptographic hashing algorithms for system
-          authentication.
+      title: >-
+        SLEM 5 must employ FIPS 140-2/140-3-approved cryptographic hashing algorithms for system
+        authentication.
       rules:
           - accounts_password_all_shadowed_sha512
       status: automated
@@ -1102,7 +1173,9 @@ controls:
     - id: SLEM-05-611085
       levels:
           - high
-      title: SLEM 5 shadow password suite must be configured to use a sufficient number of hashing rounds.
+      title: >-
+        SLEM 5 shadow password suite must be configured to use a sufficient number of hashing
+        rounds.
       rules:
           - set_password_hashing_min_rounds_logindefs
       status: automated
@@ -1110,8 +1183,9 @@ controls:
     - id: SLEM-05-611090
       levels:
           - medium
-      title: SLEM 5 must employ FIPS 140-2/140-3 approved cryptographic hashing algorithm for system
-          authentication (login.defs).
+      title: >-
+        SLEM 5 must employ FIPS 140-2/140-3 approved cryptographic hashing algorithm for system
+        authentication (login.defs).
       rules:
           - set_password_hashing_algorithm_logindefs
           - var_password_hashing_algorithm=SHA512
@@ -1120,8 +1194,9 @@ controls:
     - id: SLEM-05-611095
       levels:
           - medium
-      title: SLEM 5 must be configured to create or update passwords with a minimum lifetime of 24 hours
-          (one day).
+      title: >-
+        SLEM 5 must be configured to create or update passwords with a minimum lifetime of 24 hours
+        (one day).
       rules:
           - accounts_minimum_age_login_defs
       status: automated
@@ -1129,7 +1204,8 @@ controls:
     - id: SLEM-05-611100
       levels:
           - medium
-      title: SLEM 5 must be configured to create or update passwords with a maximum lifetime of 60 days.
+      title: >-
+        SLEM 5 must be configured to create or update passwords with a maximum lifetime of 60 days.
       rules:
           - accounts_maximum_age_login_defs
       status: automated
@@ -1145,8 +1221,9 @@ controls:
     - id: SLEM-05-612015
       levels:
           - medium
-      title: SLEM 5 must implement multifactor authentication for access to privileged accounts via pluggable
-          authentication modules (PAM).
+      title: >-
+        SLEM 5 must implement multifactor authentication for access to privileged accounts via
+        pluggable authentication modules (PAM).
       rules:
           - smartcard_pam_enabled
       status: automated
@@ -1162,8 +1239,9 @@ controls:
     - id: SLEM-05-631010
       levels:
           - medium
-      title: If Network Security Services (NSS) is being used by SLEM 5 it must prohibit the use of cached
-          authentications after one day.
+      title: >-
+        If Network Security Services (NSS) is being used by SLEM 5 it must prohibit the use of
+        cached authentications after one day.
       rules:
           - sssd_memcache_timeout
           - var_sssd_memcache_timeout=1_day
@@ -1172,8 +1250,9 @@ controls:
     - id: SLEM-05-631015
       levels:
           - medium
-      title: SLEM 5 must configure the Linux Pluggable Authentication Modules (PAM) to prohibit the use
-          of cached offline authentications after one day.
+      title: >-
+        SLEM 5 must configure the Linux Pluggable Authentication Modules (PAM) to prohibit the use
+        of cached offline authentications after one day.
       rules:
           - sssd_offline_cred_expiration
       status: automated
@@ -1181,8 +1260,9 @@ controls:
     - id: SLEM-05-631020
       levels:
           - medium
-      title: SLEM 5, for PKI-based authentication, must validate certificates by constructing a certification
-          path (which includes status information) to an accepted trust anchor.
+      title: >-
+        SLEM 5, for PKI-based authentication, must validate certificates by constructing a
+        certification path (which includes status information) to an accepted trust anchor.
       rules:
           - smartcard_configure_ca
       status: automated
@@ -1190,8 +1270,9 @@ controls:
     - id: SLEM-05-631025
       levels:
           - medium
-      title: SLEM 5 must be configured to not overwrite Pluggable Authentication Modules (PAM) configuration
-          on package changes.
+      title: >-
+        SLEM 5 must be configured to not overwrite Pluggable Authentication Modules (PAM)
+        configuration on package changes.
       rules:
           - pam_disable_automatic_configuration
       status: automated
@@ -1199,7 +1280,9 @@ controls:
     - id: SLEM-05-651010
       levels:
           - medium
-      title: SLEM 5 must use a file integrity tool to verify correct operation of all security functions.
+      title: >-
+        SLEM 5 must use a file integrity tool to verify correct operation of all security
+        functions.
       rules:
           - package_aide_installed
           - aide_build_database
@@ -1224,7 +1307,8 @@ controls:
     - id: SLEM-05-651025
       levels:
           - medium
-      title: SLEM 5 file integrity tool must be configured to protect the integrity of the audit tools.
+      title: >-
+        SLEM 5 file integrity tool must be configured to protect the integrity of the audit tools.
       rules:
           - aide_check_audit_tools
       status: automated
@@ -1232,8 +1316,9 @@ controls:
     - id: SLEM-05-651030
       levels:
           - medium
-      title: Advanced Intrusion Detection Environment (AIDE) must verify the baseline SLEM 5 configuration
-          at least weekly.
+      title: >-
+        Advanced Intrusion Detection Environment (AIDE) must verify the baseline SLEM 5
+        configuration at least weekly.
       rules:
           - aide_periodic_checking_systemd_timer
       status: automated
@@ -1241,8 +1326,9 @@ controls:
     - id: SLEM-05-651035
       levels:
           - medium
-      title: SLEM 5 must notify the system administrator (SA) when Advanced Intrusion Detection Environment
-          (AIDE) discovers anomalies in the operation of any security functions.
+      title: >-
+        SLEM 5 must notify the system administrator (SA) when Advanced Intrusion Detection
+        Environment (AIDE) discovers anomalies in the operation of any security functions.
       rules:
           - aide_scan_notification
       status: automated
@@ -1250,8 +1336,9 @@ controls:
     - id: SLEM-05-652010
       levels:
           - medium
-      title: SLEM 5 must offload rsyslog messages for networked systems in real time and offload standalone
-          systems at least weekly.
+      title: >-
+        SLEM 5 must offload rsyslog messages for networked systems in real time and offload
+        standalone systems at least weekly.
       rules:
           - package_systemd-journal-remote_installed
           - service_systemd-journal-upload_enabled
@@ -1270,8 +1357,9 @@ controls:
     - id: SLEM-05-653015
       levels:
           - medium
-      title: SLEM 5 audit records must contain information to establish what type of events occurred,
-          the source of events, where events occurred, and the outcome of events.
+      title: >-
+        SLEM 5 audit records must contain information to establish what type of events occurred,
+        the source of events, where events occurred, and the outcome of events.
       rules:
           - service_auditd_enabled
       status: automated
@@ -1287,8 +1375,10 @@ controls:
     - id: SLEM-05-653025
       levels:
           - medium
-      title: SLEM 5 must allocate audit record storage capacity to store at least one week of audit records
-          when audit records are not immediately sent to a central audit record storage facility.
+      title: >-
+        SLEM 5 must allocate audit record storage capacity to store at least one week of audit
+        records when audit records are not immediately sent to a central audit record storage
+        facility.
       rules:
           - auditd_audispd_configure_sufficiently_large_partition
       status: automated
@@ -1296,8 +1386,9 @@ controls:
     - id: SLEM-05-653030
       levels:
           - medium
-      title: SLEM 5 auditd service must notify the system administrator (SA) and information system security
-          officer (ISSO) immediately when audit storage capacity is 75 percent full.
+      title: >-
+        SLEM 5 auditd service must notify the system administrator (SA) and information system
+        security officer (ISSO) immediately when audit storage capacity is 75 percent full.
       rules:
           - auditd_data_retention_space_left_percentage
           - var_auditd_space_left_percentage=25pc
@@ -1308,7 +1399,8 @@ controls:
     - id: SLEM-05-653035
       levels:
           - medium
-      title: SLEM 5 audit system must take appropriate action when the audit storage volume is full.
+      title: >-
+        SLEM 5 audit system must take appropriate action when the audit storage volume is full.
       rules:
           - auditd_data_disk_full_action
       status: automated
@@ -1316,8 +1408,9 @@ controls:
     - id: SLEM-05-653040
       levels:
           - medium
-      title: SLEM 5 must offload audit records onto a different system or media from the system being
-          audited.
+      title: >-
+        SLEM 5 must offload audit records onto a different system or media from the system being
+        audited.
       rules:
           - auditd_audispd_network_failure_action
       status: automated
@@ -1341,8 +1434,9 @@ controls:
     - id: SLEM-05-653055
       levels:
           - medium
-      title: SLEM 5 audit tools must have the proper permissions configured to protect against unauthorized
-          access.
+      title: >-
+        SLEM 5 audit tools must have the proper permissions configured to protect against
+        unauthorized access.
       rules:
           - permissions_local_audit_binaries
       status: automated
@@ -1350,8 +1444,9 @@ controls:
     - id: SLEM-05-653060
       levels:
           - medium
-      title: SLEM 5 audit tools must have the proper permissions applied to protect against unauthorized
-          access.
+      title: >-
+        SLEM 5 audit tools must have the proper permissions applied to protect against unauthorized
+        access.
       rules: []
       status: manual
 
@@ -1366,7 +1461,9 @@ controls:
     - id: SLEM-05-653070
       levels:
           - medium
-      title: Audispd must offload audit records onto a different system or media from SLEM 5 being audited.
+      title: >-
+        Audispd must offload audit records onto a different system or media from SLEM 5 being
+        audited.
       rules:
           - auditd_audispd_configure_remote_server
       status: automated
@@ -1374,8 +1471,9 @@ controls:
     - id: SLEM-05-653075
       levels:
           - medium
-      title: The information system security officer (ISSO) and system administrator (SA), at a minimum,
-          must have mail aliases to be notified of a SLEM 5 audit processing failure.
+      title: >-
+        The information system security officer (ISSO) and system administrator (SA), at a minimum,
+        must have mail aliases to be notified of a SLEM 5 audit processing failure.
       rules:
           - postfix_client_configure_mail_alias
       status: automated
@@ -1383,8 +1481,9 @@ controls:
     - id: SLEM-05-653080
       levels:
           - medium
-      title: The information system security officer (ISSO) and system administrator (SA), at a minimum,
-          must be alerted of a SLEM 5 audit processing failure event.
+      title: >-
+        The information system security officer (ISSO) and system administrator (SA), at a minimum,
+        must be alerted of a SLEM 5 audit processing failure event.
       rules:
           - auditd_data_retention_action_mail_acct
       status: automated
@@ -1568,7 +1667,9 @@ controls:
     - id: SLEM-05-654120
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "unix_chkpwd" or "unix2_chkpwd" commands.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "unix_chkpwd" or "unix2_chkpwd"
+        commands.
       rules:
           - audit_rules_privileged_commands_unix_chkpwd
       status: automated
@@ -1584,8 +1685,9 @@ controls:
     - id: SLEM-05-654130
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all account creations, modifications, disabling,
-          and termination events that affect /etc/group.
+      title: >-
+        SLEM 5 must generate audit records for all account creations, modifications, disabling, and
+        termination events that affect /etc/group.
       rules:
           - audit_rules_usergroup_modification_group
       status: automated
@@ -1593,8 +1695,9 @@ controls:
     - id: SLEM-05-654135
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all account creations, modifications, disabling,
-          and termination events that affect /etc/security/opasswd.
+      title: >-
+        SLEM 5 must generate audit records for all account creations, modifications, disabling, and
+        termination events that affect /etc/security/opasswd.
       rules:
           - audit_rules_usergroup_modification_opasswd
       status: automated
@@ -1602,8 +1705,9 @@ controls:
     - id: SLEM-05-654140
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all account creations, modifications, disabling,
-          and termination events that affect /etc/passwd.
+      title: >-
+        SLEM 5 must generate audit records for all account creations, modifications, disabling, and
+        termination events that affect /etc/passwd.
       rules:
           - audit_rules_usergroup_modification_passwd
       status: automated
@@ -1611,8 +1715,9 @@ controls:
     - id: SLEM-05-654145
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all account creations, modifications, disabling,
-          and termination events that affect /etc/shadow.
+      title: >-
+        SLEM 5 must generate audit records for all account creations, modifications, disabling, and
+        termination events that affect /etc/shadow.
       rules:
           - audit_rules_usergroup_modification_shadow
       status: automated
@@ -1620,8 +1725,9 @@ controls:
     - id: SLEM-05-654150
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "chmod", "fchmod" and "fchmodat"
-          system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "chmod", "fchmod" and "fchmodat"
+        system calls.
       rules:
           - audit_rules_dac_modification_fchmod
       status: automated
@@ -1629,8 +1735,9 @@ controls:
     - id: SLEM-05-654155
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "chown", "fchown", "fchownat", and
-          "lchown" system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "chown", "fchown", "fchownat", and
+        "lchown" system calls.
       rules:
           - audit_rules_dac_modification_lchown
       status: automated
@@ -1638,8 +1745,9 @@ controls:
     - id: SLEM-05-654160
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "creat", "open", "openat", "open_by_handle_at",
-          "truncate", and "ftruncate" system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "creat", "open", "openat",
+        "open_by_handle_at", "truncate", and "ftruncate" system calls.
       rules:
           - audit_rules_unsuccessful_file_modification_open
       status: automated
@@ -1655,8 +1763,9 @@ controls:
     - id: SLEM-05-654170
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "init_module" and "finit_module"
-          system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "init_module" and "finit_module"
+        system calls.
       rules:
           - audit_rules_kernel_module_loading_finit
       status: automated
@@ -1672,8 +1781,9 @@ controls:
     - id: SLEM-05-654180
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "setxattr", "fsetxattr", "lsetxattr",
-          "removexattr", "fremovexattr", and "lremovexattr" system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "setxattr", "fsetxattr",
+        "lsetxattr", "removexattr", "fremovexattr", and "lremovexattr" system calls.
       rules:
           - audit_rules_dac_modification_fremovexattr
       status: automated
@@ -1689,8 +1799,9 @@ controls:
     - id: SLEM-05-654190
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all uses of the "unlink", "unlinkat", "rename", "renameat",
-          and "rmdir" system calls.
+      title: >-
+        SLEM 5 must generate audit records for all uses of the "unlink", "unlinkat", "rename",
+        "renameat", and "rmdir" system calls.
       rules:
           - audit_rules_unsuccessful_file_modification_rename
       status: automated
@@ -1714,8 +1825,9 @@ controls:
     - id: SLEM-05-654205
       levels:
           - medium
-      title: SLEM 5 must generate audit records for all modifications to the "tallylog" file must generate
-          an audit record.
+      title: >-
+        SLEM 5 must generate audit records for all modifications to the "tallylog" file must
+        generate an audit record.
       rules:
           - audit_rules_login_events_tallylog
       status: automated
@@ -1723,7 +1835,9 @@ controls:
     - id: SLEM-05-654210
       levels:
           - medium
-      title: SLEM 5 must audit all uses of the sudoers file and all files in the "/etc/sudoers.d/" directory.
+      title: >-
+        SLEM 5 must audit all uses of the sudoers file and all files in the "/etc/sudoers.d/"
+        directory.
       rules:
           - audit_rules_sysadmin_actions
       status: automated

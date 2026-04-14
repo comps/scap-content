@@ -1,4 +1,3 @@
-
 title: Ensure the notification is enabled for file integrity operator
 
 platform: not aarch64_arch and not ocp4-on-hypershift

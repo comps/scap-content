@@ -26,5 +26,3 @@ fixtext: |-
     To install the "firewalld" package run the following command:
 
     $ sudo dnf install firewalld
-
-

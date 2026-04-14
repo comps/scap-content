@@ -1,4 +1,4 @@
- 
+
 documentation_complete: true
 title: ABCD High for Red Hat Enterprise Linux 8
 description: >-

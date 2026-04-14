@@ -12,4 +12,3 @@ controls:
   - configure_network_policies
   - routes_protected_by_tls
   status: automated
-

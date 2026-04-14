@@ -19,5 +19,3 @@ fixtext: |-
     Change the owner of the "/var/log/messages" file to "root" by running the following command:
 
     $ sudo chown root /var/log/messages
-
-

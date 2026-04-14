@@ -12,4 +12,5 @@ operator: equals
 interactive: true
 
 options:
-   default: '^DataProtectionApplication\\.oadp\\.openshift\\.io$|^backups\\.velero\\.io$|^policies\\.config\\.kio\\.kasten\\.io$'
+   default: >-
+     ^DataProtectionApplication\\.oadp\\.openshift\\.io$|^backups\\.velero\\.io$|^policies\\.config\\.kio\\.kasten\\.io$

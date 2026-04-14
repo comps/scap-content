@@ -25,7 +25,8 @@ selections:
     - var_password_hashing_algorithm=SHA512
     - var_password_pam_unix_rounds=65536
 
-    # An alternative solution for R67 is using nss-pam-ldapd package, in this case ensures SSL and certificate configuration
+    # An alternative solution for R67 is using nss-pam-ldapd package, in this case ensures SSL and
+    # certificate configuration
     - ldap_client_start_tls
     - ldap_client_tls_cacertpath
 

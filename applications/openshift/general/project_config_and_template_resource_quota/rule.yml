@@ -76,4 +76,3 @@ warnings:
 - general: |-
     {{{ openshift_cluster_setting("/apis/config.openshift.io/v1/projects/cluster") | indent(4) }}}
     {{{ openshift_filtered_cluster_setting({api_path: jqfilter}) | indent(4) }}}
-

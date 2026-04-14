@@ -30,5 +30,3 @@ checktext: |-
 
 fixtext: |-
     Remove all unapproved tunnels from the system, or document them with the ISSO.
-
-

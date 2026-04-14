@@ -19,5 +19,3 @@ fixtext: |-
     Run the following command, replacing "[DIRECTORY]" with any library directory with a mode more permissive than 755.
 
     $ sudo chmod 755 [DIRECTORY]
-
-

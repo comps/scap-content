@@ -32,6 +32,6 @@ fixtext: |-
     Change the GID of any group on the system, other than root, that has a GID of "0".
 
 warnings:
-  - general: |-
-       This rule doesn't come with a remediation. The removal of groups from a system
-       or reassigning the GID is considered too disruptive.
+    - general: |-
+         This rule doesn't come with a remediation. The removal of groups from a system
+         or reassigning the GID is considered too disruptive.

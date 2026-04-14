@@ -41,11 +41,13 @@ selections:
     - '!audit_rules_login_events_tallylog'
     # lastlog is not used in RHEL 10
     - '!audit_rules_login_events_lastlog'
-    # this rule is currently failing on some systemd services, probably because of require_emergency_target_auth and require_singleuser_auth rules
+    # this rule is currently failing on some systemd services, probably because of
+    # require_emergency_target_auth and require_singleuser_auth rules
     - '!rpm_verify_hashes'
     # this rule should not be needed anymore on RHEL 10, but investigation is recommended
     - '!openssl_use_strong_entropy'
-    # Currently not working RHEL 10, changes are being made to FIPS mode. Investigation is recommended.
+    # Currently not working RHEL 10, changes are being made to FIPS mode. Investigation is
+    # recommended.
     - '!enable_dracut_fips_module'
     # This rule is not applicable for RHEL 10
     - '!force_opensc_card_drivers'

@@ -1,4 +1,3 @@
-
 documentation_complete: true
 
 
@@ -39,4 +38,3 @@ ocil: |-
     To ensure that users cannot enable user name on the lock screen, run the following:
     <pre>$ grep show-full-name-in-top-bar /etc/dconf/db/local.d/locks/*</pre>
     If properly configured, the output should be <tt>/org/gnome/desktop/screensaver/show-full-name-in-top-bar</tt>
-

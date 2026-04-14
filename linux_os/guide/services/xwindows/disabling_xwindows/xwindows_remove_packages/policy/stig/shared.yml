@@ -23,5 +23,3 @@ fixtext: |-
 
     $ sudo dnf remove "xorg*"
     $ sudo systemctl set-default multi-user.target
-
-

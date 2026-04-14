@@ -68,4 +68,3 @@ template:
     values:
       - value: "(.*?)"
         operation: "pattern match"
-

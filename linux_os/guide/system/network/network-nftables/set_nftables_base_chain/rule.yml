@@ -28,8 +28,10 @@ references:
 ocil_clause: 'base chains do not exist for nftables'
 
 warnings:
-   - general: "Configuring rules over ssh, by creating a base chain with policy drop will cause loss of connectivity.
-               Ensure that a rule allowing ssh has been added to the base chain prior to setting the base cahin's policy to drop"
+    - general: >-
+        Configuring rules over ssh, by creating a base chain with policy drop will cause loss of
+        connectivity. Ensure that a rule allowing ssh has been added to the base chain prior to
+        setting the base cahin's policy to drop
 
 ocil: |-
     To verify that base chains exist for INPUT, FORWARD, and OUTPUT, run the following commands:

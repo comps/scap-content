@@ -15,7 +15,6 @@ vuldiscussion: |-
     x509/name - certificate validation and subject name authentication
 
 
-
 checktext: |-
     Verify {{{ full_name }}} authenticates the remote logging server for offloading audit logs with the following command:
 
@@ -33,5 +32,3 @@ fixtext: |-
     Configure {{{ full_name }}} to authenticate the remote logging server for offloading audit logs by setting the following option in "/etc/rsyslog.conf" or "/etc/rsyslog.d/[customfile].conf":
 
     $ActionSendStreamDriverAuthMode x509/name
-
-

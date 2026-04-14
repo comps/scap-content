@@ -6,7 +6,7 @@
 
 - name: "{{{ rule_title }}}: Set facts"
   ansible.builtin.set_fact:
-    conf_files: [ '/etc/rsyslog.conf' ]
+    conf_files: ['/etc/rsyslog.conf']
     remote_methods:
       - selector: 'auth.*'
         regexp: ^[^#]*auth\.\*.*$

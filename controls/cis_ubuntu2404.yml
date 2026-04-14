@@ -623,7 +623,8 @@ controls:
           The rules satisfy both controls 1.7.6 and 1.7.7
 
     - id: 1.7.7
-      title: Ensure GDM disabling automatic mounting of removable media is not overridden (Automated)
+      title: >-
+        Ensure GDM disabling automatic mounting of removable media is not overridden (Automated)
       levels:
           - l1_server
           - l2_workstation
@@ -2681,7 +2682,9 @@ controls:
       status: automated
 
     - id: 6.2.3.9
-      title: Ensure discretionary access control permission modification events are collected (Automated)
+      title: >-
+        Ensure discretionary access control permission modification events are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2743,7 +2746,8 @@ controls:
       status: automated
 
     - id: 6.2.3.14
-      title: Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
+      title: >-
+        Ensure events that modify the system's Mandatory Access Controls are collected (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2753,7 +2757,9 @@ controls:
       status: automated
 
     - id: 6.2.3.15
-      title: Ensure successful and unsuccessful attempts to use the chcon command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the chcon command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2762,7 +2768,9 @@ controls:
       status: automated
 
     - id: 6.2.3.16
-      title: Ensure successful and unsuccessful attempts to use the setfacl command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the setfacl command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2771,7 +2779,9 @@ controls:
       status: automated
 
     - id: 6.2.3.17
-      title: Ensure successful and unsuccessful attempts to use the chacl command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the chacl command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2780,7 +2790,9 @@ controls:
       status: automated
 
     - id: 6.2.3.18
-      title: Ensure successful and unsuccessful attempts to use the usermod command are collected (Automated)
+      title: >-
+        Ensure successful and unsuccessful attempts to use the usermod command are collected
+        (Automated)
       levels:
           - l2_server
           - l2_workstation
@@ -2930,7 +2942,9 @@ controls:
       status: automated
 
     - id: 6.3.3
-      title: Ensure cryptographic mechanisms are used to protect the integrity of audit tools (Automated)
+      title: >-
+        Ensure cryptographic mechanisms are used to protect the integrity of audit tools
+        (Automated)
       levels:
           - l2_server
           - l2_workstation

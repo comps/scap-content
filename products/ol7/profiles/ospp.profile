@@ -159,7 +159,7 @@ selections:
     ### Configure USBGuard
 
     ### Enable / Configure FIPS
-    -  grub2_enable_fips_mode
+    - grub2_enable_fips_mode
 
     #######################################################
     ### CONFIGURATION ANNEX TO THE PROTECTION PROFILE

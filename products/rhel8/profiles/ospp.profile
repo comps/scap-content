@@ -29,7 +29,8 @@ selections:
     #######################################################
     - ospp:all
 
-    # special unused variables since we can't unselect variables. So we select the default value again
+    # special unused variables since we can't unselect variables. So we select the default value
+    # again
     - 'var_logind_session_timeout=5_minutes'
     - 'sysctl_kernel_unprivileged_bpf_disabled_value=2'
 
@@ -206,4 +207,3 @@ selections:
     - '!zipl_systemd_debug-shell_argument_absent'
     - '!audit_modify_failed_ppc64le'
     - '!package_sequoia-sq_installed'
-

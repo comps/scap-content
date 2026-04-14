@@ -54,4 +54,3 @@ fixtext: |-
 srg_requirement: |-
   {{{ full_name }}} must use FIPS validated cryptographic mechanisms to protect the integrity
   of log information.
-

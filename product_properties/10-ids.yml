@@ -1,4 +1,3 @@
-
 default:
   gid_min: 1000
   uid_min: 1000

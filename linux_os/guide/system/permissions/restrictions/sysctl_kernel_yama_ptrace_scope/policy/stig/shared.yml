@@ -5,7 +5,6 @@ vuldiscussion: |-
     Unrestricted usage of ptrace allows compromised binaries to run ptrace on other processes of the user. Like this, the attacker can steal sensitive information from the target processes (e.g., SSH sessions, web browser, etc.) without any additional assistance from the user (i.e., without resorting to phishing).
 
 
-
 checktext: |-
     Verify {{{ full_name }}} restricts the usage of ptrace to descendant processes with the following commands:
 
@@ -35,5 +34,3 @@ fixtext: |-
     The system configuration files must be reloaded for the changes to take effect. To reload the contents of the files, run the following command:
 
     $ sysctl --system
-
-

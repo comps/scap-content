@@ -35,9 +35,9 @@ references:
 ocil_clause: 'default policy is not set for nftables rules'
 
 warnings:
-   - general: |-
-       Changing firewall settings while connected over network can result in being locked out
-       of the system.
+    - general: |-
+        Changing firewall settings while connected over network can result in being locked out
+        of the system.
 
 ocil: |-
     Run the following commands and verify that base chains policy is <tt>drop</tt>:

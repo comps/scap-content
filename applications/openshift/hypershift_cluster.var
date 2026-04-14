@@ -13,4 +13,4 @@ operator: equals
 interactive: false
 
 options:
-    default: 
+    default:

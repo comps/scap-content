@@ -13,7 +13,7 @@
   ansible.builtin.getent:
     database: passwd
   register: passwd_database
-    
+
 - name: {{{ rule_title }}} - Fill home_user_dirs
   ansible.builtin.set_fact:
     home_user_dirs: "{{ home_user_dirs + [item.data[4]] }}"

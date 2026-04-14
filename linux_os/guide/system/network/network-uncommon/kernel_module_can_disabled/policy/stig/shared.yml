@@ -19,5 +19,3 @@ fixtext: |-
 
     install can /bin/false
     blacklist can
-
-

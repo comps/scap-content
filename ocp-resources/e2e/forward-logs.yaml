@@ -6,7 +6,7 @@ metadata:
 spec:
   outputs:
     # This output is fake... but it's used for a probe to work
-    - name: kafka-app 
+    - name: kafka-app
       type: "kafka"
       url: tls://kafka.secure.com:9093/app-topic
   pipelines:

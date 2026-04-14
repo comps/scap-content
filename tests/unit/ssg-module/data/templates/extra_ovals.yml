@@ -3,4 +3,3 @@ package_avahi_installed:
   vars:
     pkgname: avahi
     pkgname@rhel8: avahi8
-

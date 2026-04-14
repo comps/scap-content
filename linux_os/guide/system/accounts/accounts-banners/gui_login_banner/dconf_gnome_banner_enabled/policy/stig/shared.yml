@@ -7,7 +7,6 @@ vuldiscussion: |-
     For U.S. Government systems, system use notifications are required only for access via login interfaces with human users and are not required when such human interfaces do not exist.
 
 
-
 checktext: |-
     Note: This requirement assumes the use of the {{{ full_name }}} default graphical user interface, the GNOME desktop environment. If the system does not have any graphical user interface installed, this requirement is Not Applicable.
 
@@ -35,5 +34,3 @@ fixtext: |-
     Run the following command to update the database:
 
     $ sudo dconf update
-
-

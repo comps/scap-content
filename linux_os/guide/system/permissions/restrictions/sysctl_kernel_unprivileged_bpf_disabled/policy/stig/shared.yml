@@ -5,7 +5,6 @@ vuldiscussion: |-
     Loading and accessing the packet filters programs and maps using the bpf() system call has the potential of revealing sensitive information about the kernel state.
 
 
-
 checktext: |-
     Verify that {{{ full_name }}} prevents privilege escalation through the kernel by disabling access to the bpf system call with the following commands:
 
@@ -35,5 +34,3 @@ fixtext: |-
     The system configuration files must be reloaded for the changes to take effect. To reload the contents of the files, run the following command:
 
     $ sysctl --system
-
-

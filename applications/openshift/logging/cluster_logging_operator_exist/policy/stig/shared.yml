@@ -57,4 +57,3 @@ fixtext: |-
 
 srg_requirement: |-
   The container platform must initiate session auditing upon startup.
-

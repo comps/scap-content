@@ -40,4 +40,3 @@ platform_package_overrides:
   shadow: login
   sssd: sssd-common
   audit: auditd
-

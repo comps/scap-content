@@ -39,4 +39,3 @@ template:
     vars:
         path: /var/log/wtmp
         key: session
-

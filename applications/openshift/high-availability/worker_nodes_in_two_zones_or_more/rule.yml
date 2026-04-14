@@ -2,7 +2,7 @@ documentation_complete: true
 
 title: 'Ensure Worker Nodes are Distributed Across Three Failure Zones'
 
-description: |- 
+description: |-
     Distributing Kubernetes worker nodes across failure zones enhances security by mitigating
     the risk of a single point of failure and reducing the impact of application workload
     inavailability or attacks targeting a specific zone.

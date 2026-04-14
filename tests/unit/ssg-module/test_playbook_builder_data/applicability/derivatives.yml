@@ -3,4 +3,3 @@ cpes:
       name: "cpe:/o:centos:centos:8"
       title: "CentOS 8"
       check_id: installed_OS_is_centos8
-

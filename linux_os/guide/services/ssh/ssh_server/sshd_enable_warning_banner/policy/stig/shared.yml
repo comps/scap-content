@@ -5,7 +5,6 @@ vuldiscussion: |-
     The warning message reinforces policy awareness during the logon process and facilitates possible legal action against attackers. Alternatively, systems whose ownership should not be obvious should ensure usage of a banner that does not provide easy attribution.
 
 
-
 checktext: |-
     Verify that any SSH connection to the operating system displays the Standard Mandatory DOD Notice and Consent Banner before granting access to the system.
 
@@ -25,5 +24,3 @@ fixtext: |-
     An example configuration line is:
 
     Banner /etc/issue
-
-
