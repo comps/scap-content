@@ -27,7 +27,7 @@ jobs:
   job: tests
   trigger: pull_request
   fmf_url: https://github.com/RHSecurityCompliance/contest.git
-  fmf_ref: main
+  fmf_ref: jjtest
   tmt_plan: /plans/upstream-parallel/oscap
   identifier: contest-oscap
   targets:
@@ -42,6 +42,10 @@ jobs:
 - <<: *contest-oscap
   tmt_plan: /plans/upstream-parallel/ansible
   identifier: contest-ansible
+
+- <<: *contest-oscap
+  tmt_plan: /plans/upstream-parallel/other
+  identifier: contest-other
 
 # when modifying anything below, modify also tests/tmt/
 
